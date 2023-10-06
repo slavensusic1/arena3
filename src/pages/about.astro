@@ -1,0 +1,35 @@
+---
+import CounterComponent from '../components/Counters.jsx';
+
+
+// import Test from '../components/Test';
+import TimeLine from '../components/TimeLine.astro';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import 'astro-breadcrumbs/breadcrumbs.css';
+
+
+---
+
+<BaseLayout>
+
+
+
+<div class="container mx-auto p-4  rounded-lg">
+	<h1 class="text-6xl text-gray-700 font-bold mb-4 text-center">History of Digital Arena</h1>
+<TimeLine/>
+<!-- <Gallery/> -->
+
+
+
+
+<div class="pt-40 pb-20">
+    <CounterComponent client:visible/>
+  </div>
+
+    </div>
+	
+</div>
+
+	
+</BaseLayout>
