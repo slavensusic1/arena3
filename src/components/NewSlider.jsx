@@ -3,7 +3,7 @@ import "react-awesome-slider/dist/styles.css";
 import logo from "../assets/itSvg.svg";
 import "react-awesome-slider/dist/custom-animations/cube-animation.css";
 
-const Slider = () => {
+export const NewSlider = () => {
   return (
     <AwesomeSlider animation="cubeAnimation">
       {/* <div className="bg-white">
@@ -1350,4 +1350,3 @@ const Slider = () => {
   );
 };
 
-export default Slider;
