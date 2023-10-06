@@ -4,11 +4,15 @@ import sitemap from '@astrojs/sitemap';
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 
+import vercel from "@astrojs/vercel/serverless";
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://example.com',
   integrations: [mdx(), sitemap(), react(), tailwind()],
   bundle: {
-    external: ['prop-types'], // Add 'prop-types' as an external dependency
+    external: ['prop-types'] // Add 'prop-types' as an external dependency
   },
+  output: "server",
+  adapter: vercel()
 });
