@@ -42,6 +42,13 @@ body {
 	font-size: 20px;
 	line-height: 1.7;
 }
+.swiper-button-next {
+	height: 50px !important;
+	width: 50px !important;
+	font-size: 10px;
+	color: 	#4caf50 !important
+	;
+}
 main {
 	width: 720px;
 	max-width: calc(100% - 2em);

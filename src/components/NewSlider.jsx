@@ -24,8 +24,9 @@ const NewSlider = () => {
             </div> */}
 
       {/*  slide IT */}
-      <SwiperSlide className=" bg-gray-100  grid grid-cols-3">
-        <div class=" rounded-lg  w-2/3 p-5 hover:scale-105 hover:grayscale  duration-300">
+      <SwiperSlide >
+        <div className=" bg-gray-100  flex items-center flex-col justify-center">
+        <div class="rounded-lg  w-2/3 p-5 hover:scale-105 hover:grayscale  duration-300">
           {" "}
           <a href="/it">
             <svg
@@ -327,10 +328,12 @@ const NewSlider = () => {
             <p  transition:name="itTitle">Information Technology (IT)</p>
           </div>
         </div>
+        </div>
       </SwiperSlide>
 
       {/* --slide ICT-- */}
-      <SwiperSlide className="flex flex-col items-center bg-gray-100 w-full h-full">
+      <SwiperSlide >
+        <div className="flex flex-col items-center bg-gray-100 w-full h-full">
         <div class=" rounded-lg  w-2/3 p-5  hover:scale-105 hover:grayscale  duration-300">
           <a href="/ict">
             <svg
@@ -505,10 +508,13 @@ const NewSlider = () => {
         <div className="text-xl text-green-500 font-bold flex flex-col justify-center items-center gap-1 ">
           <p  transition:name="ictTitle">ICT infrastructure</p>
         </div>
+        </div>
       </SwiperSlide>
 
       {/* --slide energetics-- */}
-      <SwiperSlide className="flex flex-col items-center bg-gray-100 w-full h-full">
+      <SwiperSlide 
+      >
+        <div className="flex flex-col items-center bg-gray-100 w-full h-full">
         <div class=" rounded-lg  w-2/4 p-5  hover:scale-105 hover:grayscale  duration-300">
           <a href="/energetics">
             <svg
@@ -608,10 +614,12 @@ const NewSlider = () => {
         >
           <p transition:name="energeticsTitle">Energetics</p>
         </div>
+      </div>
       </SwiperSlide>
 
       {/* --slide iso-- */}
-      <SwiperSlide className="flex flex-col items-center bg-gray-100 w-full h-full">
+      <SwiperSlide>
+      <div className="flex flex-col items-center bg-gray-100 w-full h-full">
         <div className=" rounded-lg  w-2/4 p-5  hover:scale-105 hover:grayscale  duration-300">
           <a href="/ISO">
             <svg
@@ -761,10 +769,12 @@ const NewSlider = () => {
         >
           <p transition:name="titeISO"> ISO Standards</p>
         </div>
+        </div>
       </SwiperSlide>
 
       {/* --slide gdpr-- */}
-      <SwiperSlide className="flex flex-col items-center bg-gray-100 w-full h-full  hover:scale-105 hover:grayscale  duration-300">
+      <SwiperSlide>
+      <div className="flex flex-col items-center bg-gray-100 w-full h-full">
         <div className=" rounded-lg  w-2/4 p-5">
           <a href="/GDPR">
             <svg
@@ -1131,12 +1141,14 @@ const NewSlider = () => {
         >
           <p transition:name="titeGDPR">GDPR</p>
         </div>
+        </div>
       </SwiperSlide>
 
       {/* --slide CISO-- */}
-      <SwiperSlide className="flex flex-col items-center bg-gray-100 w-full h-full  hover:scale-105 hover:grayscale  duration-300">
+      <SwiperSlide>
+      <div className="flex flex-col items-center bg-gray-100 w-full h-full">
         <div className=" rounded-lg  w-2/4 p-5">
-          h2
+    
           <a href="/CISO">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -1355,6 +1367,7 @@ const NewSlider = () => {
           transition:name="CISOTitle"
         >
           <p transition:name="CISOTitle">CISO Externalization</p>
+        </div>
         </div>
       </SwiperSlide>
     </Swiper>
