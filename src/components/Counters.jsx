@@ -4,7 +4,7 @@ import Number from './Number';
 function CounterComponent() {
   return (
     <div className="py-10 px-5 md:py-20 md:px-36 bg-gray-800 text-white">
-    <h2 class="text-5xl text-white font-bold text-left mb-4">What We Can Do for You</h2>
+    <h2 class="text-3xl md:text-5xl text-white font-bold text-left mb-4 whitespace-pre-wrap">What We Can Do for You</h2>
     <p class="text-left text-lg mb-6">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, fuga quam. Minima aperiam aliquam cum quisquam, laudantium corporis velit quaerat!
     </p>

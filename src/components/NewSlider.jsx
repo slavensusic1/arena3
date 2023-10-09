@@ -1,22 +1,29 @@
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/effect-flip';
+import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+
+
+
+// import required modules
+import { EffectFlip, Pagination, Navigation } from 'swiper/modules';
 
 const NewSlider = () => {
   return (
     
     <Swiper
-    spaceBetween={50}
-    centeredSlides={true}
-    navigation={true} 
-    modules={[Navigation]}
-    slidesPerView={1.15}
-    onSlideChange={() => console.log('slide change')}
-    onSwiper={(swiper) => console.log(swiper)}
-  >
+        effect={'flip'}
+        grabCursor={true}
+        pagination={true}
+        navigation={true}
+        modules={[EffectFlip, Pagination, Navigation]}
+        className="mySwiper"
+      >
       {/* <div className="bg-white">
         <a href="/it">  <h1 className='text-white'> Hello1</h1>
         <svg width="256px" height="256px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M511.3 676.9m-10 0a10 10 0 1 0 20 0 10 10 0 1 0-20 0Z" fill="#E73B37"></path><path d="M960 756V138.5H64V756h320.1v85.5H256.2v44h511.9v-44h-128V756H960zM108 182.5h808v427.1H108V182.5z m488.1 659h-168V756h168v85.5zM108 712v-82.5h808V712H108z" fill="#39393A"></path><path d="M167.536 327.703l90.72-90.721 14.143 14.142-90.721 90.72zM172.959 423.469l181.159-181.16 14.142 14.143L187.1 437.61z" fill="#E73B37"></path></g></svg>

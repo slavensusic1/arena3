@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import logo from '../assets/body-bg.svg'
 
+
 import { ViewTransitions } from 'astro:transitions';
 import { Image } from 'astro:assets';
 
@@ -21,7 +22,10 @@ import 'astro-breadcrumbs/breadcrumbs.css';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<ViewTransitions/>
-		
+		<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
 	</head>
 	<body transition:animate="fade" class="m-0 p-0 ">
 		<Header  />
