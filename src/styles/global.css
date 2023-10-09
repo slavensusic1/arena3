@@ -52,7 +52,7 @@ body {
  }
 .swiper-pagination-bullet:active {
 	color:#4caf50;
-	background-color: #4caf50;
+	background-color: #4caf50 !important;
 	
 }
 .swiper-pagination-bullet-active{
