@@ -1,16 +1,8 @@
 ---
-
 import Testimonial from './Testimonial.astro';
-import logoEU from '../assets/logoEu.png'
-import { Image } from 'astro:assets';
-
- import Counters from './Counters.jsx'
+import Counters from './Counters.jsx'
 import NewSlider from './NewSlider';
-
-
-
-
-
+import Projects from './Projects.astro';
 ---
 
 <section class="w-full">
@@ -44,7 +36,7 @@ import NewSlider from './NewSlider';
 
 
   <!-- Partners section  -->
-  <div class="py-40">
+  <div class="pt-10">
     <h3 class="text-gray-700">Partners</h3>
     <div  class="flex gap-4 justify-between pb-10 ">
       <div class="bg-blue-300 h-32 w-32 grayscale"></div>
@@ -61,7 +53,7 @@ import NewSlider from './NewSlider';
 
 </section>
 
-  <section class="flex flex-col justify-center lg:flex-row gap-20 md:gap-0 items-start p-4 rounded-lg shadow-sm py-20 pb-48">
+  <section class="flex flex-col justify-center lg:flex-row gap-20 md:gap-0 items-start p-4 rounded-lg shadow-sm md:py-20 pb-48">
     <div class="w-full lg:w-1/2 py-10 lg:py-0 mr-5">
   <NewSlider  client:visible/>
     </div>
@@ -86,39 +78,31 @@ import NewSlider from './NewSlider';
       <div class="lg:w-2/2">
       <Counters client:visible />
       </div>
-     
-      <div class="flex items-center justify-between border-t border-b py-5 mx-5 lg:w-2/3">
-        <Image src={logoEU} alt="euLogo" class="w-1/5" />
-        <div class="text-white">
-          <h2 class="text-2xl font-semibold ">
-            <a class="text-white hover:text-green-500 flex items-center justify-between gap-x-5" href="/PV-Smart-Click">Projects <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-            </svg>
-            </a>
-          </h2>
-        </div>
-      </div>
+
+    <Projects/>
     </div>
-  </div>
-  
+    </div>
 
   Testimonials section 
-      <section class="flex flex-col md:flex-row items-center justify-center  pla pt-72">
+      <section class="flex flex-col md:flex-row items-center justify-center gap-x-10 py-20">
     <Testimonial
-      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      text="njihova stručnost i brza reakcija na naše tehničke izazove čine ih neprocjenjivim partnerom. Njihova podrška olakšava nam svakodnevne poslovne operacije jer znamo da smo u dobrim rukama."
       author="John Doe"
       role="Web Developer"
+      rating="3/5"
     />
-    <Testimonial
-      text="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    <!-- <Testimonial
+      text="Pouzdanost njihovih usluga ključna je za naš uspjeh. Nikada se ne moramo brinuti o prekidima ili nesmetanom radu naših sustava i mreža. To nam omogućuje da se fokusiramo na svoje poslovanje i ostvarimo bolje rezultate."
       author="Jane Smith"
       role="Designer"
+      rating="4/5"
     />
     <Testimonial
-    text="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-    author="Jane Smith"
+    text="Cijenimo personaliziranu podršku koju pružaju. S njima ne osjećamo se kao obični korisnici, već kao partneri. Njihova sposobnost da prilagode svoje usluge našim specifičnim potrebama čini ih neprocjenjivim članom našeg tima. Ova personalizacija olakšava suradnju i doprinosi našem dugoročnom uspjehu."
+    author="Pero Perić"
     role="Designer"
-  />
+    rating="5/5"
+  /> -->
 
   </section>
 

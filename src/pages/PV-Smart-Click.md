@@ -1,8 +1,12 @@
 ---
+layout: "../layouts/BaseLayout.astro"
 title: 'Komercijalizacija inovativnog proizvoda PVSmartClick tvrtke Digital Arena d.o.o.'
 description: 'Komercijalizacija inovativnog proizvoda PVSmartClick tvrtke Digital Arena d.o.o.'
 pubDate: 'Jul 08 2022'
 heroImage: '/logoEu.png'
+
+
+
 ---
 # Commercialization of the Innovative Product PVSmartClick by Digital Arena Ltd.
 ***
