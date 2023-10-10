@@ -73,13 +73,16 @@ import Projects from './Projects.astro';
   </section>
 
   <div class="bg-gray-800 py-5">
-    <div class="flex flex-col lg:flex-row items-center ">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-20">
       
-      <div class="lg:w-2/2">
-      <Counters client:visible />
-      </div>
-
-    <Projects/>
+        <div class="">
+            <Counters client:visible />
+          </div>
+        
+          <div> 
+            <Projects/>
+          </div> 
+  
     </div>
     </div>
 
