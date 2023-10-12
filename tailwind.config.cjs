@@ -2,7 +2,19 @@
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			animation: {
+			  'infinite-scroll': 'infinite-scroll 25s linear infinite',
+			},
+			keyframes: {
+			  'infinite-scroll': {
+				from: { transform: 'translateX(0)' },
+				to: { transform: 'translateX(-100%)' },
+			  }
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/typography'),
+	],
+}
+}
 }

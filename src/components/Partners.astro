@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets'
+import croz from '../assets/croz2.png'
+import rba from '../assets/rba.png'
+import pbz from '../assets/pbz.webp'
+import apis from '../assets/apis.png'
+import kaufland from '../assets/kaufland.png'
+---
+
+<div class="relative font-inter antialiased pt-5">
+
+  <div class="relative flex flex-col justify-center bg-gray-800 overflow-hidden rounded-xl">
+
+    <div class="w-full max-w-7xl mx-auto px-4">
+
+      <div class="text-center flex items-center justify-between">
+        <h3 class="text-gray-200 font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl  whitespace-pre pr-5">
+          Partneri 
+          <span class="bg-gradient-to-r from-green-400 via-green-500 to-green-400 text-transparent bg-clip-text">digital arene</span>
+        </h3>
+        <!-- Logo Carousel animation  -->
+        <div x-data="{}" x-init="$nextTick(() => { let ul = $refs.logos; ul.insertAdjacentHTML('afterend', ul.outerHTML); ul.nextSibling.setAttribute('aria-hidden', 'true'); })" class="w-full inline-flex flex-nowrap overflow-hidden">
+          <ul x-ref="logos" class="flex items-center justify-center md:justify-start space-x-4 md:space-x-8 animate-infinite-scroll ">
+    <li class="w-32 sm:w-40 h-32 sm:h-40 flex items-center justify-center rounded-lg shadow-lg">
+      <Image src={rba} class="filter w-4/5 h-auto grayscale invert" alt="RBA logo" />
+    </li>
+    <li class="w-32 sm:w-40 h-32 sm:h-40 flex items-center justify-center rounded-lg shadow-lg">
+      <Image src={kaufland} class="filter w-4/5 h-auto grayscale invert" alt="Kaufland logo" />
+    </li>
+    <li class="w-32 sm:w-40 h-32 sm:h-40 flex items-center justify-center rounded-lg shadow-lg">
+      <Image src={apis} class="filter w-4/5 h-auto grayscale" alt="Apis logo" />
+    </li>
+    <li class="w-32 sm:w-40 h-32 sm:h-40 flex items-center justify-center rounded-lg shadow-lg">
+      <Image src={pbz} class="filter w-4/5 h-auto grayscale" alt="PBZ logo" />
+    </li>
+    <li class="w-32 sm:w-40 h-32 sm:h-40 flex items-center justify-center rounded-lg shadow-lg">
+      <Image src={croz} class="filter w-4/5 h-auto grayscale invert" alt="CROZ logo" />
+    </li>
+  </ul>
+        </div>
+        </div>
+    </div>
+  </div>
+
+ 

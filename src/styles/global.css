@@ -57,6 +57,7 @@ body {
 }
 .swiper-pagination-bullet-active{
 	background-color: #4caf50 ;
+	padding:5px 0;
 }
 main {
 	width: 720px;
