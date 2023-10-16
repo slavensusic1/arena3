@@ -13,7 +13,7 @@ import MainHeroSection from './MainHeroSection.astro';
 <Partners />
 </section>
 
-  <section class="flex flex-col justify-center lg:flex-row gap-20 md:gap-0 items-start p-4 rounded-lg shadow-sm md:py-20 pb-48">
+  <section class="flex flex-col justify-center lg:flex-row gap-20 md:gap-0 items-start p-4 rounded-lg shadow-sm md:py-20 xl:py-40">
     <div class="w-full lg:w-1/2 py-10 lg:py-0 mr-5">
   <NewSlider  client:visible/>
     </div>
@@ -32,21 +32,24 @@ import MainHeroSection from './MainHeroSection.astro';
     </div>
   </section>
 
-  <div class="bg-gray-800 py-5">
+  <div class="shadow-xl p-5">
     <div class="flex flex-col lg:flex-row items-center justify-between gap-120">
       
-        <div class="">
+        <div class="max-w-xl">
             <Counters client:visible />
           </div>
-        
-          <div> 
+          <div class="max-w-2xl">
+            <h2 class="text-center md:text-left text-white text-2xl font-semibold">Novi projekti</h2>
             <Projects/>
+            <Projects/>
+            <Projects/>
+           
           </div> 
   
     </div>
     </div>
 
-  Testimonials section 
+
       <section class="flex flex-col md:flex-row items-center justify-center gap-x-10 py-20">
     <Testimonial
       text="njihova stručnost i brza reakcija na naše tehničke izazove čine ih neprocjenjivim partnerom. Njihova podrška olakšava nam svakodnevne poslovne operacije jer znamo da smo u dobrim rukama."

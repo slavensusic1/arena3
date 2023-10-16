@@ -14,6 +14,8 @@ function CounterComponent() {
       <Number n={10} title="Years of Experience" />
       <Number n={70} title="Solutions" />
     </div>
+
+    
   </div>
   );
 }

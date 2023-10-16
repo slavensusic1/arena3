@@ -1,48 +1,45 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import logo from '../assets/body-bg.svg'
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import logo from "../assets/body-bg.svg";
 
-import { ViewTransitions } from 'astro:transitions';
-import { Image } from 'astro:assets';
+import { ViewTransitions } from "astro:transitions";
+import { Image } from "astro:assets";
 
 import { Breadcrumbs } from "astro-breadcrumbs";
 
-import 'astro-breadcrumbs/breadcrumbs.css';
-
-
-
+import "astro-breadcrumbs/breadcrumbs.css";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-	
-		<link
-		rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-	  />
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<ViewTransitions/>
-	</head>
-	<body transition:animate="fade" class="m-0 p-0 ">
-		<Header  />
-  
-        <main class="container"  transition:animate="fade">
-        
-        
-            <slot />
-          </main>
-	
-	
-		<Footer />
-		<script src="//unpkg.com/alpinejs" defer></script>
-	</body>
-</html>
-<style>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <ViewTransitions />
+  </head>
+  <body transition:animate="fade" class="m-0 p-0">
+    <Header />
+
+    <main class="container" transition:animate="fade">
+      <slot />
+    </main>
+
+    <Footer />
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </body><style>
     .main-bg {
-  background-image: url('../assets/body-bg.svg');
-}
-</style>
+      background-image: url("../assets/body-bg.svg");
+    }
+  </style>
+</html>
