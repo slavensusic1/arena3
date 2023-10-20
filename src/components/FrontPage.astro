@@ -5,6 +5,7 @@ import NewSlider from './NewSlider';
 import Projects from './Projects.astro';
 import Partners from './Partners.astro';
 import MainHeroSection from './MainHeroSection.astro';
+import Djelatnosti from './Djelatnosti.astro';
 ---
 
 <MainHeroSection/>
@@ -13,26 +14,37 @@ import MainHeroSection from './MainHeroSection.astro';
 <Partners />
 </section>
 
-  <section class="flex flex-col justify-center lg:flex-row gap-20 md:gap-0 items-start p-4 rounded-lg shadow-sm md:py-20 xl:py-40">
-    <div class="w-full lg:w-1/2 py-10 lg:py-0 mr-5">
-  <NewSlider  client:visible/>
-    </div>
-    <div class="text-gray-700 align-text-top bg-gray-100 p-4 rounded-lg w-full lg:w-1/2 ">
-      <h2 class="text-2xl lg:text-4xl font-semibold">Our Services</h2>
-      <p class="mt-2 ">
-        Discover the range of services we provide to help you achieve your goals. Our dedicated team of experts is committed to delivering high-quality solutions tailored to your specific needs.
-      </p>
-      <p class="mt-4">
-        Whether it's information technologies, ICT infrastructure, energetics, ISO standards, GDPR compliance, or CISO externalization, we have you covered. We are here to support you every step of the way.
-      </p>
-    </div>
+  <section class=" ">
+    <div class="mx-auto flex flex-col-reverse lg:flex-row justify-center items-center">
+      <div class="text-gray-700 align-text-top p-4 lg:-mr-20">
+        <Djelatnosti/>
+      </div>
+
+
+
+          <div class="px-5 text-gray-800 bg-gray-200 lg:w-1/2 h-full">
+            <div class=" ">
+                <div class="text-center w-full py-5 lg:py-[13rem]">
+                    <h1 class="text-3xl lg:text-6xl max-w-lg mx-auto md:text-5xl font-bold mb-5 text-gray-700">Naše djelatnosti</h1>
+                  
+                    <div class="text-center mb-10">
+                        <span class="inline-block w-1 h-1 rounded-full bg-green-500 ml-1"></span>
+                        <span class="inline-block w-3 h-1 rounded-full bg-green-500 ml-1"></span>
+                        <span class="inline-block w-40 h-1 rounded-full bg-green-500"></span>
+                        <span class="inline-block w-3 h-1 rounded-full bg-green-500 ml-1"></span>
+                        <span class="inline-block w-1 h-1 rounded-full bg-green-500 ml-1"></span>
+                    </div>
+                    <h3 class="text-base max-w-lg mx-auto mb-5 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          
+            </div>
+            
   </section>
 
 
     </div>
   </section>
 
-  <div class="shadow-xl p-5">
+  <div class="p-5">
     <div class="flex flex-col lg:flex-row items-center justify-between gap-120">
       
         <div class="max-w-xl">

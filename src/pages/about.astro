@@ -1,19 +1,21 @@
 ---
 import CompanyValues from '../components/CompanyValues.astro';
-import CounterComponent from '../components/Counters.jsx';
+import TimelineComponent from '../components/TimelineComponent.jsx';
 import Gallery from '../components/Gallery.astro';
 import TLswiper from '../components/TLswiper.astro';
 import TimeLine from '../components/TimeLine.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import 'astro-breadcrumbs/breadcrumbs.css';
+import AboutHero from '../components/AboutHero.astro';
 
 
 ---
 
 <BaseLayout>
+    <AboutHero/>
+    <Gallery/> 
+<TimelineComponent client:load/>
 
-<TLswiper/>
- <Gallery/> 
 
  </div>
 	
