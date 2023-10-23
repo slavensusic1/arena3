@@ -48,18 +48,23 @@ body {
     h2 {
       font-weight: bold;
   
-      font-size: 24px;
+      font-size: 4rem;
     }
   }
   
   .timeline {
     width: 90%;
+    padding: 0 35px;
     margin-top: 70px;
+  
+    @media (min-width: 900px) {
+      padding: 0;
+    }
   
     ul {
       padding: 0px;
       height: 3px;
-      background: black;
+      background: rgb(223, 224, 222); // linija
       border-radius: 3px;
       transform: translateY(-50%);
       display: flex;
@@ -68,72 +73,68 @@ body {
       flex-direction: row;
       align-items: center;
   
-      li {
-        list-style: none;
-        cursor: pointer;
-  
+      & li:first-child {
         a {
-          text-decoration: none;
-          text-align: center;
-          font-style: normal;
-          font-weight: 700;
-          font-size: 12px;
-          line-height: 24px;
-          color: #27272A;
-          display: flex;
-          flex-direction: column;
-          flex-wrap: nowrap;
-          justify-content: center;
-          align-items: center;
-          position: relative; /* Add this line for positioning the icon */
+          align-items: start;
+        }
+      }
+      & li:last-child {
+        a {
+          align-items: end;
+        }
+      }
+    }
   
-          i {
-            font-size: 50px;
-
-            /* Position the icon */
-            position: absolute;
-            top: -50px; /* Adjust the vertical position of the icon */
-            left: 50%; /* Center the icon horizontally */
-            transform: translateX(-50%); /* Center the icon horizontally */
-            
-            /* Create a gradient background */
-            background: linear-gradient(to right, green, #a5c58b);
-            -webkit-background-clip: text; /* Clip the gradient to the text */
-            color: transparent; /* Hide the original text color */
-          }
+    ul li {
+      list-style: none;
+      cursor: pointer;
+  
+      a {
+        text-decoration: none;
+        text-align: center;
+        
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 24px;
+        color: gray;  //godine
+        margin-top: 43px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+  
+        @media (min-width: 900px) {
+          font-size: 24px;
         }
   
-        &.active a {
-          &::before {
-            margin-top: 10px;
-            background: green;
-          }
+        &::before {
+          content: "";
+          display: flex;
+          width: 10px;
+          height: 10px;
+          background: white;
+           border: 2px solid rgb(180, 231, 180);
+          border-radius: 50%;
+          margin-bottom: -36px;
+          
+        }
+      }
+  
+      &.active a {
+        color: #22C55E;
+        
+        &::before {
+          background: rgb(180, 231, 180);
+          color: #22C55E;
         }
       }
     }
   }
+  
   .panel {
     display: flex;
-  }
-  .icon-list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-  }
-  
-  .icon-list li {
-    cursor: pointer;
-    margin: 0 5px;
-  }
-  
-  .icon-list .active {
-    /* Style for the active year with an icon */
-    color: red; /* Change the color for the active item */
-  }
-  
-  .icon-list li.active {
-    /* Style for the active year with an icon */
-    color: red; /* Change the color for the active item */
   }
   
   .arrows {

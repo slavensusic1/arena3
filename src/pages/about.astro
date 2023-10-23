@@ -7,14 +7,16 @@ import TimeLine from '../components/TimeLine.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import 'astro-breadcrumbs/breadcrumbs.css';
 import AboutHero from '../components/AboutHero.astro';
+import Team from '../components/Team.astro';
 
 
 ---
 
 <BaseLayout>
     <AboutHero/>
-    <Gallery/> 
+    <!-- <Gallery/>  -->
 <TimelineComponent client:load/>
+<Team/>
 
 
  </div>

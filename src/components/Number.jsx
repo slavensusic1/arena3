@@ -10,8 +10,8 @@ function Number({n, title}) {
   });
 
   return (
-  <div className="flex flex-col items-left text-2xl text-gray-200">
-     <div className="flex"><animated.div>{number.to((n) => n.toFixed(0))}</animated.div>+</div>
+  <div className="flex flex-col items-left text-2xl text-gray-800">
+     <div className="flex justify-center items-center"><animated.div>{number.to((n) => n.toFixed(0))}</animated.div>+</div>
     <p className="text-base">{title}</p>
    
 
