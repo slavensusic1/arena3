@@ -31,7 +31,7 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 40px 25px;
+    // padding: 40px 25px;
     margin: 20px auto;
     border-radius: 10px;
     // background: #74ebd5;
@@ -157,12 +157,12 @@ body {
   
     .tab {
       display: none;
-      padding: 0px 20px;
+      // padding: 0px 20px;
       color: #22C55E; //slova dolje
       height: 300px;
   
       @media (min-width: 900px) {
-        padding: 0px 120px;
+        // padding: 0px 120px;
       }
   
       &.selected {

@@ -51,19 +51,20 @@ import kaufland from '../assets/kaufland.png'
   </h1> -->
 
   <ul x-ref="logos" class="flex items-center justify-center  space-x-4 md:space-x-24 scale-110  ">
-    <li class="w-32 sm:w-25 h-32 sm:h-25 flex items-center justify-center rounded-lg  ">      <Image src={rba} class="h-auto grayscale " alt="RBA logo" />
+    <li class="w-32 sm:w-25 h-32 sm:h-25 grayscale hover:grayscale-0 flex items-center justify-center rounded-lg  ">  
+          <Image src={rba} class="h-auto grayscale invert hover:invert-0 hover:grayscale-0 " alt="RBA logo" />
     </li>
     <li class="w-32 sm:w-25 h-32 sm:h-25 flex items-center justify-center rounded-lg  ">
-      <Image src={kaufland} class=" h-auto grayscale  " alt="Kaufland logo" />
+      <Image src={kaufland} class=" h-auto grayscale  hover:grayscale-0 " alt="Kaufland logo" />
     </li>
     <li class="w-32 sm:w-25 h-32 sm:h-25 flex items-center justify-center rounded-lg  ">
-      <Image src={apis} class="  h-auto  invert grayscale" alt="Apis logo" />
+      <Image src={apis} class="  h-auto grayscale hover:grayscale-0" alt="Apis logo" />
     </li>
     <li class="w-32 sm:w-25 h-32 sm:h-25 flex items-center justify-center rounded-lg  ">
-      <Image src={pbz} class="  h-auto p-2 invert grayscale " alt="PBZ logo" />
+      <Image src={pbz} class="  h-auto p-2  grayscale hover:grayscale-0" alt="PBZ logo" />
     </li> 
        <li class="w-32 sm:w-25 h-32 sm:h-25 flex items-center justify-center rounded-lg  ">
-      <Image src={croz} class="  h-auto  grayscale " alt="CROZ logo" />
+      <Image src={croz} class="  h-auto  grayscale hover:grayscale-0" alt="CROZ logo" />
     </li>
   </ul>
 </div>
