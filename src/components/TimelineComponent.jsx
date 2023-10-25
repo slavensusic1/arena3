@@ -130,28 +130,28 @@ function TimelineComponent() {
           {years_timeline.map((item, key) => (
             <div
               key={key}
-              className={`tab bg-opacity-80 p-6 rounded-lg flex items-center justify-center bg-gray-900  ${
+              className={`tab bg-opacity-80 p-6 rounded-lg flex items-center justify-center dark:bg-gray-900  ${
                 yearSelected === item.year && "selected"
               }`}
             >
-              <h2 className="text-5xl flex max-w-lg mx-auto font-semibold mb-2 text-green-500 bg-gray-900">
+              <h2 className="text-5xl flex max-w-lg mx-auto font-semibold mb-2 text-green-500 dark:bg-gray-900">
                 {item.year}
               </h2>
-              <div className="flex flex-row-reverse w-full items-center justify-center gap-5 bg-gray-900"> 
-          <div className="w-3/4 text-left mb-10 text-2xl text-gray-100 bg-gray-900"> {item.body}</div>
+              <div className="flex flex-row-reverse w-full items-center justify-center gap-5 dark:bg-gray-900"> 
+          <div className="w-3/4 text-left mb-10 text-2xl text-gray-700 dark:text-gray-100  dark:bg-gray-900"> {item.body}</div>
              <div className="w-1/4 mb-10">{item.pic}</div>  
               
             </div>
             </div>
           ))}
-          <p className="absolute z-0 max-w-8xl mx-auto text-[20rem] top-[-50%] text-white/30 opacity-10 ">history</p>
+          <p className="absolute z-0 max-w-8xl mx-auto text-[20rem] top-[-50%] dark:text-white/30 opacity-10 ">history</p>
           <div class="absolute inset-0 hidden h-max dark:block lg:my-auto">
                 <div
                   aria-hidden="true"
                   class="grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-70 2xl:mx-auto 2xl:max-w-6xl"
                 >
                   <div
-                    class="h-60 bg-gradient-to-br from-primary to-purple-400 blur-3xl dark:from-blue-700"
+                    class="h-60 bg-gradient-to-br from-blue-200 to-green-400 blur-3xl dark:from-blue-800"
                   >
                   </div>
                   <div

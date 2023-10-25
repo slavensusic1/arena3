@@ -14,7 +14,10 @@ import "astro-breadcrumbs/breadcrumbs.css";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en"
+x-data="{darkMode: localStorage.getItem('darkMode')}"
+x-init="$watch('darkMode', val => localStorage.setItem('darkMode', val))"
+x-bind:data-theme="darkMode">
   <head>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -28,7 +31,7 @@ import "astro-breadcrumbs/breadcrumbs.css";
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <ViewTransitions />
   </head>
-  <body transition:animate="fade" class="m-0 p-0 bg-gray-900">
+  <body transition:animate="fade" class="m-0 p-0 bg-gray-100 dark:bg-gray-900"  transition:persist>
     <Header />
 
     <main class="container" transition:animate="fade">
