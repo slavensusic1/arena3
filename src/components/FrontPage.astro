@@ -1,14 +1,15 @@
 ---
 import Testimonial from './Testimonial.astro';
 import Counters from './Counters.jsx'
-import NewSlider from './NewSlider';
-import Projects from './Projects.astro';
 import Partners from './Partners.astro';
 import MainHeroSection from './MainHeroSection.astro';
 import Djelatnosti from './Djelatnosti.astro';
 import CTA from './CTA.astro';
 import Beyond from './Beyond.astro';
+import FrontPageLayot from '../layouts/FrontPageLayot.astro';
 ---
+
+
 
 <MainHeroSection/>
   <!-- Partners section  -->
@@ -16,7 +17,7 @@ import Beyond from './Beyond.astro';
 <Partners />
 </section>
 
-  <section class="py-10 ">
+  <section class="py-10 border dark:border-0 rounded-xl ">
     <div class="mx-auto flex flex-col-reverse lg:flex-row justify-center items-center">
       <div class="text-gray-700 align-text-top">
         <Djelatnosti/>
@@ -24,24 +25,23 @@ import Beyond from './Beyond.astro';
 
 
 
-          <div class="px-5 text-gray-800 bg-gray-900 h-full">
+          <div class="px-5 dark:text-gray-800  lg:h-full">
                <div class="relative ">
-            <div
-              aria-hidden="true"
-              class="absolute inset-0 m-auto grid h-3/5 w-3/5 grid-cols-2 -space-x-52 opacity-40 dark:opacity-60"
-            >
-              <div
-                class="h-full rounded-full bg-gradient-to-br from-primary to-purple-400 blur-[106px] dark:from-blue-700"
+                <div class="absolute inset-0 hidden lg:block h-max blur-3xl dark:block transform lg:translate-x-[1%] lg:translate-y-[40%] -translate-y-[25%]">
+                <div
+                  aria-hidden="true"
+                  class="grid grid-cols-2 -space-x-80 opacity-50 dark:opacity-70 2xl:mx-auto 2xl:max-w-2xl"
+              <div class="h-60 bg-gradient-to-br from-green-200 blur-3xl to-purple-300  dark:from-blue-700"
               >
               </div>
               <div
-                class="h-full bg-gradient-to-r from-cyan-400 to-primary blur-[106px] dark:to-indigo-600"
+              class="h-72 rounded-full bg-gradient-to-r from-green-200 to-green-300 blur-3xl dark:from-transparent dark:to-indigo-600"
               >
               </div>
             </div>
             <div class=" ">
               <div class="text-center w-full py-5 lg:py-[13rem]">
-                  <h1 class="text-3xl lg:text-6xl max-w-lg mx-auto md:text-5xl font-bold mb-5 text-white  relative">Naše djelatnosti</h1>
+                  <h1 class="text-3xl lg:text-6xl max-w-lg mx-auto md:text-5xl font-bold mb-5 dark:text-white text-gray-700  relative">Naše djelatnosti</h1>
                 
                   <div class="text-center mb-10">
                       <span class="inline-block w-1 h-1 rounded-full bg-green-500 ml-1"></span>
@@ -68,48 +68,21 @@ import Beyond from './Beyond.astro';
         <div class="w-full">
             <Counters client:visible />
           </div>
-          <!-- <div class="-ml-10  p-2">
-             <h2 class="text-center text-white text-2xl font-semibold">Novi projekti</h2> 
-            <Projects/>
-            <Projects/>
-            <Projects/>
-           
-          </div>  -->
-  
+      
     </div>
     </div>
 
     <CTA/>
 
 
-      <section class="flex flex-col md:flex-row items-center justify-center gap-x-10">
-    <Testimonial
-      text="njihova stručnost i brza reakcija na naše tehničke izazove čine ih neprocjenjivim partnerom. Njihova podrška olakšava nam svakodnevne poslovne operacije jer znamo da smo u dobrim rukama."
-      author="John Doe"
-      role="Web Developer"
-      rating="3/5"
-    />
-    <!-- <Testimonial
-      text="Pouzdanost njihovih usluga ključna je za naš uspjeh. Nikada se ne moramo brinuti o prekidima ili nesmetanom radu naših sustava i mreža. To nam omogućuje da se fokusiramo na svoje poslovanje i ostvarimo bolje rezultate."
-      author="Jane Smith"
-      role="Designer"
-      rating="4/5"
-    />
-    <Testimonial
-    text="Cijenimo personaliziranu podršku koju pružaju. S njima ne osjećamo se kao obični korisnici, već kao partneri. Njihova sposobnost da prilagode svoje usluge našim specifičnim potrebama čini ih neprocjenjivim članom našeg tima. Ova personalizacija olakšava suradnju i doprinosi našem dugoročnom uspjehu."
-    author="Pero Perić"
-    role="Designer"
-    rating="5/5"
-  /> -->
+<div class="py-10">
+    <Testimonial/>
+  </div> 
 
-
-
-
-
-  
-    
+</main>
  
-  
+</div>
+
 </main>
  
 </div>

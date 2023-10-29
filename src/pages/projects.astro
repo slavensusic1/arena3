@@ -1,0 +1,44 @@
+---
+
+import Counters from '../components/Counters.jsx'
+import Partners from '../components/Partners.astro';
+import MainHeroSection from '../components/MainHeroSection.astro';
+import Djelatnosti from '../components/Djelatnosti.astro';
+import CTA from '../components/CTA.astro';
+import Beyond from '../components/Beyond.astro';
+import Testimonial from '../components/Testimonial.astro';
+import FrontPageLayot from '../layouts/FrontPageLayot.astro';
+---
+<script is:inline>
+
+
+</script>
+
+<FrontPageLayot>
+    1<div class="wrapper p-3">
+        <span>Scroll down 👇</span>
+        <div class="jump"></div>
+      
+        <div x-data="{ visible: false }" x-intersect="visible = true">
+            <p class="duration-1000 transition-all transform" :class="visible ? 'opacity-0 -translate-x-10' : 'opacity-1 translate-x-5'">Hello, World!</p>
+        </div>
+      </div>
+</FrontPageLayot>
+
+<style>
+body {
+  background: lavender;
+}
+
+.wrapper {
+  height: 120px;
+  width: 350px;
+  background: white;
+}
+
+.jump {
+  height: 50vh;
+}
+
+
+</style>

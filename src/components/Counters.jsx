@@ -21,24 +21,23 @@ return (
             Digital Arena u brojkama
             </h2>
             <p class="mt-4 text-center text-gray-600 dark:text-gray-300">
-              apiente optio repellendus atque illum odio! Fugiat at expedita
-              deserunt dolorum molestias.
+            Digitalna Arena je naše stvaralačko igralište gdje brojke postaju stvarnost. Uspjeh definiramo koristeći ključne statistike:
             </p>
           </div><div class="mt-16 md:mt-20">
             <div
               class="relative grid rounded-3xl border border-gray-200 p-1 dark:border-gray-800 lg:grid-cols-2"
             >
-              <div class="absolute inset-0 hidden h-max dark:block lg:my-auto">
+              <div class="absolute inset-0  h-max dark:block lg:my-auto">
                 <div
                   aria-hidden="true"
-                  class="grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-70 2xl:mx-auto 2xl:max-w-6xl"
+                  class="grid grid-cols-3 -space-x-96 opacity-50 dark:opacity-70 2xl:mx-auto 2xl:max-w-4xl"
                 >
                   <div
                     class="h-60 bg-gradient-to-br from-primary to-purple-400 blur-3xl dark:from-blue-700"
                   >
                   </div>
                   <div
-                    class="h-72 rounded-full bg-gradient-to-r from-cyan-400 to-sky-300 blur-3xl dark:from-transparent dark:to-indigo-600"
+                    class="h-72 rounded-full bg-gradient-to-r from-green-400 to-sky-00 blur-3xl dark:from-transparent dark:to-indigo-600"
                   >
                   </div>
                 </div>
@@ -77,7 +76,7 @@ return (
                     >
                     Inovativnih riješenja
                     </h2>
-                    <Number n={20} title=" Inovativnih rješenja" checkmark={checkmark} client:load />
+                    <Number n={80} title=" Inovativnih rješenja" checkmark={checkmark} client:load />
                   </div>
                 </div>
 
@@ -91,7 +90,7 @@ return (
                     >
                    Stalnih klienata
                     </h2>
-                    <Number n={20} title=" Inovativnih rješenja" checkmark={checkmark2} client:load />
+                    <Number n={90} title=" Inovativnih rješenja" checkmark={checkmark2} client:load />
                   </div>
                 </div>
 
@@ -104,7 +103,7 @@ return (
                     >
                      Realiziranih projekata
                     </h2>
-                    <Number n={20} title=" Završenih projekata" checkmark={checkmark3} client:load />
+                    <Number n={200} title=" Završenih projekata" checkmark={checkmark3} client:load />
                   </div>
                 </div>
 
@@ -118,7 +117,7 @@ return (
                     >
                     Inovativnih rješenja
                     </h2>
-                    <Number n={20} title=" Inovativnih rješenja" checkmark={checkmark4} client:load />
+                    <Number n={120} title=" Inovativnih rješenja" checkmark={checkmark4} client:load />
                   </div>
                 </div>
               </div>

@@ -9,12 +9,15 @@ import "astro-breadcrumbs/breadcrumbs.css";
 ---
 
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="en"
+x-data="{darkMode: localStorage.getItem('darkMode')}"
+x-init="$watch('darkMode', val => localStorage.setItem('darkMode', val))"
+x-bind:data-theme="darkMode">
+	<head >
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <ViewTransitions />
   </head>
-  <body transition:animate="fade" class="m-0 p-0">
+  <body transition:animate="fade" class="m-0 p-0 bg-white dark:bg-gray-900"  transition:persist>
     <Header />
     <button
       class="flex mx-auto capitalize justify-center items-center text-green-700 font-bold

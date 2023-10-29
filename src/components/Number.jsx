@@ -16,7 +16,7 @@ function Number({ n, title, checkmark }) {
         <p className="w-14">{checkmark}</p>
       </div>
       <div class="flex flex-col items-center justify-center ml-4">
-        <div class="flex items-center space-x-1 justify-center text-gray-100">
+        <div class="flex items-center space-x-1 justify-center dark:text-gray-100">
           <animated.div class="text-3xl font-bold">{number.to((n) => n.toFixed(0))}</animated.div>
           <p class="text-lg">+</p>
         </div>
