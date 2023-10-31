@@ -1,88 +1,82 @@
 ---
-import Testimonial from './Testimonial.astro';
-import Counters from './Counters.jsx'
-import Partners from './Partners.astro';
-import MainHeroSection from './MainHeroSection.astro';
-import Djelatnosti from './Djelatnosti.astro';
-import CTA from './CTA.astro';
-import Beyond from './Beyond.astro';
-import FrontPageLayot from '../layouts/FrontPageLayot.astro';
+import Testimonial from "./Testimonial.astro";
+import Counters from "./Counters.jsx";
+import Partners from "./Partners.astro";
+import MainHeroSection from "./MainHeroSection.astro";
+import Djelatnosti from "./Djelatnosti.astro";
+import CTA from "./CTA.astro";
+import Beyond from "./Beyond.astro";
+import FrontPageLayot from "../layouts/FrontPageLayot.astro";
 ---
 
+<MainHeroSection />
+<!-- Partners section  -->
 
-
-<MainHeroSection/>
-  <!-- Partners section  -->
- 
 <Partners />
-</section>
 
-  <section class="py-10 border dark:border-0 rounded-xl ">
-    <div class="mx-auto flex flex-col-reverse lg:flex-row justify-center items-center">
-      <div class="text-gray-700 align-text-top">
-        <Djelatnosti/>
-      </div>
+<section class="py-10  dark:border-0 rounded-xl">
+  <div
+    class="mx-auto flex border dark:border-0 rounded-xl flex-col-reverse lg:flex-row justify-center items-center"
+  >
+    <div class="text-gray-700 align-text-top">
+      <Djelatnosti />
+    </div>
 
+    <div class="px-5 dark:text-gray-800 lg:h-full">
+      <div class="relative">
+        <div
+          class="absolute inset-0 hidden lg:block h-max blur-3xl dark:block transform lg:translate-x-[1%] lg:translate-y-[40%] -translate-y-[25%]"
+        >
+          <div
+            aria-hidden="true"
+            class="grid grid-cols-2 -space-x-80 opacity-50 dark:opacity-70 2xl:mx-auto 2xl:max-w-2xl"
+            <div
+            class="h-60 bg-gradient-to-br from-green-200 blur-3xl to-purple-300 dark:from-blue-700"
+          >
+          </div>
+          <div
+            class="h-72 rounded-full bg-gradient-to-r from-green-200 to-green-300 blur-3xl dark:from-transparent dark:to-indigo-600"
+          >
+          </div>
+        </div>
+        <div class="">
+          <div class="text-center w-full py-5 lg:py-[13rem]">
+            <h1
+              class="text-3xl lg:text-6xl max-w-lg mx-auto md:text-5xl font-bold mb-5 dark:text-white text-gray-700 relative"
+            >
+              Naše djelatnosti
+            </h1>
 
-
-          <div class="px-5 dark:text-gray-800  lg:h-full">
-               <div class="relative ">
-                <div class="absolute inset-0 hidden lg:block h-max blur-3xl dark:block transform lg:translate-x-[1%] lg:translate-y-[40%] -translate-y-[25%]">
-                <div
-                  aria-hidden="true"
-                  class="grid grid-cols-2 -space-x-80 opacity-50 dark:opacity-70 2xl:mx-auto 2xl:max-w-2xl"
-              <div class="h-60 bg-gradient-to-br from-green-200 blur-3xl to-purple-300  dark:from-blue-700"
-              >
-              </div>
-              <div
-              class="h-72 rounded-full bg-gradient-to-r from-green-200 to-green-300 blur-3xl dark:from-transparent dark:to-indigo-600"
-              >
-              </div>
+            <div class="text-center mb-10">
+              <span class="inline-block w-1 h-1 rounded-full bg-green-500 ml-1"
+              ></span>
+              <span class="inline-block w-3 h-1 rounded-full bg-green-500 ml-1"
+              ></span>
+              <span class="inline-block w-40 h-1 rounded-full bg-green-500"
+              ></span>
+              <span class="inline-block w-3 h-1 rounded-full bg-green-500 ml-1"
+              ></span>
+              <span class="inline-block w-1 h-1 rounded-full bg-green-500 ml-1"
+              ></span>
             </div>
-            <div class=" ">
-              <div class="text-center w-full py-5 lg:py-[13rem]">
-                  <h1 class="text-3xl lg:text-6xl max-w-lg mx-auto md:text-5xl font-bold mb-5 dark:text-white text-gray-700  relative">Naše djelatnosti</h1>
-                
-                  <div class="text-center mb-10">
-                      <span class="inline-block w-1 h-1 rounded-full bg-green-500 ml-1"></span>
-                      <span class="inline-block w-3 h-1 rounded-full bg-green-500 ml-1"></span>
-                      <span class="inline-block w-40 h-1 rounded-full bg-green-500"></span>
-                      <span class="inline-block w-3 h-1 rounded-full bg-green-500 ml-1"></span>
-                      <span class="inline-block w-1 h-1 rounded-full bg-green-500 ml-1"></span>
-                  </div>
-                  <h3 class="text-base max-w-lg mx-auto mb-5 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-        
           </div>
-                   </div>
-    
-            
-  </section>
-
-
+        </div>
+      </div>
     </div>
-  </section>
-<Beyond />
+  </div>
+
   <div class="p-5 py-10 mt-12 pb-22">
+    <Beyond />
     <div class="flex flex-col lg:flex-row items-center justify-between">
-      
-        <div class="w-full">
-            <Counters client:visible />
-          </div>
-      
+      <div class="w-full">
+        <Counters client:visible />
+      </div>
     </div>
-    </div>
+  </div>
 
-    <CTA/>
+  <CTA />
 
-
-<div class="py-10">
-    <Testimonial/>
-  </div> 
-
-</main>
- 
-</div>
-
-</main>
- 
-</div>
+  <div class="py-10">
+    <Testimonial />
+  </div>
+</section>

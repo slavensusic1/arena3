@@ -53,13 +53,16 @@ body {
   }
   
   .timeline {
-    width: 90%;
+    width: 120%;
     padding: 0 35px;
     margin-top: 70px;
   
     @media (min-width: 900px) {
       padding: 0;
+      .timeline {
+        width: 100%;
     }
+  }
   
     ul {
       padding: 0px;
@@ -159,7 +162,7 @@ body {
       display: none;
       // padding: 0px 20px;
       color: #22C55E; //slova dolje
-      height: 300px;
+      // height: 300px;
   
       @media (min-width: 900px) {
         // padding: 0px 120px;
@@ -175,7 +178,7 @@ body {
   
       h4 {
         font-family: 'Atkinson', sans-serif;
-        font-size: 20;
+        font-size: 5;
       }
   
       p {

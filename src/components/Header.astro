@@ -10,31 +10,50 @@ import ThemeIcon from "./ThemeIcon.astro";
 
 <header class="lg:flex p-5  gap-5 justify-between items-center shadow-inner">
   <Astronav>
-    <div class="flex w-full justify-between ">
+    <div class=" ">
 		<a href="/"><Image src={logo} alt=""
-			width={200}></a>
-      <div class="block lg:hidden">
-        <MenuIcon class="w-4 h-4 text-gray-800" />
-      </div>
+			 class="w-1/4"></a>
+     
     </div>
-    <MenuItems class="hidden lg:flex lg:items-center lg:gap-40">
+    <div>
+    <MenuItems class="hidden lg:flex lg:items-center lg:gap-40 bg-transparent  rounded-full px-5">
+    
       <ul class="flex flex-col lg:flex-row lg:gap-5">
 		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Projects</HeaderLink>
+		<HeaderLink href="/projects">Projects</HeaderLink>
 		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="/openpositions" class="whitespace-nowrap p">Open positions</HeaderLink>
-		<HeaderLink href="/contact">
+		<HeaderLink href="/career" class="">Career</HeaderLink>
+    <div class="flex pt-2 border-t-2 mt-5 justify-start items-center gap-5 md:hidden">
+        
+      <HeaderLink href="/contact">
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z" />
+          </svg>
+          
+          </HeaderLink>
+          <ThemeIcon transition:persist/>
+    </div>
+		
+  </div>
+  <div class="lg:hidden flex items-end justify-end">
+    <MenuIcon class="w-4 h-4 text-gray-800 dark:text-gray-100" />
+  </div>
+        <div class="md:flex hidden justify-center items-center gap-5">
+        
+          <HeaderLink href="/contact">
    
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z" />
-			  </svg>
-			  
-			  </HeaderLink>
-        <ThemeIcon/>
-          <Dropdown class="group">
-         </Dropdown>
-       
-      </ul>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z" />
+              </svg>
+              
+              </HeaderLink>
+              <ThemeIcon transition:persist/>
+        </div>
     </MenuItems>
   </Astronav>
 </header>
+
+
+
+
