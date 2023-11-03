@@ -8,22 +8,22 @@ import ThemeIcon from "./ThemeIcon.astro";
 
 
 
-<header class="lg:flex p-5  gap-5 justify-between items-center shadow-inner">
-  <Astronav>
+<header class="lg:flex p-5  gap-5 items-center justify-between shadow-inner  z-50 absolute md:relative dark:bg-gray-900 ">
+  <Astronav  transition:persist>
     <div class=" ">
 		<a href="/"><Image src={logo} alt=""
 			 class="w-1/4"></a>
      
     </div>
     <div>
-    <MenuItems class="hidden lg:flex lg:items-center lg:gap-40 bg-transparent  rounded-full px-5">
+    <MenuItems class="hidden lg:flex lg:items-center jus lg:gap-40 dark:bg-gray-900  rounded-full z-10">
     
-      <ul class="flex flex-col lg:flex-row lg:gap-5">
+      <ul class="flex flex-col lg:flex-row lg:gap-5  dark:bg-gray-900 ">
 		<HeaderLink href="/">Home</HeaderLink>
 		<HeaderLink href="/projects">Projects</HeaderLink>
 		<HeaderLink href="/about">About</HeaderLink>
 		<HeaderLink href="/career" class="">Career</HeaderLink>
-    <div class="flex pt-2 border-t-2 mt-5 justify-start items-center gap-5 md:hidden">
+    <div class="flex pt-2 border-t-2 mt-5 justify-start items-center gap-5 lg:hidden">
         
       <HeaderLink href="/contact">
 
@@ -36,10 +36,10 @@ import ThemeIcon from "./ThemeIcon.astro";
     </div>
 		
   </div>
-  <div class="lg:hidden flex items-end justify-end">
+  <div class="lg:hidden flex items-end justify-end z-30 ">
     <MenuIcon class="w-4 h-4 text-gray-800 dark:text-gray-100" />
   </div>
-        <div class="md:flex hidden justify-center items-center gap-5">
+        <div class="lg:flex hidden justify-center items-end gap-5 z-30  ">
         
           <HeaderLink href="/contact">
    

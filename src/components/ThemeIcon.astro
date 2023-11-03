@@ -72,29 +72,36 @@ x-on:click="darkMode = (darkMode == 'dark') ? 'light' : 'dark'">
 
 <script>
  	class ThemeToggle extends HTMLElement {
-		constructor() {
-			super();
+  constructor() {
+    super();
 
-			const button = this.querySelector('button')!;
+    const button = this.querySelector('button');
 
-			/** Set the theme to dark/light mode. */
-			const setTheme = (dark: boolean) => {
-				document.documentElement.classList[dark ? 'add' : 'remove']('theme-dark');
-				button.setAttribute('aria-pressed', String(dark));
-			};
+    const setTheme = (dark) => {
+      document.documentElement.classList[dark ? 'add' : 'remove']('theme-dark');
+      button.setAttribute('aria-pressed', String(dark));
+      localStorage.setItem('theme', dark ? 'dark' : 'light'); // Save theme preference
+    };
 
-			// Toggle the theme when a user clicks the button.
-			button.addEventListener('click', () => setTheme(!this.isDark()));
+    button.addEventListener('click', () => {
+      const isDark = !this.isDark();
+      setTheme(isDark);
+    });
 
-			// Initialize button state to reflect current theme.
-			setTheme(this.isDark());
-		}
+    setTheme(this.getStoredTheme());
+  }
 
-		isDark() {
-			return document.documentElement.classList.contains('theme-dark');
-		}
-	}
-	customElements.define('theme-toggle', ThemeToggle);
+  isDark() {
+    return document.documentElement.classList.contains('theme-dark');
+  }
+
+  getStoredTheme() {
+    // Get the stored theme preference from local storage or return default
+    return localStorage.getItem('theme') === 'dark';
+  }
+}
+
+customElements.define('theme-toggle', ThemeToggle);
 </script>
     <!-- <style>
         .theme-switch-wrapper {

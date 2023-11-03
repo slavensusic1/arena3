@@ -6,13 +6,16 @@ import MainHeroSection from "./MainHeroSection.astro";
 import Djelatnosti from "./Djelatnosti.astro";
 import CTA from "./CTA.astro";
 import Beyond from "./Beyond.astro";
-import FrontPageLayot from "../layouts/FrontPageLayot.astro";
+
 ---
+<div class="md:pb-50 -z-10">
+  <MainHeroSection />
+  </div> 
 
-<MainHeroSection />
 <!-- Partners section  -->
-
+<div class="z-10">
 <Partners />
+</div>
 
 <section class="py-10  dark:border-0 rounded-xl">
   <div
@@ -42,7 +45,7 @@ import FrontPageLayot from "../layouts/FrontPageLayot.astro";
         <div class="">
           <div class="text-center w-full py-5 lg:py-[13rem]">
             <h1
-              class="text-3xl lg:text-6xl max-w-lg mx-auto md:text-5xl font-bold mb-5 dark:text-white text-gray-700 relative"
+              class="text-5xl lg:text-6xl max-w-lg mx-auto md:text-5xl font-bold mb-5 dark:text-white text-gray-700 relative"
             >
               Naše djelatnosti
             </h1>

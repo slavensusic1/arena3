@@ -264,7 +264,7 @@ function CounterComponent() {
     <div class="relative pt-8 md:pt-16 lg:pt-24" id="features">
        <div class="mx-auto max-w-6xl md:px-8 lg:px-4 xl:px-0">
         <div class="mx-auto md:w-4/5 lg:w-3/5">
-          <h2 class="text-center text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 dark:text-white">
+          <h2 class="text-center text-6xl font-bold text-gray-900 dark:text-white">
             Digital Arena u brojkama
           </h2>
           <p class="mt-4 text-center text-gray-600 dark:text-gray-300">
@@ -357,8 +357,8 @@ function CounterComponent() {
                 </div>
               </div>
             </div>
-            <div class="absolute hidden md:block left-1/2 top-0 -translate-x-1/2 blur-2xl xl:top-[10rem] -z-10" aria-hidden="true">
-      <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-blue-200 to-[#352bc5] opacity-30" style={{ clipPath: "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" }}></div></div>
+            <div class="absolute hidden lg:block w-1/2 -left-1/2 top-0 -translate-x-1/2 blur-2xl xl:top-[10rem] -z-10" aria-hidden="true">
+      <div class="aspect-[1155/678] w-[10.1875rem] bg-gradient-to-tr from-blue-200 to-[#352bc5] opacity-30" style={{ clipPath: "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" }}></div></div>
           </div>
          
            
