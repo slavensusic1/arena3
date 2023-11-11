@@ -55,12 +55,12 @@ const perkz = [
 
 
 
-
-const data = [
+// const poslovi= false
+ const poslovi = [
     {
-        position: 'Frontend Developer',
-        location: 'New York',
-        type: 'Full-Time | Part Time'
+      position: 'Data Scientist',
+        location: 'San Francisco',
+        type: 'Full-Time | Contract'
     },
     {
         position: 'Data Scientist',
@@ -119,8 +119,8 @@ const zaposljavanje = [
 <BaseLayout>
 <div>
 <!-- HERO -->
-<div class="dark:bg-gray-900 bg-white sm:h-[80vh] pt-20">
-  <div class="bg-white dark:bg-gray-900 flex flex-col justify-center md:flex-row relative z-15 items-center">
+<div class="dark:bg-gray-900 bg-gray-100 sm:h-[80vh] pt-20">
+  <div class="bg-gray-100 dark:bg-gray-900 flex flex-col justify-center md:flex-row relative z-15 items-center">
     <div class="flex flex-col relative z-15 md:w-1/2 lg:w-full">
       <h1 class="sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-black whitespace-pre leading-none dark:text-gray-100 text-gray-800 text-center sm:text-left">Karijera u
 <span class="text-green-500">digital areni</span>
@@ -206,36 +206,39 @@ const zaposljavanje = [
     
     </div>
   </div>
+
   <div class="grid md:grid-cols-2 lg:grid-cols-3 max-w-5xl gap-10 mx-auto ">
    
     
-    {data.map((podatak) => {
-      return (
-        <div class="border rounded-2xl">
 
-          <div>
-            <div class="flex items-center justify-start">
-            <div class="icon w-1/6 p-2">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="#4caf50" d="M16 18a5 5 0 1 1 5-5a5.006 5.006 0 0 1-5 5Zm0-8a3 3 0 1 0 3 3a3.003 3.003 0 0 0-3-3Z"/><path fill="#4caf50" d="m16 30l-8.436-9.949a35.076 35.076 0 0 1-.348-.451A10.889 10.889 0 0 1 5 13a11 11 0 0 1 22 0a10.884 10.884 0 0 1-2.215 6.597l-.001.003s-.3.394-.345.447ZM8.812 18.395c.002 0 .234.308.287.374L16 26.908l6.91-8.15c.044-.055.278-.365.279-.366A8.901 8.901 0 0 0 25 13a9 9 0 1 0-18 0a8.905 8.905 0 0 0 1.813 5.395Z"/></svg>
-       
-         
-         </div>
-         <div>
-          <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">{podatak.location}</span>
-          </div>
-        </div>
-          <p class="dark:text-gray-100 text-left pl-2">{podatak.position}</p>
-          <p class="dark:text-gray-100 text-left pl-2 text-sm ">{podatak.type}</p>
-          <button class="bg-green-500 rounded-2xl px-4 text-xl mb-4">
-         <a class="text-inherit hover:text-green-800 transition duration-200" href="">Prijavi se</a> 
-            </button>
-        </div>
-         </div>
-      )
-    })}
-    </div>
-  </div>
- </div>
+
+              {poslovi.map((podatak) => {
+                return (
+                  <div class="border rounded-2xl">
+
+                    <div>
+                      <div class="flex items-center justify-start">
+                      <div class="icon w-1/6 p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="#4caf50" d="M16 18a5 5 0 1 1 5-5a5.006 5.006 0 0 1-5 5Zm0-8a3 3 0 1 0 3 3a3.003 3.003 0 0 0-3-3Z"/><path fill="#4caf50" d="m16 30l-8.436-9.949a35.076 35.076 0 0 1-.348-.451A10.889 10.889 0 0 1 5 13a11 11 0 0 1 22 0a10.884 10.884 0 0 1-2.215 6.597l-.001.003s-.3.394-.345.447ZM8.812 18.395c.002 0 .234.308.287.374L16 26.908l6.91-8.15c.044-.055.278-.365.279-.366A8.901 8.901 0 0 0 25 13a9 9 0 1 0-18 0a8.905 8.905 0 0 0 1.813 5.395Z"/></svg>
+                
+                  
+                  </div>
+                  <div>
+                    <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">{podatak.location}</span>
+                    </div>
+                  </div>
+                    <p class="dark:text-gray-100 text-left pl-2">{podatak.position}</p>
+                    <p class="dark:text-gray-100 text-left pl-2 text-sm ">{podatak.type}</p>
+                    <button class="bg-green-500 rounded-2xl px-4 text-xl mb-4">
+                  <a class="text-inherit hover:text-green-800 transition duration-200" href="">Prijavi se</a> 
+                      </button>
+                  </div>
+                  </div>
+                )
+              })}
+              </div>
+            </div>
+
 <!-- proces zapošljavanja -->
 <div class="text text-center p-4 py-20 relative ">
   <div class="text-center">

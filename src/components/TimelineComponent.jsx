@@ -9,14 +9,7 @@ import g4 from "../assets/code.svg";
 import g5 from "../assets/plane.svg"; 
 import g6 from "../assets/hand.svg"; 
 
-const yearToIcon = {
-  2018: 'fa-seedling',
-  2019: 'fa-chart-line',
-  2020: 'fa-chart-pie',
-  2021: 'fa-trophy',
-  2022: 'fa-handshake',
-  2023: 'fa-rocket',
-};
+
 
 
 
@@ -26,46 +19,30 @@ const fields = {
 
   years_timeline: [
     {
+      year: 2014,
+      body: "Godine 2014. nastala je ideja o Digitalnoj Areni te su započele aktivnosti u IT i telekomunikacijskom sektoru.",
+      pic: <img src={g2.src} alt="Godina 2014" />,
+    },
+    {
       year: 2018,
-      body: "In 2018, our journey began with a vision, a dream, and unwavering determination. Fei amoi Brezn, Buam a bissal mogsd a Bussal Obazda so...",
-      pic: <img src={g2.src} alt="Year 2018" />,
-    },
-    {
-      year: 2019,
-      body: "2019 was a year of challenges and growth. We faced Bavaria ipsum dolor sit amet, but our spirits remained high as we climbed each Engelgwand. Milli ded Edlweiss...",
-      pic: <img src={g2.src} alt="Year 2018" />,
-    },
-    {
-      year: 2020,
-      body: "Noch da Giasinga Heiwog des wiad a Mordsgaudi de Obazda koa... 2020 marked a turning point as we realized that even in the face of adversity, there is always room for joy and celebration.",
-      pic: <img src={g3.src} alt="Year 2018" />,
+      body: "Osnivanje Iluminum ICT-a proširilo je njihove aktivnosti na područje IBM alata i sektora informacijsko-komunikacijske tehnologije.",
+      pic: <img src={g2.src} alt="Godina 2018" />,
     },
     {
       year: 2021,
-      body: (
-        <div>
-          <p>
-            As we ventured into 2021, our hearts were filled with passion and dedication. Noch da Giasinga Heiwog des wiad a Mordsgaudi de Obazda koa... We also welcomed new beginnings and opportunities symbolized by the g1 icon.
-          </p>
-        </div>
-      ),
-      pic: <img src={g4.src} alt="Year 2018" />,
+      body: "Udruživanje snaga sa Iluminum ICT-em, tvrtka raste na više od 50 zaposlenih te se ostvaruje zajednički prihod od više od 5 miliona €",
+      pic: <img src={g6.src} alt="Year 2018" />,
     },
-    {
-      year: 2022,
-      body: "The year 2022 was a continuation of our journey, marked by perseverance and a commitment to our goals. Noch da Giasinga Heiwog des wiad a Mordsgaudi de Obazda koa...",
-      pic: <img src={g5.src} alt="Year 2018" />,
-    },
-    {
+     {
       year: 2023,
       body: (
         <div>
           <p>
-            In 2023, our efforts bore fruit as we expanded our horizons and explored new frontiers. Sog i Kuaschwanz Lewakaas Steckerleis wos Graudwiggal. Wuid is unbandig... The wild and uncharted territory of success beckoned, and we embraced the adventure.
+            u 2023. godini firma usprkos svim izazovima nezaustavljivo raste te širi svoje poslovanje
           </p>
         </div>
       ),
-      pic: <img src={g6.src} alt="Year 2018" />,
+      pic: <img src={g4.src} alt="Year 2018" />,
     },
   ]
 };
@@ -129,7 +106,7 @@ function TimelineComponent() {
       visible: { opacity: 1, x: 0, y:0 },
       hidden: { opacity: 0, x: 0, y:-"50rem" },
     }}
-    transition={{ type: "reveal", duration: 1.5 }}
+    // transition={{ type: "reveal", duration: 1.5 }}
   >
     <section className="wrapper">
       <div className="text-center max-w-2xl mx-auto">
@@ -183,7 +160,7 @@ function TimelineComponent() {
                 transition={{ duration: 0.5, delay: 0.8 }}
               >
                 <motion.div
-                  className="w-full text-left mb-10 w-1/2 text-xs md:text-2xl text-gray-700 dark:text-gray-100 dark:bg-gray-900"
+                  className="w-full text-left mb-10  text-xs md:text-2xl text-gray-700 dark:text-gray-100 dark:bg-gray-900"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 20 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
@@ -201,7 +178,7 @@ function TimelineComponent() {
               </motion.div>
             </motion.div>
           ))}
-          <p className="absolute z-0 max-w-8xl mx-auto text-[8rem] top-[14%] md:text-[20rem] md:top-[-50%] dark:text-white/30 opacity-10 ">history</p>
+          <p className="absolute z-0 md:max-w-8xl text-[7rem] top-[14%] md:text-[14rem] lg:text-[20rem] md:top-[-50%]   dark:text-white/30 opacity-10 ">history</p>
           <div class="absolute inset-0 hidden h-max dark:block lg:my-auto">
                 <div
                   aria-hidden="true"
@@ -223,7 +200,7 @@ function TimelineComponent() {
           
         </div>
       </div>
-      <div className="timeline z-10">
+      <div className="timeline z-10 md:max-w-2xl lg:max-w-5xl mx-auto ">
         <ul>
           {years_timeline.map((item, key) => (
             <li key={key} className={item.year === yearSelected ? "active" : ""}>

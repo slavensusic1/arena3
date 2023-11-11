@@ -1,5 +1,5 @@
 ---
-import image from '../assets/g6.svg'
+import image from '../assets/g2.svg'
 import { Image } from 'astro:assets';
 import CTAicona from "../assets/cm.svg"
 
@@ -50,7 +50,7 @@ const listItems = [
               <span>Naš tim stručnjaka vodit će vas kroz svaki korak kako biste osigurali da je vaše vrijeme iskorišteno na najbolji način.</span>
             </p>
 
-            <ul class="text-gray-100 text-base md:px-12">
+            <ul class="text-gray-100 text-base md:px-2">
               {listItems.map((items, index) => (
                 <li class="flex items-center gap-2 mb-4">
                   <img src={items.icon} alt="" class="w-1/12" />
@@ -67,8 +67,7 @@ const listItems = [
         </div>
 
         <div>
-          {/* Adjust this part as per the correct usage of the Image component */}
-          <Image src={image} class="w-full rounded-lg hidden lg:block shadow-lg dark:shadow-black/20" alt="Digital Arena" />
+         <Image src={image} class="w-full rounded-lg hidden lg:block shadow-lg dark:shadow-black/20" alt="Digital Arena" />
         </div>
       </div>
     </div>
