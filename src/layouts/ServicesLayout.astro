@@ -1,54 +1,68 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import { ViewTransitions } from "astro:transitions";
-import { Breadcrumbs } from "astro-breadcrumbs";
-import "astro-breadcrumbs/breadcrumbs.css";
+
+import { ViewTransitions } from 'astro:transitions';
+import { fade } from 'astro:transitions';
+interface Props {
+	title: string;
+}
+import { getLangFromUrl } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const { title } = Astro.props;
+import Navbar from '../components/Navbar.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ServicesHeader from '../components/services/ServicesHeader.astro'
 ---
 
 <!doctype html>
-<html lang="en"
-x-data="{darkMode: localStorage.getItem('darkMode')}"
-x-init="$watch('darkMode', val => localStorage.setItem('darkMode', val))"
-x-bind:data-theme="darkMode">
-	<head >
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    <ViewTransitions />
-  </head>
-  <body transition:animate="fade" class="m-0 p-0 bg-gray-100 dark:bg-gray-900"  transition:persist>
-    <Header />
-    <button
-      class="flex mx-auto capitalize justify-center items-center text-green-700 font-bold
-		 border-4 py-2 rounded-full px-5 my-5"
-    >
-      <Breadcrumbs class="">
-        <svg
-          slot="index"
-          aria-label="Home Page"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          ><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
-          </path><polyline points="9 22 9 12 15 12 15 22"></polyline>
-        </svg>
-      </Breadcrumbs>
-    </button>
-    <main class="w-full" transition:animate="fade">
-      <slot />
-    </main>
-
-    <Footer />
-  </body><style>
-    .main-bg {
-      background-image: url("../assets/body-bg.svg");
-    }
-  </style>
+<html lang={lang}>
+	<head>
+		<ViewTransitions />
+		<script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+    <body class="">
+		<main transition:animate="initial" />
+            <div class="z-0">
+               <Navbar/>      
+            </div> 
+            <div class="-z-20">
+               <ServicesHeader />
+            </div> 
+         
+    
+          <slot />
+        </main>
+        <Footer/>
+      </body>
 </html>
+<style is:global>
+	:root {
+		
+	}
+	html {
+		font-family: 'Dosis', sans-serif;
+	
+	}
+	code {
+		font-family:
+		Dosis,
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+</style>

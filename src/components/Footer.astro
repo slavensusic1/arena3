@@ -1,37 +1,22 @@
 ---
-const today = new Date();
-import logo from '../assets/digitalarena.png'
-import { Image } from 'astro:assets';
+import FooterJs from "./FooterJs";
+import { languages } from '../i18n/ui';
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
 ---
 
-<footer class="bg-gray-800 text-white py-5">
-	<div class="flex flex-col md:flex-row justify-between items-start text-base px-4 md:px-16">
-	  <div class="md:pr-10">
-		<h3 class="text-white text-lg font-semibold">SERVICES</h3>
-		<p class="mt-2">Information Technologies (IT)</p>
-		<p>ICT Infrastructure</p>
-		<p>Energetics</p>
-		<p>ISO, GDPR, CISO standards</p>
-	  </div>
-	  <div class="mt-4 md:mt-0 md:pl-10">
-		<h3 class="text-white text-lg font-semibold">COMPANY</h3>
-		<p class="mt-2">DIGITAL ARENA d.o.o.</p>
-		<p>Šetalište Stjepana Radića 16, 21260 Imotski</p>
-		<p>Zagreb, XI Podbrežje 11a</p>
-		<p>Split, Put Pazdigrada 14</p>
-		<p>Ljubuški, Šipovača 84</p>
-	  </div>
-	  <div class="mt-4 md:mt-0">
-		<h3 class="text-white text-lg font-semibold">LEGAL</h3>
-		<p class="mt-2">OIB: 69476362249</p>
-		<p>MBS: 060320206</p>
-	  </div>
-	</div>
-	<div class="flex flex-col md:flex-row md:gap-2 items-center text-base px-4 md:px-16 py-3 border-t border-gray-700">
-	  <span>&copy; {today.getFullYear()}</span>
-	  <Image src={logo} width={100} alt="Digital arena logo" />
-	  <span class="mt-2 md:mt-0">All rights reserved.</span>
-	</div>
-  </footer>
 
-  
+
+
+
+<FooterJs it={`/${lang}/services/it`} ict={`/${lang}/services/ict`}
+energetics={`/${lang}/services/energetics`}
+isoGdprCisco={`/${lang}/services/isoGdprCisco`} translatedParagraf={t('footer.paragraf')}
+translatedEnergetika={t('footer.energetika')} services={t('ser.headline')} 
+urediHR={t('footer.locationsHR')}
+urediBiH={t('footer.locationsBiH')}
+client:load/>

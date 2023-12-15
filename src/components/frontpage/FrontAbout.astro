@@ -1,0 +1,56 @@
+---
+import about from '../../assets/about-ilustration.svg'
+import { Image } from 'astro:assets';
+
+---
+<!-- About Section with Enhanced Percentage Display -->
+<div class="bg-gray-200 pt-20 py-20 px-5">
+  <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-20 justify-items-center bg-gray-200">
+
+    <!-- Text Content -->
+    <div>
+      <!-- About Title and Description -->
+      <div class="py-5">
+        <p class="text-green-500 text-left font-bold text-lg md:text-2xl">ABOUT OUR COMPANY</p>
+        <h2 class="text-left font-bold text-4xl md:text-4xl leading-[50px]">Providing Your Business With Quality IT Service</h2>
+        <p class="text-xl">At digital arena, we are driven by a passion to deliver top-notch IT services for your business</p>
+      </div>
+
+      <!-- Enhanced Percentage Display -->
+      <div class="space-y-4 bg-gray-200 pb-14 pt-10 w-full">
+        <div class="flex items-center justify-between">
+          <p class="font-bold">IT</p>
+          <div class="w-3/4 bg-gray-300 rounded-full h-2.5 dark:bg-gray-700">
+            <div class="bg-green-600 h-2.5 rounded-full" style="width: 90%"></div>
+          </div>
+          <p class="w-1/4 text-right">90%</p>
+        </div>
+        <div class="flex items-center justify-between">
+          <p class="font-bold">Energetics</p>
+          <div class="w-3/4 bg-gray-300 rounded-full h-2.5 dark:bg-gray-700">
+            <div class="bg-green-600 h-2.5 rounded-full" style="width: 95%"></div>
+          </div>
+          <p class="w-1/4 text-right">95%</p>
+        </div>
+        <div class="flex items-center justify-between">
+          <p class="font-bold">SEO, GDPR, ICT</p>
+          <div class="w-3/4 bg-gray-300 rounded-full h-2.5 dark:bg-gray-700">
+            <div class="bg-green-600 h-2.5 rounded-full" style="width: 90%"></div>
+          </div>
+          <p class="w-1/4 text-right">90%</p>
+        </div>
+      </div>
+
+      <!-- Call to Action Button -->
+      <div class="py-8">
+        <button class="bg-green-800 text-lg px-6 py-2 rounded-md md:text-xl md:px-16 md:py-5 text-white max-w-[16rem]">Learn More</button>
+      </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="w-1/2 flex">
+      <img src={about.src} alt="about image" class="w-full" />
+    </div>
+
+  </div>
+</div>

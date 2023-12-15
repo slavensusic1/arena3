@@ -1,0 +1,67 @@
+---
+
+import solar from '../../assets/solar.jpg'
+import ProjectLayout from '../../layouts/ProjectLayout.astro'
+import SwiperReact from './SwiperReact.jsx'
+
+const title= "pvsmartclick"
+const headline= "Simulacija troškova i učinkovitosti solarnih elektrana"
+const text1="Softverska platforma pruža sveobuhvatno rješenje za sve faze razvoja solarnih elektrana. Uključuje alate za dizajn koji omogućuju precizno planiranje i vizualizaciju, pratnju proizvodnje energije te sustave održavanja. Osim toga, softver pruža mogućnost selekcije opreme koja je ključna za optimalno funkcioniranje solarnih elektrana. . Integrirajući ove ključne aspekte, naša platforma olakšava upravljanje, poboljšava učinkovitost i osigurava dugoročnu pouzdanost solarnih energetskih sustava"
+const subheadline="Inovativnost i zelena energija"
+const text2="Razvijamo inovativnu aplikaciju koja će riješiti izazove vezane uz projektiranje fotoelektričnih sustava. Naš cilj je pružiti korisnicima alat koji će uzeti u obzir cijene električne energije, vremensku diferencijaciju tarifa te zakonske okvire pojedinih zemalja u regiji. Osim toga, implementirat ćemo umjetnu inteligenciju koja će pretraživati proizvode, davati preporuke i optimizirati odgovore kako bismo generirali dizajn u pitanju minuta, umjesto tjednima."
+      
+const text3="Ova aplikacija će riješiti neizvjesnost investitora prilikom ulaganja u obnovljive izvore energije, optimizirati male elektrane prema potrošnji i lokalnom distributeru energije te pružiti točnu dokumentaciju s minimalnim unosima korisnika. Također, potičemo postojeće potrošače električne energije da investiraju u fotonaponske elektrane za vlastite potrebe, koristeći umjetnu inteligenciju za pomoć pri odabiru opreme prema dostupnosti, cjenovnom rasponu i lokaciji. Kroz praćenje proizvodnje i potrošnje, aplikacija će pružati analize i uvide potrebne za efikasno korištenje obnovljivih izvora energije."
+
+const category="Enrgetics, App"
+const link= 'https://pvsmartclick.com/home'
+import pic1 from '../../assets/pvsc1.png'
+import pic2 from '../../assets/pvsc2.png'
+import pic3 from '../../assets/pvsc3.png'
+import pic4 from '../../assets/pvsc4.png'
+import pic5 from '../../assets/pvsc5.png'
+import pic6 from '../../assets/pvsc6.png'
+
+const images = [
+  { id: 1, src: pic1, alt: 'Image 1', caption: 'Caption 1' },
+  { id: 2, src: pic2, alt: 'Image 2', caption: 'Caption 2' },
+  { id: 3, src: pic3, alt: 'Image 3', caption: 'Caption 3' },
+  { id: 4, src: pic4, alt: 'Image 4', caption: 'Caption 4' },
+  { id: 5, src: pic5, alt: 'Image 5', caption: 'Caption 5' },
+  { id: 6, src: pic6, alt: 'Image 6', caption: 'Caption 6' },
+];
+---
+<ProjectLayout>
+    <div class="p-8 space-y-5 max-w-7xl mx-auto">
+  <div>
+    <img src={solar.src} alt="pannel" class="rounded-lg w-full max-h-1/3"/>
+  </div>
+<h1 class=" text-4xl font-bold pb-5">{headline}</h1>
+<p class="text-gray-600 text-xl">{text1}</p>
+<div class="space-y-5">
+<h1 class=" text-2xl font-bold ">{subheadline}</h2>
+  <p class="text-gray-600 text-xl">{text2}</p>
+    <p class="text-gray-600 text-xl">{text3}</p>
+  <div class="flex gap-10 flex-col justify-center md:flex-row items-center md:justify-between">
+    <div>
+    <h3 class="font-bold text-2xl">Category:</h3><span class="text-lg">{category}</span>
+    </div>
+    
+    <div>
+      <div class="flex flex-col">
+        <a href={link}>
+          <button
+            class="bg-green-500 text-white font-bold py-4 px-8 text-xl rounded-md">
+            Live project
+          </button>
+        </a>
+
+      </div>
+    </div>
+    </div>
+
+  </div>
+  
+  
+</div>
+<div class="py-10"><SwiperReact pic1={pic1} pic2={pic2} pic3={pic3} pic4={pic4} pic5={pic5} pic6={pic6} client:load/></div>
+</ProjectLayout>

@@ -1,0 +1,49 @@
+---
+import { languages } from '../i18n/ui';
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+
+
+const currentUrl = new URL(Astro.url);
+const currentPath = currentUrl.pathname;
+const currentLang = currentPath.split('/')[1]; // Assuming language code is the first segment of the path
+
+const constructUrlForLanguage = (lang) => {
+  if (languages.hasOwnProperty(currentLang)) {
+    return currentPath.replace(`/${currentLang}`, `/${lang}`);
+  } else {
+    return `/${lang}${currentPath}`;
+  }
+};
+
+const languageLinks = Object.entries(languages).map(([lang, label]) => {
+  return {
+    href: constructUrlForLanguage(lang),
+    label: label
+  };
+});
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+import logo from '../assets/digitalarena.png'
+import { Image } from 'astro:assets';
+import LanguagePicker from './LanguagePicker.astro';
+import Navbar from './Navbar.jsx'
+const languageArray = Object.entries(languages).map(([code, label]) => ({ code, label }));
+---
+
+  <Navbar 
+  currentUrl={currentUrl}
+    homeTex={t('nav.home')}
+    homeLink={`/${lang}/`}
+    services={t('nav.services')} 
+    servicesLink={`/${lang}/services`}
+    about={t('nav.about')} 
+    aboutLink={`/${lang}/about`}
+    portfolio={t('nav.portfolio')} 
+    portfolioLink={`/${lang}/portfolio`} 
+    languageLinks={languageLinks}
+    client:load
+  />
+
+  
+               

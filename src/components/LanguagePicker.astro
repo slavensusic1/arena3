@@ -1,0 +1,68 @@
+<!-- ---
+import { languages } from '../i18n/ui';
+
+const currentUrl = new URL(Astro.url);
+const currentPath = currentUrl.pathname;
+const currentLang = currentPath.split('/')[1]; // Assuming language code is the first segment of the path
+
+// Function to construct URL for a given language
+const constructUrlForLanguage = (lang) => {
+  if (languages.hasOwnProperty(currentLang)) {
+    // Replace the current language code with the new language code
+    return currentPath.replace(`/${currentLang}`, `/${lang}`);
+  } else {
+    // If the current path doesn't start with a language code, prepend the new language code
+    return `/${lang}${currentPath}`;
+  }
+};
+---
+
+<div class="language-dropdown">
+  <button class="dropdown-toggle">Languages</button>
+  <ul class="dropdown-menu hidden">
+    {Object.entries(languages).map(([lang, label]) => (
+      <li>
+        <a href={constructUrlForLanguage(lang)}>{label}</a>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<style>
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.language-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+</style> -->

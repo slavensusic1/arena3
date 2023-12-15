@@ -1,0 +1,59 @@
+---
+
+import kmarket from '../../assets/KAUFLAND-market.png'
+import ProjectLayout from '../../layouts/ProjectLayout.astro'
+import SwiperReact from './SwiperReact.jsx'
+
+const title= "Kaufland market"
+const headline= "Simulacija troškova i učinkovitosti solarnih elektrana"
+const text1="Aplikacija k-marke(t) kao sastavni dio Kauflandove nagradne igre koja se odvijalau periodu od 30.08.2023. do 03.10.2023. Tijekom naradne igre korisnicu su svaki dan mogli dobiti bogate Kauflandove nagrade. Aplikacija je uspješno isporučena naručitelju te je zadovoljila uslugom u svkom aspektu. Za izradu aplikacije je korišten NUXT kao 'fullstack' javascript framework"
+ const subheadline="Interaktivna aplikacija u kojoj kupci osvajaju  nagrade"
+ const text2="Prvih 1000 korisnika koji imaju najbolje rezultate na rang- listi u svoj pretinac dobivaju kod kojim ostvaruju pravo na dnevnu nagradu – jedan proizvod Kauflandove robne marke"
+      
+
+const category="App"
+const link= 'https://demo.kaufland.digitalarena.hr/'
+import pic1 from '../../assets/kmsc6.png'
+import pic2 from '../../assets/kmsc2.png'
+import pic3 from '../../assets/kmsc3.png'
+import pic4 from '../../assets/kmsc4.png'   
+import pic5 from '../../assets/kmsc1.png'
+import pic6 from '../../assets/kmsc7.png'
+
+const images = [
+  { id: 1, src: pic1, alt: 'Image 1', caption: 'Caption 1' },
+  { id: 2, src: pic2, alt: 'Image 2', caption: 'Caption 2' },
+  { id: 3, src: pic3, alt: 'Image 3', caption: 'Caption 3' },
+  { id: 4, src: pic4, alt: 'Image 4', caption: 'Caption 4' },
+  { id: 5, src: pic5, alt: 'Image 5', caption: 'Caption 5' },
+  { id: 6, src: pic6, alt: 'Image 6', caption: 'Caption 6' },
+];
+---
+<ProjectLayout>
+    <div class="p-8 space-y-5 max-w-7xl mx-auto">
+  <div>
+    <img src={kmarket.src} alt="pannel" class="rounded-lg w-full max-h-1/3"/>
+  </div>
+  <div class="p-8 space-y-5 max-w-7xl mx-auto">
+    <div class="space-y-5">
+        <h1 class=" text-4xl font-bold pb-5">{subheadline}</h1>
+        <p class="text-gray-600 text-xl">{text1}</p>
+        <p class="text-gray-500 text-xl">{text2}</p>
+        <div class="flex flex-col justify-center md:flex-row md:items-center md:justify-between gap-10">
+            <div>
+                <h3 class="font-bold text-2xl">Category:</h3><span class="text-lg">{category}</span>
+            </div>
+            <div>
+                <a href={link}>
+                    <button class="bg-green-500 text-white font-bold py-4 px-8 text-lg rounded-md">Live project</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+  </div>
+  
+  
+</div>
+<div class="py-10" ><SwiperReact pic1={pic1} pic2={pic2} pic3={pic3} pic4={pic4} pic5={pic5} pic6={pic6} client:load/></div>
+</ProjectLayout>

@@ -1,59 +1,195 @@
 ---
-import { Astronav, MenuItems, MenuIcon,  Dropdown, DropdownItems } from "astro-navbar";
-import HeaderLink from "./HeaderLink.astro";
 import logo from '../assets/digitalarena.png'
 import { Image } from 'astro:assets';
-import ThemeIcon from "./ThemeIcon.astro";
 ---
+<body class=" z-50 pt-10">
+	<head>
+		<script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+	  </head>
+	  
+	  <body>
+		<header>
+		  <div class="container">
+			<input type="checkbox" name="check" id="check">
+			<div class="logo-container">
+			  <h3 class="logo">Brand<span>Name</span></h3>
+			</div>
+	  
+			<div class="nav-btn">
+			  <div class="nav-links">
+				<ul>
+				  <li class="nav-link" style="--i: .6s">
+					<a href="#">Home</a>
+				  </li>
+				  <li class="nav-link" style="--i: .85s">
+					<a href="#">Menu<i class="fas fa-caret-down"></i></a>
+					<div class="dropdown">
+					  <ul>
+						<li class="dropdown-link">
+						  <a href="#">Link 1</a>
+						</li>
+						<li class="dropdown-link">
+						  <a href="#">Link 2</a>
+						</li>
+						<li class="dropdown-link">
+						  <a href="#">Link 3<i class="fas fa-caret-down"></i></a>
+						  <div class="dropdown second">
+							<ul>
+							  <li class="dropdown-link">
+								<a href="#">Link 1</a>
+							  </li>
+							  <li class="dropdown-link">
+								<a href="#">Link 2</a>
+							  </li>
+							  <li class="dropdown-link">
+								<a href="#">Link 3</a>
+							  </li>
+							  <li class="dropdown-link">
+								<a href="#">More<i class="fas fa-caret-down"></i></a>
+								<div class="dropdown second">
+								  <ul>
+									<li class="dropdown-link">
+									  <a href="#">Link 1</a>
+									</li>
+									<li class="dropdown-link">
+									  <a href="#">Link 2</a>
+									</li>
+									<li class="dropdown-link">
+									  <a href="#">Link 3</a>
+									</li>
+									<div class="arrow"></div>
+								  </ul>
+								</div>
+							  </li>
+							  <div class="arrow"></div>
+							</ul>
+						  </div>
+						</li>
+						<li class="dropdown-link">
+						  <a href="#">Link 4</a>
+						</li>
+						<div class="arrow"></div>
+					  </ul>
+					</div>
+				  </li>
+				  <li class="nav-link" style="--i: 1.1s">
+					<a href="#">Services<i class="fas fa-caret-down"></i></a>
+					<div class="dropdown">
+					  <ul>
+						<li class="dropdown-link">
+						  <a href="#">Link 1</a>
+						</li>
+						<li class="dropdown-link">
+						  <a href="#">Link 2</a>
+						</li>
+						<li class="dropdown-link">
+						  <a href="#">Link 3<i class="fas fa-caret-down"></i></a>
+						  <div class="dropdown second">
+							<ul>
+							  <li class="dropdown-link">
+								<a href="#">Link 1</a>
+							  </li>
+							  <li class="dropdown-link">
+								<a href="#">Link 2</a>
+							  </li>
+							  <li class="dropdown-link">
+								<a href="#">Link 3</a>
+							  </li>
+							  <li class="dropdown-link">
+								<a href="#">More<i class="fas fa-caret-down"></i></a>
+								<div class="dropdown second">
+								  <ul>
+									<li class="dropdown-link">
+									  <a href="#">Link 1</a>
+									</li>
+									<li class="dropdown-link">
+									  <a href="#">Link 2</a>
+									</li>
+									<li class="dropdown-link">
+									  <a href="#">Link 3</a>
+									</li>
+									<div class="arrow"></div>
+								  </ul>
+								</div>
+							  </li>
+							  <div class="arrow"></div>
+							</ul>
+						  </div>
+						</li>
+						<li class="dropdown-link">
+						  <a href="#">Link 4</a>
+						</li>
+						<div class="arrow"></div>
+					  </ul>
+					</div>
+				  </li>
+				  <li class="nav-link" style="--i: 1.35s">
+					<a href="#">About</a>
+				  </li>
+				</ul>
+			  </div>
+			  <div class="log-sign" style="--i: 1.8s">
+				<a href="#" class="btn transparent">Log in</a>
+				<a href="#" class="btn solid">Sign up</a>
+			  </div>
+			</div>
+	  
+			<div class="hamburger-menu-container">
+			  <div class="hamburger-menu">
+				<div></div>
+			  </div>
+			</div>
+		  </div>
+		</header>
+		<main>
+		  <section>
+			<div class="overlay"></div>
+		  </section>
+		</main>
+	  </body>
+</body>
 
+<style	></style>
 
+<script is:inline>
+// Burger menus
+document.addEventListener('DOMContentLoaded', function() {
+    // open
+    const burger = document.querySelectorAll('.navbar-burger');
+    const menu = document.querySelectorAll('.navbar-menu');
 
-<header class="lg:flex p-5  gap-5 items-center justify-around shadow-inner  w-full z-50  bg-gray-100 dark:bg-gray-900 ">
-  <Astronav  transition:persist>
-    <div class=" ">
-		<a href="/"><Image src={logo} alt=""
-			 class="w-1/4"></a>
-     
-    </div>
-    <div>
-    <MenuItems class="hidden lg:flex lg:items-center justify-center lg:gap-40 dark:bg-gray-900  rounded-full z-10">
-    
-      <ul class="flex flex-col lg:flex-row lg:gap-5  dark:bg-gray-900 ">
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/projects">Projects</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="/career" class="">Career</HeaderLink>
-    <div class="flex pt-2 border-t-2 mt-5 justify-start items-center gap-5 lg:hidden">
-        
-      <HeaderLink href="/contact">
+    if (burger.length && menu.length) {
+        for (var i = 0; i < burger.length; i++) {
+            burger[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z" />
-          </svg>
-          
-          </HeaderLink>
-          <ThemeIcon transition:persist/>
-    </div>
-		
-  </div>
-  <div class="lg:hidden flex items-center justify-end z-30 ">
-    <MenuIcon class="w-4 h-4 text-gray-800 dark:text-gray-100" />
-  </div>
-        <div class="lg:flex hidden justify-center items-center gap-5 z-30  ">
-        
-          <HeaderLink href="/contact">
-   
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z" />
-              </svg>
-              
-              </HeaderLink>
-              <ThemeIcon transition:persist/>
-        </div>
-    </MenuItems>
-  </Astronav>
-</header>
+    // close
+    const close = document.querySelectorAll('.navbar-close');
+    const backdrop = document.querySelectorAll('.navbar-backdrop');
 
+    if (close.length) {
+        for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
 
-
-
+    if (backdrop.length) {
+        for (var i = 0; i < backdrop.length; i++) {
+            backdrop[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+});
+</script>
