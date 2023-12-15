@@ -29,7 +29,7 @@ const Navbar = ({
           </div>
 
           {/* Navigation links for large screens */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden lg:flex space-x-8 px-5">
            <a href={homeLink} className={`text-gray-100 hover:text-green-600 text-xl ${isScrolled ? 'text-green-500' : ''}`}>{homeTex}</a>
             <a href={aboutLink} className={`text-gray-100 hover:text-green-600 text-xl ${isScrolled ? 'text-green-500' : ''}`}>{about}</a>
             <a href={servicesLink} className={`text-gray-100 hover:text-green-600 text-xl ${isScrolled ? 'text-green-500' : ''}`}>{services}</a>
@@ -47,7 +47,7 @@ const Navbar = ({
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden z-50 px-5">
+          <div className="lg:hidden z-50 px-5">
             
             <button onClick={() => setMenuOpen(!isMenuOpen)} className="text-gray-800 hover:text-green-600 focus:outline-none focus:text-green-600">
             {!isMenuOpen ? <svg xmlns="http://www.w3.org/2000/svg" className='' width="24" height="24" viewBox="0 0 24 24" stroke={`${!isScrolled ? 'white' : 'black'} `} strokeWidth="2">
@@ -59,7 +59,7 @@ const Navbar = ({
       </div>
 
       {/* Mobile menu */}
-      <div className={`absolute top-0 inset-x-0  transition transform origin-top-right md:hidden ${isMenuOpen ? 'scale-100' : 'hidden scale-95 opacity-0'}`}>
+      <div className={`absolute top-0 inset-x-0  transition transform origin-top-right lg:hidden ${isMenuOpen ? 'scale-100' : 'hidden scale-95 opacity-0'}`}>
         <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
           <div className="pt-5 pb-6 px-5">
             <div className="flex items-center justify-between">
