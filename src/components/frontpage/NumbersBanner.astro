@@ -1,16 +1,21 @@
 ---
 import Counters from "./Counters";
-const lang = getLangFromUrl(Astro.url);
-import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/utils'
+let lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 <div class="relative">
 <div class="bg py-10 -z-20">
-    {t('nav.home')}
+  const  
  
 <div class="absolute bg-black/10 h-full w-full z-10" style="transform: translate(-50%, -50%); left: 50%; top: 50%;"></div>
 <div class="z-20">
-    <Counters titles={t('nav.home')} client:visible/>
+    <Counters yearsHelping={t('yearsHelping')} workingEmp={t('workingEmp')}
+    completedPro={t('completedPro')}
+    happyCustomer={t('happyCustomer')}  client:visible/>
 </div>
 </div>
 

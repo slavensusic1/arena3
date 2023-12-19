@@ -1,5 +1,10 @@
 ---
 import Contact from '../Contact.astro'
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/utils';
+import { z } from 'astro:content';
+let lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <style>
@@ -37,9 +42,9 @@ import Contact from '../Contact.astro'
 
 
     <div class="flex flex-col justify-center items-center  max-w-3xl mx-auto text-center">
-        <p class="text-green-500 text-left font-bold text-lg md:text-2xl z-20">WANT TO WORK WITH US?</p>
-        <h2 class="font-bold text-3xl md:text-4xl text-white/100 z-20 text-center py-4">Digitally Transform & Grow Your Business</h2>
-        <p class="text-white text-center z-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore tur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p class="text-green-500 text-left font-bold text-lg md:text-2xl z-20">{t('workwithus.headline')}</p>
+        <h2 class="font-bold text-3xl md:text-4xl text-white/100 z-20 text-center py-4">{t('workwithus.subheadline')}</h2>
+        <p class="text-white text-center z-20">{t('workwithus.parag')} </p>
         <div class="flex items-center justify-center gap-3 z-20 pt-10" >
             <button class="bg-white text-lg px-6 py-2 md:text-xl md:px-8 md:py-3  rounded-md "><a href="/services"> Our services </a> <button/>
               <Contact/>

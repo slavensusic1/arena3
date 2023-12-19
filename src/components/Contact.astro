@@ -1,5 +1,14 @@
+---
+import { transitionEnabledOnThisPage } from "astro:transitions/client";
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+import { z } from 'astro:content';
+let lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
 
-<button onclick="openEmail()" class="bg-green-600 text-white hover:bg-green-700 duration-300 text-lg px-6 py-2 rounded-md md:text-xl md:px-8 md:py-3  ">Contact Us <button/>
+
+<button onclick="openEmail()" class="bg-green-600 text-white hover:bg-green-700 duration-300 text-lg px-6 py-2 rounded-md md:text-xl md:px-8 md:py-3  ">{t('button.contact')}<button/>
 
 <script is:inline>
     function openEmail() {

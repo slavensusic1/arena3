@@ -1,6 +1,12 @@
 ---
 import { Image } from "astro:assets";
 import trust from "../../assets/cert.svg";
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/utils';
+import { z } from 'astro:content';
+let lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
 ---
 
 <div class="pt-20 py-20 lg:px-20 ">
@@ -10,10 +16,9 @@ import trust from "../../assets/cert.svg";
 
 
       <div>
-        <p class="text-green-500 text-left font-bold text-lg md:text-2xl">WHY TRUST US??</p>
-        <h2 class="text-left font-bold text-4xl md:text-4xl leading-[50px]">Rely on Certified Industry Experts for Your Business</h2>
-        <p class="text-lg py-10">Our engineers hold industry-recognized certifications, ensuring a high level of expertise and reliability. 
-          Trust us to drive the digital transformation of your business. With our certified professionals, we bring unparalleled excellence to every aspect of our services.</p>
+        <p class="text-green-500 text-left font-bold text-lg md:text-2xl">{t('why.trustus.headline')}</p>
+        <h2 class="text-left font-bold text-4xl md:text-4xl leading-[50px]">{t('why.trustus.subheadline')}</h2>
+        <p class="text-lg py-10">{t('why.trustus.parag')}</p>
     </div>
 
       <nav class="max-w-7xl mx-auto">

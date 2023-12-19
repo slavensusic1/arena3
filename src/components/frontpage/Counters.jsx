@@ -2,15 +2,16 @@ import React from "react";
 import Number from "./Number";
 
 
-function CounterComponent({titles}) {
+function CounterComponent({yearsHelping,workingEmp,completedPro,happyCustomer
+}) {
 
 
   return (
 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-center justify-center gap-y-16 py-10" style={{backgroundImage:'../../assets/banner.jpg'}}>
                             <Number
                     n={10}
-                    title=" Years Helping Business"
-                    titles={titles}
+                    title={yearsHelping}
+              
                     client:visible
                   />
             
@@ -19,7 +20,7 @@ function CounterComponent({titles}) {
               
                   <Number
                     n={50}
-                    title=" Working Employees"
+                    title={workingEmp}
             className="z-20"
                     client:visible
                   />
@@ -29,7 +30,7 @@ function CounterComponent({titles}) {
               
                   <Number
                     n={36}
-                    title=" Complete Projects"
+                    title={completedPro}
             
                     client:visible
                   />
@@ -38,7 +39,7 @@ function CounterComponent({titles}) {
           
                   <Number
                     n={20}
-                    title=" Happy Customers"
+                    title={happyCustomer}
                     client:visible
                   />
            

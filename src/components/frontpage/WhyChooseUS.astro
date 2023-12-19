@@ -1,20 +1,25 @@
 ---
 import { Image } from 'astro:assets';
 import whychooseus from '../../assets/whychooseus.svg'
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/utils';
+import { z } from 'astro:content';
+let lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 <div class="pt-20  py-20 px-5 ">
 
     <div class="w-full grid grid-cols-1 lg:grid-cols-2 md:gap-x-20 justify-items-center">
 
         <div class="w-full flex justify-center items-center">
-            <img src={whychooseus.src} alt="about image w-full" class="w-1/2" />
+            <img src={whychooseus.src} alt="about image w-full" class="w-2/3" />
         </div>
     
         <div>
           <div>
-            <p class="text-green-500 text-left font-bold text-lg md:text-2xl">WHY CHOOSE US?</p>
-            <h2 class="text-left font-bold text-4xl  md:text-4xl leading-[50px]">Embrace the Future: Propel Your Brand with the Latest in Technology</h2>
-            <p class="text-xl">Stay at the forefront of innovation by choosing us to elevate your brand.</p>
+            <p class="text-green-500 text-left font-bold text-lg md:text-2xl">{t('why.headline')}</p>
+            <h2 class="text-left font-bold text-4xl py-5 md:text-4xl leading-[50px]">{t('why.subheadline')}</h2>
+            <p class="text-xl">{t('why.parag')}</p>
         </div>
     
                     <nav class="max-w-7xl mx-auto pt-5 duration-500">
