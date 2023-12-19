@@ -11,5 +11,9 @@ const translatePath = useTranslatedPath(lang);
 ---
 
 <PortfolioLayout>
-<Portfolio client:load lang={lang}/>
+<Portfolio client:load lang={lang} headline={t('portfolio.headline')}
+subHeadline={t('portfolio.subHeadline')}
+apps={t('portfolio.apps')}
+    miss={t('portfolio.Miscellaneous')}
+    energetics={t('footer.energetika')}/>
 </PortfolioLayout>

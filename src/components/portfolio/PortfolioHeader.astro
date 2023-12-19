@@ -3,6 +3,11 @@
 import {Image} from 'astro:assets'
 
 import laptop from '../../assets/laptop.jpg'
+
+const lang = getLangFromUrl(Astro.url);
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+const t = useTranslations(lang);
+
 ---
 
 
@@ -11,12 +16,12 @@ import laptop from '../../assets/laptop.jpg'
       
 
       <div class="flex flex-col items-center justify-center z-20 pt-52">
-        <h1 class="top-0 font-bold text-5xl text-white z-20 ">Portfolio</h1>
+        <h1 class="top-0 font-bold text-5xl text-white z-20 ">{t('nav.portfolio')}</h1>
       
         <ul class=" font-bold text-base text-white  flex justify-center items-center gap-5">
-            <li class="font-bold text-xl text-white z-20"><a href="/">Home</a></li>
+            <li class="font-bold text-xl text-white z-20"><a href="/">{t('nav.home')}</a></li>
             <li class="font-bold text-xl text-white z-20 relative">•</li>
-            <li class="font-bold text-xl text-white z-20 whitespace-nowrap">Portflio</li>
+            <li class="font-bold text-xl text-white z-20 whitespace-nowrap">{t('nav.portfolio')}</li>
           </ul>
       </div>
 

@@ -1,5 +1,5 @@
 ---
-import { img } from "astro:assets";
+
 import croz from '../../assets/croz2.png'
 import kaufland from '../../assets/kaufland.png'
 import rba from '../../assets/rba.png'
@@ -16,13 +16,16 @@ import iskon from '../../assets/iskon.png'
 
 import combis from '../../assets/combis.png'
 import bilog from '../../assets/bilog.svg'
+const lang = getLangFromUrl(Astro.url);
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+const t = useTranslations(lang);
 ---
 
 
 <div class=" px-10">
 <div class=" sm:pe-6 lg:pe-8 py-10">
     <div class="flex flex-col justify-center items-center py-5">
-               <h2 class="text-left font-bold text-4xl md:text-4xl">Our Partners</h2>
+               <h2 class="text-left font-bold text-4xl md:text-4xl">{t('partners')}</h2>
         
     </div>
 

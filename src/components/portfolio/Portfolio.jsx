@@ -1,15 +1,29 @@
 import React, { useState } from "react";
-import { blogContent } from "./blog";
+// import { blogContent } from "./blog";
 import { tabsData } from "./tabs";
 
-function Blogs({lang}) {
+import pvSmartclick from '../../assets/pvc-logo-color.svg';
+import market from '../../assets/kmarket.png';
+import eduvizija  from '../../assets/Eduvizija.jpg'
+
+
+
+
+
+
+function Blogs({lang,subHeadline,headline, apps, miss,energetics}) {
+  const blogContent = [
+    { id: 1, headline: 'PV Smart Click', category: [apps, ' | ', energetics], src: pvSmartclick },
+    { id: 2, headline: 'Kaufland marke(t)', category: [apps], src: market },
+    { id: 2, headline: 'Eduvizija', category: [apps], src: eduvizija },
+  ];
   const [filteredItems, setFilteredItems] = useState(blogContent);
   const [filteredTabs, setFilteredTabs] = useState(tabsData);
   const [activeAll, setActiveAll] = useState(true);
   const [activeBranding, setActiveBranding] = useState(false);
   const [razno, setActiverazno] = useState(false);
   const [activePhotography, setActivePhotography] = useState(false);
-
+ 
   const handleFilterAll = () => {
     setFilteredItems(blogContent);
     setActiveAll(true);
@@ -46,10 +60,10 @@ function Blogs({lang}) {
         <div className="sm:pe-6 lg:pe-8">
           <div className="flex flex-col justify-center items-center">
             <p className="text-green-500 text-left font-bold text-lg md:text-2xl">
-              RECENT WORKS
+             {headline}
             </p>
             <h2 className="text-left font-bold text-4xl md:text-4xl">
-              Our Portfolio
+            {subHeadline}
             </h2>
           </div>
         </div>
@@ -63,7 +77,7 @@ function Blogs({lang}) {
               activeAll ? "text-white" : "text-black"
             }  font-bold py-2 px-4 rounded shadow-2xl `}
           >
-        Aplikacije
+  {apps}
           </button>
       
           <button
@@ -72,7 +86,7 @@ function Blogs({lang}) {
               razno ? "text-white" : "text-black"
             } font-bold py-2 px-4 rounded shadow-2xl`}
           >
-            Razno
+           {miss}
           </button>
         </div>
       </div>

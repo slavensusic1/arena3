@@ -24,6 +24,7 @@ export const routes = {
       'nav.services/it': 'It',
       'nav.portfolio': 'Portfolio',
       'nav.Contact': 'Contact',
+      'about.us':'About Us',
         'hero.headline': 'Navigate Your Path to Success in the Digital Frontier with Digital Arena',
         'hero.sub':'Founded in 2014, Digital Arena has been a leader in IT innovation, setting industry benchmarks. We turn complex challenges into pioneering solutions, shaping the digital future. Our approach is transformative, mirroring the innovative spirit that revolutionized print and typesetting. Digital Arena stands for turning uncertainty into potential, redefining technological possibilities. Our legacy is crafting transformative, cutting-edge technologies.',
       'button.services':'Our Services',
@@ -55,8 +56,21 @@ export const routes = {
 'workwithus.headline':"WANT TO WORK WITH US?",
 'workwithus.subheadline':"Digitally Transform & Grow Your Business",
 'workwithus.parag':"Embrace the digital era with us and lead your industry. Our expert IT team is committed to digitally transforming your business, focusing on efficiency and growth. We offer tailored, cutting-edge solutions to streamline your processes and enhance customer engagement. With a focus on innovation and excellence, we'll help your business not just adapt, but thrive in the digital landscape. Join us and elevate your business to new heights.",
-
-
+'work.proces.headline':'4 STEP WORK PROCESS',
+'work.proces.subHeadline':'Working Process',
+'work.proces.discoverHeadline':"Discover",
+'work.proces.discoverText':"Embark on a journey of exploration with Digital Arena. Discover innovative solutions tailored to meet your unique business needs. We delve deep into understanding your requirements, ensuring a foundation for success.",
+'work.proces.DesignHeadline':"Design & Development",
+'work.proces.DesignText':"At Digital Arena, we transform ideas into reality through cutting-edge design and development. Our expert team crafts solutions that not only meet but exceed expectations. Experience the power of seamless integration and captivating design..",
+'work.proces.InstallHeadline':"Install & Testing",
+'work.proces.InstallText':'Seamless implementation and rigorous testing are the cornerstones of our approach. Digital Arena ensures that every solution is not only installed seamlessly but rigorously tested for optimal performance. Your success is our priority',
+'work.proces.ProjectHeadline':"Project Delivery",
+'work.proces.ProjectText':'Experience the culmination of precision and dedication at Digital Arena. Our project delivery is a testament to our commitment to excellence. From concept to completion, we ensure a smooth and successful journey for every project.',
+'partners':'Our Partners',
+'portfolio.headline':'RECENT WORKS',
+'portfolio.subHeadline':'Our Portfolio',
+'portfolio.apps':'Applications',
+'portfolio.Miscellaneous':'Miscellaneous',
 
       'ser.headline':'Our Services',
       'ser.sub':'What we provide',
@@ -73,7 +87,7 @@ export const routes = {
       'baner.years':'Years Helping Business',
 
       'about.flexHeadline':"Flexibility & Responsive",
-      'about.flex':'In the dynamic landscape of todays business world, Flexibility & Responsiveness are not just attributes but Flexibility & Responsiveness are not just attributes but essential qualities for success. Our approach embraces adaptability, ensuring that we can pivot swiftly to meet the ever-changing needs of our clients. By being flexible and responsive, we not only navigate challenges seamlessly but also create tailored solutions that evolve with the dynamic nature of the market',
+      'about.flex':'In the dynamic landscape of todays business world, Flexibility & Responsiveness are not just attributes but essential qualities for success. Our approach embraces adaptability, ensuring that we can pivot swiftly to meet the ever-changing needs of our clients. By being flexible and responsive, we not only navigate challenges seamlessly but also create tailored solutions',
 
       'about.TeamworkHeadline':"Teamwork",
       'about.Teamwork':"Teamwork is the heartbeat of our success. We believe in the collective strength of diverse minds working in unison towards a common goal. Collaboration and shared expertise are woven into the fabric of our culture, fostering an environment where innovation flourishes and challenges are conquered collectively. Together, we build not just solutions but a collaborative legacy of achievement",
@@ -99,6 +113,7 @@ export const routes = {
         'ser.headline':'Naše Usluge',
         'hero.headline': 'Kreirajte svoj put uspjeha u digitalnom svijetu uz Digital Arenu',
         'hero.sub': 'Osnovana 2014. godine, Digital Arena je lider u inovacijama informacijskih tehnologija, postavljajući industrijske standarde. Pretvaramo složene izazove u vrhunska rješenja, oblikujući digitalnu budućnost. Digital Arena znači pretvaranje neizvjesnosti u potencijal, redefinirajući tehnološke mogućnosti. Naša misija je stvaranje transformativnih tehnologija posljednje generacije.',
+        'about.us':'O nama',
         'about.company.li1': "Development (Python, Java, full-stack, React, Angular, JavaScript, baze podataka)",
 'about.company.li2': "Testiranje (automatizacija i manual)",
 'about.company.li3': "DevOps (Linux, Docker, Kubernetes, CI/CD)",
@@ -112,19 +127,39 @@ export const routes = {
 'workwithus.headline': "ŽELITE RADITI S NAMA?",
 'workwithus.subheadline': "Digitalno Transformirajte & Razvijajte Svoje Poslovanje",
 'workwithus.parag': "Pridružite se nama u digitalnom dobu i budite lider u svojoj industriji. Naš stručni IT tim posvećen je digitalnoj transformaciji vašeg poslovanja, usmjeravajući se na efikasnost i rast. Nudimo prilagođena, najmodernija rješenja za pojednostavljenje vaših procesa i poboljšanje angažmana kupaca. S fokusom na inovacije i izvrsnost, pomoći ćemo vašem poslovanju ne samo da se prilagodi, već i da prosperira u digitalnom pejzažu. Pridružite nam se i podignite svoje poslovanje na nove visine.",
-
+'about.flexHeadline':"Flexibilnost",
 'yearsHelping': "Godina u poslovanju",
 'workingEmp': "Zaposlenih Djelatnika",
 'completedPro': "Dovršeni Projekata",
-'happyCustomer': "Zadovoljnh Kupaca",
+'happyCustomer': "Zadovoljnih Kupaca",
+'portfolio.headline':'NAJNOVIJI RADOVI',
+'portfolio.subHeadline':'Naš Portfolio',
+'portfolio.apps':'Aplikacije',
+'portfolio.Miscellaneous':'Razno',
+
+
+'partners':'Naši partneri',
 
 'about.TeamworkHeadline': "Timski Rad",
 'about.Teamwork': "Timski rad je srž našeg uspjeha. Vjerujemo u kolektivnu snagu različitih umova koji rade zajedno prema zajedničkom cilju. Suradnja i zajedničko stručno znanje utkani su u tkaninu naše kulture, stvarajući okruženje u kojem cvjeta inovacija i izazovi se zajednički savladavaju. Zajedno ne gradimo samo rješenja, već i suradničko nasljeđe postignuća",
 
 'about.GrowthHeadline': "Rast",
-'about.Growth': "Rast nije samo cilj; to je neprekidno putovanje. U [Ime Vaše Tvrtke], njegujemo okruženje koje potiče individualni i kolektivni rast. Naša predanost osobnom i profesionalnom razvoju osigurava da je svaki član tima i organizacija kao cjelina na putu stalnog usavršavanja. Kako rastemo, tako raste i naša sposobnost pružanja izuzetne vrijednosti našim klijentima i dionicima.",
+'about.Growth': "Rast nije samo cilj; to je neprekidno putovanje. U digital areni, njegujemo okruženje koje potiče individualni i kolektivni rast. Naša predanost osobnom i profesionalnom razvoju osigurava da je svaki član tima i organizacija kao cjelina na putu stalnog usavršavanja. Kako rastemo, tako raste i naša sposobnost pružanja izuzetne vrijednosti našim klijentima i dionicima.",
 
 
+'work.proces.headline': 'PROCES RAZVOJA U 4 koraka',
+'work.proces.subHeadline': 'Proces rada',
+'work.proces.discoverHeadline':"Ideja",
+'work.proces.discoverText':"Krenite na put istraživanja s Digital Arena. Otkrijte inovativna rješenja prilagođena vašim jedinstvenim poslovnim potrebama. Detaljno se posvećujemo razumijevanju vaših zahtjeva, osiguravajući temelj za uspjeh.",
+
+'work.proces.DesignHeadline':"Dizajn i razvoj",
+'work.proces.DesignText':"U Digital Arena, pretvaramo ideje u stvarnost kroz vrhunski dizajn i razvoj. Naš stručni tim stvara rješenja koja ne samo da ispunjavaju, već i nadmašuju očekivanja.",
+
+'work.proces.InstallHeadline':"Instalacija i testiranje",
+'work.proces.InstallText':"Savršena primjena i detaljno ispitivanje su ključni aspekti naše metodologije. U Digital Areni, svaka implementacija se izvodi s najvišom preciznošću, a svako rješenje prolazi temeljite provjere za maksimalnu efikasnost. Postizanje vašeg uspjeha je na vrhu naše liste prioriteta.",
+
+'work.proces.ProjectHeadline': "Realizacija projekta",
+'work.proces.ProjectText': "U Digital Areni, svaki projekt je odraz vrhunske točnosti i predanog rada.  Od početne ideje do finalne realizacije, jamčimo nesmetanu i uspješnu provedbu svakog projekta.",
 
        'button.services':'Naše usluge ',
        'button.contact': 'Kontaktirajte nas',
@@ -132,9 +167,9 @@ export const routes = {
        'about.company.headline': 'O DIGITAL ARENI',
        'about.company.subheadline': 'Osiguravamo Vašem Poslovanju Kvalitetne IT Usluge',
        'about.company.parag': 'U digitalnoj areni, pokreće nas strast da pružimo vrhunske IT usluge za vaše poslovanje.',
-       'about.company.paragraf1':'Naš tim od preko 50 IT inženjera, u suradnji s vodećim tvrtkama, specijaliziran je za outsourcing IT-a i razvoj projekata. Imamo značajne suradnje s PBZ-om, Addiko Bankom, Raiffeisenom, Zagrebačkom bankom, CROZ-om, Ericssonom Nikolom Teslom u Hrvatskoj, te smo radili projekte za Hrvatsku radioteleviziju i Poštu. Sa dubokim stručnostima u TelCo i bankarskom sektoru, naše usluge obuhvaćaju :',
+       'about.company.paragraf1':'Naš tim od preko 50 IT inženjera, u suradnji s vodećim tvrtkama, specijaliziran je za outsourcing IT-a i razvoj projekata. Imamo značajne suradnje s PBZ-om, Addiko Bankom, Raiffeisenom, Zagrebačkom bankom, CROZ-om, Ericssonom Nikolom Teslom u Hrvatskoj, te smo radili projekte za Hrvatsku radioteleviziju i Poštu. S dubokim stručnostima u TelCo i bankarskom sektoru, naše usluge obuhvaćaju :',
   
-       'about.company.paragraf2': "Iako su ovo naše osnovne snage, vješti smo u prilagodbi te u traženju riješenja u novom području",
+       'about.company.paragraf2': "Iako su ovo naše osnovne snage, vješti smo u prilagodbi te u traženju rješenja u novom području",
 
        'ser.sub': 'Što nudimo',
        'ser.it':'IT rješenja',
@@ -144,12 +179,11 @@ export const routes = {
        'ser.Energetics':'Energetika' ,
        'ser.Energetics-text':'Digitalna arena posvećena je revolucioniranju energetskog sektora kroz strateško savjetovanje i vrhunska tehnološka rješenja. Usredotočeni smo na optimizaciju potrošnje energije i poticanje inovacija za stvaranje održive budućnosti',
        'ser.gdpr-text':'Naša se obveza proteže na usklađenost s GDPR-om, čuvajući osobne podatke svih dionika u vašem poslovanju.',
-       'ser.ciso-text':'Digitalna arena nudi usluge CISO outsourcinga za jačanje vaše kibersigurnosne pozicije. Naš sveobuhvatni pristup uključuje.',
+       'ser.ciso-text':'Digitalna arena nudi usluge CISO outsourcinga za jačanje vaše sigurnosti od hakerskih napada. Naš sveobuhvatni pristup uključuje.',
        'ser.iso-text':'U digitalnoj areni specijalizirani smo za pružanje sveobuhvatnih usluga revizije informacijskog sustava',
        'read-more': 'Pročitaj više',
        'baner.years':'godine u poslu' ,
-        'about.flex':'U dinamičnom krajoliku današnjeg poslovnog svijeta, Fleksibilnost i Responzivnost nisu samo atributi, već bitne kvalitete za uspjeh. Naš pristup obuhvaća prilagodljivost, osiguravajući da se možemo brzo okrenuti prema potrebama naših klijenata koje se stalno mijenjaju. Budući da smo fleksibilni i brzi, ne samo da se neprimjetno nosimo s izazovima, već i stvaramo prilagođena rješenja koja se razvijaju s dinamičnom prirodom tržišta',
-        'footer.paragraf':'Izrada IT rješenja može predstavljati značajne izazove, posebno za one bez tehničkog znanja. Surađujte s nama, iznesite svoje ideje na stol i iskoristite našu tehničku stručnost za stvaranje vrhunskog konačnog proizvoda koji će unaprijediti vaše poslovanje',
+        'about.flex':'U dinamičnom krajoliku današnjeg poslovnog svijeta, Fleksibilnost i Responzivnost nisu samo atributi, već bitne kvalitete za uspjeh. Naš pristup obuhvaća prilagodljivost, osiguravajući da se možemo brzo okrenuti prema potrebama naših klijenata koje se stalno mijenjaju. Budući da smo fleksibilni i brzi, stvaramo prilagođena za svakog kupca',
         'footer.energetika':'Energetika',
         'footer.locationsHR':'Uredi Hrvatska',
         'footer.locationsBiH':'Uredi BiH',
