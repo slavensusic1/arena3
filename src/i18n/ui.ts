@@ -183,6 +183,9 @@ export const routes = {
        'ser.iso-text':'U digitalnoj areni specijalizirani smo za pružanje sveobuhvatnih usluga revizije informacijskog sustava',
        'read-more': 'Pročitaj više',
        'baner.years':'godine u poslu' ,
+
+       'footer.paragraf':'Izrada IT rješenja može predstavljati značajne izazove, posebno za one bez tehničkog znanja. Surađujte s nama, iznesite svoje ideje na stol i iskoristite našu tehničku stručnost za stvaranje vrhunskog konačnog proizvoda koji će unaprijediti vaše poslovanje',
+
         'about.flex':'U dinamičnom krajoliku današnjeg poslovnog svijeta, Fleksibilnost i Responzivnost nisu samo atributi, već bitne kvalitete za uspjeh. Naš pristup obuhvaća prilagodljivost, osiguravajući da se možemo brzo okrenuti prema potrebama naših klijenata koje se stalno mijenjaju. Budući da smo fleksibilni i brzi, stvaramo prilagođena za svakog kupca',
         'footer.energetika':'Energetika',
         'footer.locationsHR':'Uredi Hrvatska',
