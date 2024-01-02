@@ -25,7 +25,8 @@ export const routes = {
       'nav.portfolio': 'Portfolio',
       'nav.Contact': 'Contact',
       'about.us':'About Us',
-        'hero.headline': 'Navigate Your Path to Success in the Digital Frontier with Digital Arena',
+        'hero.headline': 'Navigate Your Path to Success in the Digital Frontier with ',
+        'hero.digiralArena':'Digital Arena',
         'hero.sub':'Founded in 2014, Digital Arena has been a leader in IT innovation, setting industry benchmarks. We turn complex challenges into pioneering solutions, shaping the digital future. Our approach is transformative, mirroring the innovative spirit that revolutionized print and typesetting. Digital Arena stands for turning uncertainty into potential, redefining technological possibilities. Our legacy is crafting transformative, cutting-edge technologies.',
       'button.services':'Our Services',
       'button.contact':'Contact Us',
@@ -111,7 +112,8 @@ export const routes = {
         'nav.portfolio': 'Portfelj',
         'nav.Contact': 'Kontakt',
         'ser.headline':'Naše Usluge',
-        'hero.headline': 'Kreirajte svoj put uspjeha u digitalnom svijetu uz Digital Arenu',
+        'hero.headline': 'Kreirajte svoj put uspjeha u digitalnom svijetu uz ',
+        'hero.digiralArena':'Digital Arenu',
         'hero.sub': 'Osnovana 2014. godine, Digital Arena je lider u inovacijama informacijskih tehnologija, postavljajući industrijske standarde. Pretvaramo složene izazove u vrhunska rješenja, oblikujući digitalnu budućnost. Digital Arena znači pretvaranje neizvjesnosti u potencijal, redefinirajući tehnološke mogućnosti. Naša misija je stvaranje transformativnih tehnologija posljednje generacije.',
         'about.us':'O nama',
         'about.company.li1': "Development (Python, Java, full-stack, React, Angular, JavaScript, baze podataka)",
@@ -127,7 +129,7 @@ export const routes = {
 'workwithus.headline': "ŽELITE RADITI S NAMA?",
 'workwithus.subheadline': "Digitalno Transformirajte & Razvijajte Svoje Poslovanje",
 'workwithus.parag': "Pridružite se nama u digitalnom dobu i budite lider u svojoj industriji. Naš stručni IT tim posvećen je digitalnoj transformaciji vašeg poslovanja, usmjeravajući se na efikasnost i rast. Nudimo prilagođena, najmodernija rješenja za pojednostavljenje vaših procesa i poboljšanje angažmana kupaca. S fokusom na inovacije i izvrsnost, pomoći ćemo vašem poslovanju ne samo da se prilagodi, već i da prosperira u digitalnom pejzažu. Pridružite nam se i podignite svoje poslovanje na nove visine.",
-'about.flexHeadline':"Flexibilnost",
+'about.flexHeadline':"Fleksibilnost",
 'yearsHelping': "Godina u poslovanju",
 'workingEmp': "Zaposlenih Djelatnika",
 'completedPro': "Dovršenih Projekata",
@@ -147,7 +149,7 @@ export const routes = {
 'about.Growth': "Rast nije samo cilj; to je neprekidno putovanje. U digital areni, njegujemo okruženje koje potiče individualni i kolektivni rast. Naša predanost osobnom i profesionalnom razvoju osigurava da je svaki član tima i organizacija kao cjelina na putu stalnog usavršavanja. Kako rastemo, tako raste i naša sposobnost pružanja izuzetne vrijednosti našim klijentima i dionicima.",
 
 
-'work.proces.headline': 'PROCES RAZVOJA U 4 koraka',
+'work.proces.headline': 'PROCES RAZVOJA U 4 KORAKA',
 'work.proces.subHeadline': 'Proces rada',
 'work.proces.discoverHeadline':"Ideja",
 'work.proces.discoverText':"Krenite na put istraživanja s Digital Arena. Otkrijte inovativna rješenja prilagođena vašim jedinstvenim poslovnim potrebama. Detaljno se posvećujemo razumijevanju vaših zahtjeva, osiguravajući temelj za uspjeh.",
@@ -186,7 +188,7 @@ export const routes = {
 
        'footer.paragraf':'Izrada IT rješenja može predstavljati značajne izazove, posebno za one bez tehničkog znanja. Surađujte s nama, iznesite svoje ideje na stol i iskoristite našu tehničku stručnost za stvaranje vrhunskog konačnog proizvoda koji će unaprijediti vaše poslovanje',
 
-        'about.flex':'U dinamičnom krajoliku današnjeg poslovnog svijeta, Fleksibilnost i Responzivnost nisu samo atributi, već bitne kvalitete za uspjeh. Naš pristup obuhvaća prilagodljivost, osiguravajući da se možemo brzo okrenuti prema potrebama naših klijenata koje se stalno mijenjaju. Budući da smo fleksibilni i brzi, stvaramo prilagođena za svakog kupca',
+        'about.flex':'U dinamičnom krajoliku današnjeg poslovnog svijeta, Fleksibilnost i responzivnost nisu samo atributi, već bitne kvalitete za uspjeh. Naš pristup obuhvaća prilagodljivost, osiguravajući da se možemo brzo okrenuti prema potrebama naših klijenata koje se stalno mijenjaju. Budući da smo fleksibilni i brzi, stvaramo prilagođena za svakog kupca',
         'footer.energetika':'Energetika',
         'footer.locationsHR':'Uredi Hrvatska',
         'footer.locationsBiH':'Uredi BiH',

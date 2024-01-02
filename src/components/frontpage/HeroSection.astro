@@ -12,12 +12,12 @@ const translatePath = useTranslatedPath(lang);
 ---
 
 <section class="mr-auto text-3xl font-bold space-y-5  pt-20 bg-gradient-to-b from-green-800 via-green-500 to-green-100 z-50 ">
-    <div class="max-w-3xl p-5 lg:max-w-7xl mx-auto flex flex-col lg:flex-row space-y-8 items-center lg:px-5">
+    <div class="max-w-3xl p-5 lg:max-w-7xl mx-auto flex flex-col lg:flex-row space-y-8 items-center">
         <div class="flex flex-col lg:items-start space-y-10 lg:w-1/2">
-<h1 class="text-center text-4xl md:text-6xl  font-bold text-white  lg:text-left">{t('hero.headline')}</h1>
+<h1 class="text-center text-4xl md:text-5xl  font-bold text-white  lg:text-left">{t('hero.headline')} <span class="whitespace-nowrap"> {t('hero.digiralArena')}</span></h1>
 <p class="text-base text-center text-white md:text-lg lg:text-left">{t('hero.sub')}</p>
 <div class="flex items-center justify-center gap-3" >
-    <button class="bg-white text-lg px-6 py-2 md:text-xl md:px-8 md:py-3  rounded-md hover:bg-gray-200 duration-300 "> <a href=`/${lang}/services` >{t('button.services')} <a/><button/>
+    <button class="bg-white whitespace-nowrap text-green-600 hover:bg-gray-200 duration-300 text-lg px-6 py-2 rounded-md md:text-xl md:px-8 md:py-3 "> <a href=`/${lang}/services` >{t('button.services')} <a/><button/>
         <Contact/>
 </div>
 </div>
