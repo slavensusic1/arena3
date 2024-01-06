@@ -88,7 +88,7 @@ const Navbar = ({
             </div>
           </div>
           <div className="bg-green-500 border-t border-gray-900 p-6 text-left text-gray-800 font-bold  ">
-  <span id="copyright" className="text-gray-200 text-xl">
+  <span id="copyright" className="text-gray-200 text-lg">
   &copy; Digital Arena {year}
 </span>
     
