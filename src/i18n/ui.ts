@@ -169,9 +169,9 @@ export const routes = {
        'about.company.headline': 'O DIGITAL ARENI',
        'about.company.subheadline': 'Osiguravamo Vašem Poslovanju Kvalitetne IT Usluge',
        'about.company.parag': 'U Digital Areni, pokreće nas strast da pružimo vrhunske IT usluge za vaše poslovanje.',
-       'about.company.paragraf1':'Naš tim od preko 50 IT inženjera, u suradnji s vodećim tvrtkama, specijaliziran je za outsourcing IT-a i razvoj projekata. Imamo značajne suradnje s PBZ-om, Addiko Bankom, Raiffeisenom, Zagrebačkom bankom, CROZ-om, Ericssonom Nikolom Teslom u Hrvatskoj, te smo radili projekte za Hrvatsku radioteleviziju i Poštu. S dubokim stručnostima u TelCo i bankarskom sektoru, naše usluge obuhvaćaju :',
+       'about.company.paragraf1':'Naš tim broji više od 50 iskusnih IT inženjera koji se specijaliziraju za pružanje IT usluga i razvoj projekata u okviru outsourcinga. U našem portfoliju ističu se značajne suradnje s renomiranim financijskim institucijama kao što su Privredna banka Zagreb (PBZ), Addiko Bank, Raiffeisen Bank, Zagrebačka banka, te uspješni projekti realizirani za Hrvatsku radioteleviziju i Hrvatsku poštu. S dubokim stručnostima u područjima telekomunikacija i bankarstva, naše usluge obuhvaćaju:',
   
-       'about.company.paragraf2': "Iako su ovo naše osnovne snage, vješti smo u prilagodbi te u traženju rješenja u novom području",
+       'about.company.paragraf2': "Unatoč našim primarnim kompetencijama, istaknuli smo se kao stručnjaci sposobni prilagoditi se novim izazovima i tražiti rješenja u nepoznatim područjima.",
 
        'ser.sub': 'Što nudimo',
        'ser.it':'IT rješenja',
