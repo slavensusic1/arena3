@@ -1,7 +1,7 @@
 ---
 import { transitionEnabledOnThisPage } from "astro:transitions/client";
 import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
-import { z } from 'astro:content';
+
 let lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);

@@ -4,7 +4,6 @@ import hero from '../../assets/home-font.png'
 import bottom from '../../assets/home-bottom-shape.png'
 import Contact from '../Contact.astro'
 import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/utils';
-import { z } from 'astro:content';
 let lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);

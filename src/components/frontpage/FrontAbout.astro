@@ -2,7 +2,7 @@
 import about from '../../assets/about-ilustration.svg'
 import { Image } from 'astro:assets';
 import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/utils';
-import { z } from 'astro:content';
+
 let lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
