@@ -25,7 +25,9 @@ const Navbar = ({
         <div className="flex justify-between items-center py-3 md:py-4">
          {/* <img src={logo} alt="" /> */}
           <div className="flex items-center justify-center px-5">
-            <img src={logo.src} alt="logo" className="h-10 md:h-12" />
+          <a href="/">
+  <img src={logo.src} alt="logo" className="h-10 md:h-12" />
+</a>
           </div>
 
           {/* Navigation links for large screens */}
@@ -87,8 +89,8 @@ const Navbar = ({
 </nav>
             </div>
           </div>
-          <div className="bg-green-500 border-t border-gray-900 p-6 text-left text-gray-800 font-bold  ">
-  <span id="copyright" className="text-gray-200 text-lg">
+          <div className="border-t border-blue-900 p-6 text-left font-bold  ">
+  <span id="copyright" className="text-slate-900 text-base">
   &copy; Digital Arena {year}
 </span>
     
