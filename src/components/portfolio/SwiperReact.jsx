@@ -16,11 +16,11 @@ import './styles.css'
 import { EffectFlip,  Navigation } from 'swiper/modules';
 import { FreeMode, Pagination } from 'swiper/modules';
 
-const SwiperReact = ({pic1, pic2, pic3, pic4, pic5, pic6}) => {
+const SwiperReact = ({pic1, pic2, pic3, pic4, pic5, pic6, slides}) => {
   return (
     
     <Swiper
-    slidesPerView={2}
+    slidesPerView={slides}
     spaceBetween={20}
     freeMode={true}
     pagination={{
