@@ -3,12 +3,16 @@
 import kmarket from '../../assets/KAUFLAND-market.png'
 import ProjectLayout from '../../layouts/ProjectLayout.astro'
 import SwiperReact from './SwiperReact.jsx'
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/utils';
+let lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 
-const title= "Kaufland market"
-const headline= "Simulacija troškova i učinkovitosti solarnih elektrana"
-const text1="Aplikacija k-marke(t) kao sastavni dio Kauflandove nagradne igre koja se odvijalau periodu od 30.08.2023. do 03.10.2023. Tijekom naradne igre korisnicu su svaki dan mogli dobiti bogate Kauflandove nagrade. Aplikacija je uspješno isporučena naručitelju te je zadovoljila uslugom u svkom aspektu. Za izradu aplikacije je korišten NUXT kao 'fullstack' javascript framework"
- const subheadline="Interaktivna aplikacija u kojoj kupci osvajaju  nagrade"
- const text2="Prvih 1000 korisnika koji imaju najbolje rezultate na rang- listi u svoj pretinac dobivaju kod kojim ostvaruju pravo na dnevnu nagradu – jedan proizvod Kauflandove robne marke"
+// const title= "Kaufland market"
+// const headline= "Simulacija troškova i učinkovitosti solarnih elektrana"
+// const text1="Aplikacija k-marke(t) kao sastavni dio Kauflandove nagradne igre koja se odvijalau periodu od 30.08.2023. do 03.10.2023. Tijekom naradne igre korisnicu su svaki dan mogli dobiti bogate Kauflandove nagrade. Aplikacija je uspješno isporučena naručitelju te je zadovoljila uslugom u svkom aspektu. Za izradu aplikacije je korišten NUXT kao 'fullstack' javascript framework"
+//  const subheadline="Interaktivna aplikacija u kojoj kupci osvajaju  nagrade"
+//  const text2="Prvih 1000 korisnika koji imaju najbolje rezultate na rang- listi u svoj pretinac dobivaju kod kojim ostvaruju pravo na dnevnu nagradu – jedan proizvod Kauflandove robne marke"
       
 
 const category="App"
@@ -30,22 +34,21 @@ const images = [
 ];
 ---
 <ProjectLayout>
-    <div class="p-8 space-y-5 max-w-7xl mx-auto">
-  <div>
-    <img src={kmarket.src} alt="pannel" class="rounded-lg w-full max-h-1/3"/>
-  </div>
   <div class="p-8 space-y-5 max-w-7xl mx-auto">
-    <div class="space-y-5">
-        <h1 class=" text-4xl font-bold pb-5">{subheadline}</h1>
-        <p class="text-gray-600 text-xl">{text1}</p>
-        <p class="text-gray-500 text-xl">{text2}</p>
+  <div>
+    <img src={kmarket.src} alt="pannel" class="rounded-lg w-full"/>
+  </div>
+   <div class="space-y-5">
+        <h1 class=" text-4xl font-bold pb-5">{t('kauflandTitle')}</h1>
+        <p class="text-gray-600 text-xl">{t('kauflandText1')}</p>
+        <p class="text-gray-500 text-xl">{t('kauflandText2')}</p>
         <div class="flex flex-col justify-center md:flex-row md:items-center md:justify-between gap-10">
             <div>
-                <h3 class="font-bold text-2xl">Category:</h3><span class="text-lg">{category}</span>
+                <h3 class="font-bold text-2xl">{t('Category')}:</h3><span class="text-lg">{t('category.app')}</span>
             </div>
             <div>
-                <a href={link}>
-                    <button class="bg-green-500 text-white font-bold py-4 px-8 text-lg rounded-md">Live project</button>
+              <a href={link} target="_blank">
+                    <button class="bg-green-500 text-white font-bold py-4 px-8 text-lg rounded-md">{t('live.project')}</button>
                 </a>
             </div>
         </div>

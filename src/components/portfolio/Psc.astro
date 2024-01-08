@@ -3,6 +3,10 @@
 import solar from '../../assets/solar.jpg'
 import ProjectLayout from '../../layouts/ProjectLayout.astro'
 import SwiperReact from './SwiperReact.jsx'
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/utils';
+let lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 
 const title= "pvsmartclick"
 const headline= "Simulacija troškova i učinkovitosti solarnih elektrana"
@@ -35,24 +39,24 @@ const images = [
   <div>
     <img src={solar.src} alt="pannel" class="rounded-lg w-full max-h-1/3"/>
   </div>
-<h1 class=" text-4xl font-bold pb-5">{headline}</h1>
-<p class="text-gray-600 text-xl">{text1}</p>
+
+
 <div class="space-y-5">
-<h1 class=" text-2xl font-bold ">{subheadline}</h2>
-  <p class="text-gray-600 text-xl">{text2}</p>
-    <p class="text-gray-600 text-xl">{text3}</p>
+  <h1 class=" text-2xl font-bold ">{t('pvsc.headline')}</h1>
+<p class="text-gray-600 text-xl">{t('pvsc.text1')}</p>
+<h1 class=" text-2xl font-bold ">{t('pvsc.subheadline')}</h2>
+  <p class="text-gray-600 text-xl">{t('pvsc.text2')}</p>
+    <p class="text-gray-600 text-xl">{t('pvsc.text3')}</p>
   <div class="flex gap-10 flex-col justify-center md:flex-row items-center md:justify-between">
     <div>
-    <h3 class="font-bold text-2xl">Category:</h3><span class="text-lg">{category}</span>
-    </div>
+      <h3 class="font-bold text-2xl">{t('Category')}:</h3><span class="text-lg">{t('category.app')} , {t('category.ener')} </span>
+  </div>
     
     <div>
       <div class="flex flex-col">
-        <a href={link}>
-          <button
-            class="bg-green-500 text-white font-bold py-4 px-8 text-xl rounded-md">
-            Live project
-          </button>
+        <a href={link} target="_blank">
+          <button class="bg-green-500 text-white font-bold py-4 px-8 text-lg rounded-md">{t('live.project')}</button>
+      
         </a>
 
       </div>

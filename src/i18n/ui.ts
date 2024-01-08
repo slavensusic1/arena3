@@ -24,6 +24,8 @@ export const routes = {
       'nav.services/it': 'It',
       'nav.portfolio': 'Portfolio',
       'nav.Contact': 'Contact',
+      'nav.project':'Project',
+      'nav.projectDetail':'Project Detail',
       'about.us':'About Us',
         'hero.headline': 'Navigate Your Path to Success in the Digital Frontier with ',
         'hero.digiralArena':'Digital Arena',
@@ -97,7 +99,31 @@ export const routes = {
       'about.GrowthHeadline':"Growth",
       'about.Growth':"Growth is not just a destination; it's a continuous journey. At Digital Arena, we nurture an environment that encourages individual and collective growth. Our commitment to personal and professional development ensures that each team member and the organization as a whole is on a trajectory of constant improvement. As we grow, so does our capacity to deliver exceptional value to our clients and stakeholders.",
 
+      'kauflandTitle': "Kaufland Market",
+      'kauflandText1': "The k-marke(t) application as an integral part of Kaufland's prize game, which took place from August 30, 2023, to October 3, 2023. During the prize game, users could win rich Kaufland prizes every day. The application was successfully delivered to the client and satisfied the service in every aspect. NUXT was used as a 'fullstack' JavaScript framework for the application development",
+      'kauflandSubheadline': "Interactive application where customers win prizes",
+      'kauflandText2': "The first 1000 users with the best results on the leaderboard receive a code in their mailbox, entitling them to a daily prize – one Kaufland brand product",
+      
+      'pvsc.title' : "pvsmartclick",
+ 'pvsc.headline': "Solar Power Plant Cost and Efficiency Simulation",
+'pvsc.text1': "The software platform provides a comprehensive solution for all phases of solar power plant development. It includes design tools that enable precise planning and visualization, energy production monitoring, and maintenance systems. Additionally, the software offers the ability to select equipment crucial for the optimal functioning of solar power plants. By integrating these key aspects, our platform facilitates management, enhances efficiency, and ensures long-term reliability of solar energy systems.",
+'pvsc.subheadline' : "Innovation and Green Energy",
+'pvsc.text2' : "We are developing an innovative application that will address the challenges associated with designing photovoltaic systems. Our goal is to provide users with a tool that considers electricity prices, time-differentiated tariffs, and the legal frameworks of individual countries in the region. Furthermore, we will implement artificial intelligence to search for products, provide recommendations, and optimize responses to generate designs in a matter of minutes, instead of weeks.",
+'pvsc.text3' : "This application will resolve the uncertainty of investors in renewable energy sources, optimize small power plants according to consumption and the local energy distributor, and provide accurate documentation with minimal user input. Also, we encourage existing electric power consumers to invest in photovoltaic power plants for their own needs, using artificial intelligence to assist in selecting equipment based on availability, price range, and location. Through monitoring of production and consumption, the application will provide analyses and insights necessary for efficient use of renewable energy sources.",
 
+'edu.headline' : "Developing Knowledge through Interactive Learning from First to Eighth Grade",
+'edu.text1' : "Eduvision is an innovative educational platform that provides comprehensive learning for students from first to eighth grade. This interactive platform is exclusively focused on education, offering users a unique learning experience. Through advanced technologies and customized lessons, Eduvision encourages students to develop knowledge and skills. It is solely dedicated to education, offering high-quality learning resources.",
+'edu.subheadline' : "Refresh Your Education with Eduvision",
+'edu.text2' : "Eduvision is designed to enable users interactive learning without distractions. The platform focuses on creating a stimulating environment for education. All users have the opportunity to explore and assimilate material in a way tailored to their needs, providing an unparalleled educational experience.",
+
+      
+      
+      
+      
+      'live.project':"Live Projekt",     
+      'Category':'Category', 
+      'category.app':'App',
+      'category.ener':'Energetics',
 
 
       'footer.paragraf':'Crafting IT solutions can pose significant challenges, especially for those without a technical background. Collaborate with us, bringing your ideas to the table, and leverage our technical expertise to create a top-tier final product that will elevate your business',
@@ -111,6 +137,8 @@ export const routes = {
         'nav.services': 'Usluge',
         'nav.portfolio': 'Portfelj',
         'nav.Contact': 'Kontakt',
+        'nav.projectDetail':'Izrada Projekta',
+        'nav.project':'Projekt',
         'ser.headline':'Naše Usluge',
         'hero.headline': 'Kreirajte svoj put uspjeha u digitalnom svijetu uz ',
         'hero.digiralArena':'Digital Arenu',
@@ -185,6 +213,23 @@ export const routes = {
        'ser.iso-text':'U Digital Areni specijalizirani smo za pružanje sveobuhvatnih usluga revizije informacijskog sustava',
        'read-more': 'Pročitaj više',
        'baner.years':'godine u poslu' ,
+
+       'kauflandTitle':"Kaufland market",
+'kauflandText1':"Aplikacija k-marke(t) kao sastavni dio Kauflandove nagradne igre koja se odvijalau periodu od 30.08.2023. do 03.10.2023. Tijekom naradne igre korisnicu su svaki dan mogli dobiti bogate Kauflandove nagrade. Aplikacija je uspješno isporučena naručitelju te je zadovoljila uslugom u svkom aspektu. Za izradu aplikacije je korišten NUXT kao 'fullstack' javascript framework",
+ 'kauflandSubheadline':"Interaktivna aplikacija u kojoj kupci osvajaju  nagrade",
+ 'kauflandText2':"Prvih 1000 korisnika koji imaju najbolje rezultate na rang- listi u svoj pretinac dobivaju kod kojim ostvaruju pravo na dnevnu nagradu – jedan proizvod Kauflandove robne marke",
+ 
+ 'pvsc.headline': "Simulacija troškova i učinkovitosti solarnih elektrana",
+'pvsc.text1': "Softverska platforma pruža sveobuhvatno rješenje za sve faze razvoja solarnih elektrana. Uključuje alate za dizajn koji omogućuju precizno planiranje i vizualizaciju, praćenje proizvodnje energije te sustave održavanja. Osim toga, softver nudi mogućnost odabira opreme koja je ključna za optimalno funkcioniranje solarnih elektrana. Integriranjem ovih ključnih aspekata, naša platforma olakšava upravljanje, povećava učinkovitost i osigurava dugoročnu pouzdanost solarnih energetskih sustava.",
+'pvsc.subheadline': "Inovativnost i zelena energija",
+'pvsc.text2': "Razvijamo inovativnu aplikaciju koja će riješiti izazove povezane s projektiranjem fotovoltačkih sustava. Naš cilj je pružiti korisnicima alat koji uzima u obzir cijene električne energije, vremenski diferencirane tarife i zakonske okvire pojedinih zemalja u regiji. Nadalje, implementirat ćemo umjetnu inteligenciju za pretraživanje proizvoda, davanje preporuka i optimizaciju odgovora kako bismo generirali dizajn u pitanju minuta, umjesto tjednima.",
+'pvsc.text3': "Ova aplikacija će riješiti neizvjesnost investitora u obnovljive izvore energije, optimizirati male elektrane prema potrošnji i lokalnom distributeru energije, te pružiti točnu dokumentaciju s minimalnim unosima korisnika. Također, potičemo postojeće potrošače električne energije da ulažu u fotonaponske elektrane za vlastite potrebe, koristeći umjetnu inteligenciju za pomoć pri odabiru opreme prema dostupnosti, cjenovnom rasponu i lokaciji. Kroz praćenje proizvodnje i potrošnje, aplikacija će pružati analize i uvide potrebne za efikasno korištenje obnovljivih izvora energije.",
+
+ 
+ 'live.project':"Projekt",     
+ 'Category':'Kategorija',
+ 'category.app':'Aplikacija',
+ 'category.ener':'Energetika',
 
        'footer.paragraf':'Izrada IT rješenja može predstavljati značajne izazove, posebno za one bez tehničkog znanja. Surađujte s nama, iznesite svoje ideje na stol i iskoristite našu tehničku stručnost za stvaranje vrhunskog konačnog proizvoda koji će unaprijediti vaše poslovanje',
 
