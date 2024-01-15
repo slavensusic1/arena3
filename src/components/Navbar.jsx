@@ -21,7 +21,7 @@ const Navbar = ({
 
   return (
     <div className={`fixed top-0 w-full z-50 transition duration-500 ease-in-out ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center py-3 md:py-4">
          {/* <img src={logo} alt="" /> */}
           <div className="flex items-center justify-center px-5">
