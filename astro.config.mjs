@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 
-import vercel from "@astrojs/vercel/serverless";
+// import vercel from "@astrojs/vercel/serverless"; // Commented out for static site generation
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,6 +13,6 @@ export default defineConfig({
   bundle: {
     external: ['prop-types'] // Add 'prop-types' as an external dependency
   },
-  output: "server",
-  adapter: vercel()
+  output: "static", // Changed from "server" to "static"
+  // adapter: vercel() // Commented out for static site generation
 });

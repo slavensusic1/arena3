@@ -1,4 +1,8 @@
----
-// return Astro.redirect('en/');
----
-<meta http-equiv="refresh" content="0;url=/en/" />
+<!-- ---
+// Place this at the top of your Astro component
+if (typeof window === 'undefined') {
+    return Astro.redirect('/en/');
+}
+--- -->
+
+ <meta http-equiv="refresh" content="0;url=/en/" /> 
