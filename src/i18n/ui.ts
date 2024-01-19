@@ -256,6 +256,12 @@ export const ui = {
     "work.proces.DesignHeadline": "Dizajn i razvoj",
     "work.proces.DesignText":
       "U Digital Arena, pretvaramo ideje u stvarnost kroz vrhunski dizajn i razvoj. Naš stručni tim stvara rješenja koja ne samo da ispunjavaju, već i nadmašuju očekivanja.",
+      "edu.headline": "Razvijanje znanja kroz interaktivno učenje od prvog do osmog razreda",
+"edu.text1":
+"Eduvizija je inovativna obrazovna platforma koja pruža sveobuhvatno učenje za učenike od prvog do osmog razreda. Ova interaktivna platforma usmjerena je isključivo na obrazovanje, nudeći korisnicima jedinstveno iskustvo učenja. Kroz napredne tehnologije i prilagođene lekcije, Eduvizija potiče učenike na razvijanje znanja i vještina. Posvećena je isključivo obrazovanju, nudeći visokokvalitetne obrazovne resurse.",
+"edu.subheadline": "Osvježite svoje obrazovanje s Eduvizijom",
+"edu.text2":
+"Eduvizija je dizajnirana kako bi korisnicima omogućila interaktivno učenje bez ometanja. Platforma se fokusira na stvaranje poticajnog okruženja za obrazovanje. Svi korisnici imaju priliku istraživati i usvajati materijale na način prilagođen njihovim potrebama, pružajući neusporedivo obrazovno iskustvo.",
 
     "work.proces.InstallHeadline": "Instalacija i testiranje",
     "work.proces.InstallText":
