@@ -11,7 +11,14 @@ import eduvizija  from '../../assets/Eduvizija.jpg'
 
 
 
-function Blogs({lang,subHeadline,headline, apps, miss,energetics}) {
+function Blogs({lang,subHeadline,headline, apps, miss,energetics, banksTitle, banks1, banks2,
+  banks3,
+  banks4,
+  banks5,
+  banks6}) {
+
+
+
   const blogContent = [
     { id: 1, headline: 'PV Smart Click', category: [apps, ' | ', energetics], src: pvSmartclick },
     { id: 2, headline: 'Kaufland marke(t)', category: [apps], src: market },
@@ -141,17 +148,17 @@ function Blogs({lang,subHeadline,headline, apps, miss,energetics}) {
 
       <div className="grid max-w-4xl mx-auto grid-cols-1 md:grid-cols-2">
         {razno ?
-          filteredTabs.map((tab) => (
-            <div key={tab.id} className="border p-4 m-4">
-              <p className="font-bold mb-2 text-left text-2xl">{tab.category}</p>
-              <ul className="list-disc ">
-                {tab.content.map((item, index) => (
-                  <li key={index} className="mb-2">{item}</li>
-                ))}
-              </ul>
-            </div>
-          )) :
-          ''}
+        <div> <ul>
+         <li>{energetics}</li>
+          <li>{banks1}</li>
+          <li>{banks2}</li>
+          <li>{banks3}</li>
+          <li>{banks4}</li>
+          <li>{banks5}</li>
+          <li>{banks6}</li>
+        </ul>
+        </div>
+          : ''}
       </div>
     </div>
   );
