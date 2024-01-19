@@ -136,7 +136,7 @@ export const ui = {
       "This application will resolve the uncertainty of investors in renewable energy sources, optimize small power plants according to consumption and the local energy distributor, and provide accurate documentation with minimal user input. Also, we encourage existing electric power consumers to invest in photovoltaic power plants for their own needs, using artificial intelligence to assist in selecting equipment based on availability, price range, and location. Through monitoring of production and consumption, the application will provide analyses and insights necessary for efficient use of renewable energy sources.",
  "banks.title": "Banks",
 
-      "Banks.1": "Cash Order Module",
+ 'banks.listitem1': "Cash Order Module",
       "Banks.2": "Cash Loan Module",
       "Banks.3": "Mobile Banking and Omnichannel (frontend development)",
       "Banks.4":
@@ -164,11 +164,10 @@ export const ui = {
       
       "tele.1": "LH1E – Implementation of Beacon 1e",
       
-      "tele.1": "LCM Tool 2.0 – Maintenance of Legacy Components",
+      "tele.2": "LCM Tool 2.0 – Maintenance of Legacy Components",
       
-      "tele.1": "CSDP - Customer Support Platform",
+      "tele.3": "CSDP - Customer Support Platform",    
       
-      
 
 
 
@@ -177,8 +176,7 @@ export const ui = {
 
 
 
-    "edu.headline":
-      "Developing Knowledge through Interactive Learning from First to Eighth Grade",
+    "edu.headline":"Developing Knowledge through Interactive Learning from First to Eighth Grade",
     "edu.text1":
       "Eduvision is an innovative educational platform that provides comprehensive learning for students from first to eighth grade. This interactive platform is exclusively focused on education, offering users a unique learning experience. Through advanced technologies and customized lessons, Eduvision encourages students to develop knowledge and skills. It is solely dedicated to education, offering high-quality learning resources.",
     "edu.subheadline": "Refresh Your Education with Eduvision",
@@ -190,8 +188,7 @@ export const ui = {
     "category.app": "App",
     "category.ener": "Energetics",
 
-    "footer.paragraf":
-      "Crafting IT solutions can pose significant challenges, especially for those without a technical background. Collaborate with us, bringing your ideas to the table, and leverage our technical expertise to create a top-tier final product that will elevate your business",
+    "footer.paragraf":"Crafting IT solutions can pose significant challenges, especially for those without a technical background. Collaborate with us, bringing your ideas to the table, and leverage our technical expertise to create a top-tier final product that will elevate your business",
     "footer.energetika": "Energetics",
     "footer.locationsHR": "Headquarters in Croatia",
     "footer.locationsBiH": "Headquarters in BiH",
@@ -240,7 +237,7 @@ export const ui = {
     "portfolio.apps": "Aplikacije",
     "portfolio.Miscellaneous": "Razno",
 
-    partners: "Naši partneri",
+    "partners": "Naši partneri",
 
     "about.TeamworkHeadline": "Timski Rad",
     "about.Teamwork":
@@ -326,7 +323,7 @@ export const ui = {
     //"banks.title": "Banke",
      "banks.title": "Banke",
 
-    'Banks.1': "Modul za narudžbu gotovine",
+     'banks.listitem1': "Modul za narudžbu gotovine",
     "Banks.2": "Modul za gotovinske zajmove",
     "Banks.3": "Mobilno bankarstvo i Omnichannel (razvoj frontend-a)",
     "Banks.4":
@@ -342,16 +339,16 @@ export const ui = {
     "d.sector.2": "Aplikacija skladišta za područja pogođena potresom za vladu",
     "d.sector.3": "Aplikacija za obračun plaće za drugi dohodak vlade",
 
-    "Trgovina.title": "Trgovina",
+    "Trade.title": "Trgovina",
 
-    "Trgovina.1": "Implementacija ERP/POS u maloprodaji",
-    "Trgovina.2": "Automatske narudžbe za POS",
-    "Trgovina.3": "Mjenjačnice za male trgovine",
-    "Trgovina.4": "WEB integracija blagajne sa ERP-om",
-    "Trgovina.5": "Automatski unos radnog vremena i izvoz izvješća",
-    "Trgovina.6": "Integracija s tvrtkom za distribuciju paketa",
-    "Trgovina.7": "Integracija za EDI razmjenu",
-    "Trgovina.8": "Integracija za aplikaciju plaćanja računa",
+    "Trade.1": "Implementacija ERP/POS u maloprodaji",
+    "Trade.2": "Automatske narudžbe za POS",
+    "Trade.3": "Mjenjačnice za male trgovine",
+    "Trade.4": "WEB integracija blagajne sa ERP-om",
+    "Trade.5": "Automatski unos radnog vremena i izvoz izvješća",
+    "Trade.6": "Integracija s tvrtkom za distribuciju paketa",
+    "Trade.7": "Integracija za EDI razmjenu",
+    "Trade.8": "Integracija za aplikaciju plaćanja računa",
 
     "tele.title": "Telekomunikacije",
 

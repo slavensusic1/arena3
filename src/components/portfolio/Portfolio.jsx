@@ -11,11 +11,25 @@ import eduvizija  from '../../assets/Eduvizija.jpg'
 
 
 
-function Blogs({lang,subHeadline,headline, apps, miss,energetics, banksTitle, banks1, banks2,
-  banks3,
-  banks4,
-  banks5,
-  banks6}) {
+function Blogs({lang,subHeadline,headline,banksListItem, apps, miss,energetics, banksTitle, banks1, banks2, banks3,banks4,banks5,banks6,
+d1,d2,d3,d4,
+     t0,
+t1,
+t2,
+t3,
+ t4,
+ t5,
+ t6,
+ t7,
+ t8,
+ te1,
+
+ te2,
+ te3,
+
+ te4,
+
+}) {
 
 
 
@@ -69,6 +83,7 @@ function Blogs({lang,subHeadline,headline, apps, miss,energetics, banksTitle, ba
             <p className="text-green-500 text-left font-bold text-lg md:text-2xl">
              {headline}
             </p>
+          
             <h2 className="text-left font-bold text-4xl md:text-4xl">
             {subHeadline}
             </h2>
@@ -126,8 +141,8 @@ function Blogs({lang,subHeadline,headline, apps, miss,energetics, banksTitle, ba
               </div>
             </a>
             <div className="mt-4 flex flex-col items-start justify-start opacity-0 bg-white transition-all duration-500 transform translate-y-[-4rem] 
-              group-hover:opacity-100 group-hover:translate-y-[-7rem] mx-2 py-4 rounded-lg ease-in">
-              <h2 className="text-lg text-center opacity-0 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-5 duration-500 delay-200 text-green-500 font-semibold">{item.category}</h2>
+              group text-lg-hover:opacity-100 group text-lg-hover:translate-y-[-7rem] mx-2 py-4 rounded-lg ease-in">
+              <h2 className="text-lg text-center opacity-0 group text-lg-hover:opacity-100 -translate-x-0 group text-lg-hover:translate-x-5 duration-500 delay-200 text-green-500 font-semibold">{item.category}</h2>
               <a
                   href={`/${lang}/portfolio/${item.headline
                   .toLowerCase()
@@ -137,27 +152,55 @@ function Blogs({lang,subHeadline,headline, apps, miss,energetics, banksTitle, ba
                   .replaceAll("š", "s")
                   .replaceAll("!", "")
                   .replaceAll("?", "")}`}
-                className="text-lg text-black transform translate-x-20 group-hover:translate-x-5 duration-500 delay-500"
+                className="text-lg text-black transform translate-x-20 group text-lg-hover:translate-x-5 duration-500 delay-500"
               >
-                <p className="text-base text-start opacity-0 group-hover:opacity-100 translate-x-20 group-hover:-translate-x-0 duration-500 delay-200 text-black font-semibold ">{item.headline}</p>
+                <p className="text-base text-start opacity-0 group text-lg-hover:opacity-100 translate-x-20 group text-lg-hover:-translate-x-0 duration-500 delay-200 text-black font-semibold ">{item.headline}</p>
               </a>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="grid max-w-4xl mx-auto grid-cols-1 md:grid-cols-2">
+      <div className="">
         {razno ?
-        <div> <ul>
-         <li>{energetics}</li>
-          <li>{banks1}</li>
-          <li>{banks2}</li>
-          <li>{banks3}</li>
-          <li>{banks4}</li>
-          <li>{banks5}</li>
-          <li>{banks6}</li>
-        </ul>
-        </div>
+      <div className="grid max-w-4xl mx-auto grid-cols-1 md:grid-cols-2 gap-10 p-6  shadow-lg rounded-lg">
+      <ul className="space-y-4">
+        <li className="font-semibold text-xl text-green-600">{banksTitle}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{banks1}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{banks2}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{banks3}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{banks4}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{banks5}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{banks6}</li>
+      </ul>
+    
+      <ul className="space-y-4">
+        <li className="font-semibold text-xl text-green-600">{d1}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{d2}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{d3}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{d4}</li>
+      </ul>
+    
+      <ul className="space-y-4">
+        <li className="font-semibold text-xl text-green-600">{t0}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{t2}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{t3}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{t4}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{t5}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{t6}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{t7}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{t8}</li>
+      </ul>  
+    
+      <ul className="space-y-4">
+        <li className="font-semibold text-xl text-green-600">{te1}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{te2}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{te3}</li>
+        <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{te4}</li>
+      </ul>  
+    </div>
+    
+      
           : ''}
       </div>
     </div>
