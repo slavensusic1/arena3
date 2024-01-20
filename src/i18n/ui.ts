@@ -124,17 +124,38 @@ export const ui = {
     'kauflandSubheadline': "Interactive application where customers win prizes",
     'kauflandText2':
       "The first 1000 users with the best results on the leaderboard receive a code in their mailbox, entitling them to a daily prize – one Kaufland brand product",
-
-    "pvsc.title": "pvsmartclick",
-    "pvsc.headline": "Solar Power Plant Cost and Efficiency Simulation",
-    "pvsc.text1":
-      "The software platform provides a comprehensive solution for all phases of solar power plant development. It includes design tools that enable precise planning and visualization, energy production monitoring, and maintenance systems. Additionally, the software offers the ability to select equipment crucial for the optimal functioning of solar power plants. By integrating these key aspects, our platform facilitates management, enhances efficiency, and ensures long-term reliability of solar energy systems.",
-    "pvsc.subheadline": "Innovation and Green Energy",
-    "pvsc.text2":
-      "We are developing an innovative application that will address the challenges associated with designing photovoltaic systems. Our goal is to provide users with a tool that considers electricity prices, time-differentiated tariffs, and the legal frameworks of individual countries in the region. Furthermore, we will implement artificial intelligence to search for products, provide recommendations, and optimize responses to generate designs in a matter of minutes, instead of weeks.",
-    "pvsc.text3":
-      "This application will resolve the uncertainty of investors in renewable energy sources, optimize small power plants according to consumption and the local energy distributor, and provide accurate documentation with minimal user input. Also, we encourage existing electric power consumers to invest in photovoltaic power plants for their own needs, using artificial intelligence to assist in selecting equipment based on availability, price range, and location. Through monitoring of production and consumption, the application will provide analyses and insights necessary for efficient use of renewable energy sources.",
- "banks.title": "Banks",
+      "pvsc.headline": "PVSmartClick: Innovative Online Platform",
+      "pvsc.text1": "PVSmartClick is an online platform that efficiently connects investors interested in building solar power plants, such as households and businesses, with banking institutions for project financing and experts in solar panel installation. The platform enables investors to quickly and accurately obtain information on the profitability of solar power plant projects; while easing the process of arranging credit engagements for banks and the design process for installers.",
+      "pvsc.subheadline": "PVSmartClick helps establish communication between investors, banks, and installers.",
+      
+      // "pvsc.text2": "PVSmartClick simplifies the design process using our advanced optimization tool, enabling fast and accurate planning, with minimal errors and maximum efficiency of the solar power plant. We automate the report generation process for investors, facilitating their business decision-making on investments.",
+      "pvsc.headline2": "PVSmartClick simplifies the design process using our advanced optimization tool, enabling fast and accurate planning, with minimal errors and maximum efficiency of the solar power plant. We automate the report generation process for investors, facilitating their business decision-making on investments.",
+      "pvsc.headline3":"Key Features and Functionalities",
+      
+      "pvsc-list1":"1. Profitability Analyses: Detailed analyses for households and entrepreneurs in Bosnia and Herzegovina and Croatia, including technical specifications.",
+      
+      "pvsc-list2":"2. Precise Consumption Analyses: Profitability analyses based on monthly or hourly consumption data, in accordance with renewable energy laws and local energy prices.",
+      
+      "pvsc-list3":"3. Various Analysis Models: Choice between different analysis models, including net metering, net billing, and 'zero feed in'.",
+      
+      "pvsc-list4":"4. Advanced Reports: Automatic generation of reports useful for all involved parties (Investors, Designers, Banks).",
+      
+      "pvsc-list5":"5. Investor's Guide: Detailed 'step by step' instructions for building solar power plants.",
+      
+      "pvsc-list6":"6. Integration with Insolation Tools: Connecting with tools like 'PVGIS' and 'NREL' for insolation and production estimation.",
+      
+      "pvsc-list7":"7. Integration with Professional Tools: Connecting with 'PV*Sol' and 'PVsyst' for 3D modeling of solar power plants.",
+      
+      "pvsc-list8":"8. Connecting with Banks and Installers: Linking investors with banks and installers.",
+      
+      "pvsc-list9":"9. Customizable Energy Prices: Analyses at customized prices for specific needs.",
+    
+      "pvsc-list10":"10. Automatic Calculation of Area, Slope, and Orientation: Simple online assessment of the area, slope, orientation, and insolation of the roof for available regions.",
+//     "pvsc.text2":
+//       "We are developing an innovative application that will address the challenges associated with designing photovoltaic systems. Our goal is to provide users with a tool that considers electricity prices, time-differentiated tariffs, and the legal frameworks of individual countries in the region. Furthermore, we will implement artificial intelligence to search for products, provide recommendations, and optimize responses to generate designs in a matter of minutes, instead of weeks.",
+//     "pvsc.text3":
+//       "This application will resolve the uncertainty of investors in renewable energy sources, optimize small power plants according to consumption and the local energy distributor, and provide accurate documentation with minimal user input. Also, we encourage existing electric power consumers to invest in photovoltaic power plants for their own needs, using artificial intelligence to assist in selecting equipment based on availability, price range, and location. Through monitoring of production and consumption, the application will provide analyses and insights necessary for efficient use of renewable energy sources.",
+//  "banks.title": "Banks",
 
  'banks.listitem1': "Cash Order Module",
       "Banks.2": "Cash Loan Module",
@@ -312,14 +333,36 @@ export const ui = {
     'kauflandText2':
       "Prvih 1000 korisnika koji imaju najbolje rezultate na rang- listi u svoj pretinac dobivaju kod kojim ostvaruju pravo na dnevnu nagradu – jedan proizvod Kauflandove robne marke",
 
-    "pvsc.headline": "Simulacija troškova i učinkovitosti solarnih elektrana",
-    "pvsc.text1":
-      "Softverska platforma pruža sveobuhvatno rješenje za sve faze razvoja solarnih elektrana. Uključuje alate za dizajn koji omogućuju precizno planiranje i vizualizaciju, praćenje proizvodnje energije te sustave održavanja. Osim toga, softver nudi mogućnost odabira opreme koja je ključna za optimalno funkcioniranje solarnih elektrana. Integriranjem ovih ključnih aspekata, naša platforma olakšava upravljanje, povećava učinkovitost i osigurava dugoročnu pouzdanost solarnih energetskih sustava.",
-    "pvsc.subheadline": "Inovativnost i zelena energija",
-    "pvsc.text2":
-      "Razvijamo inovativnu aplikaciju koja će riješiti izazove povezane s projektiranjem fotovoltačkih sustava. Naš cilj je pružiti korisnicima alat koji uzima u obzir cijene električne energije, vremenski diferencirane tarife i zakonske okvire pojedinih zemalja u regiji. Nadalje, implementirat ćemo umjetnu inteligenciju za pretraživanje proizvoda, davanje preporuka i optimizaciju odgovora kako bismo generirali dizajn u pitanju minuta, umjesto tjednima.",
-    "pvsc.text3":
-      "Ova aplikacija će riješiti neizvjesnost investitora u obnovljive izvore energije, optimizirati male elektrane prema potrošnji i lokalnom distributeru energije, te pružiti točnu dokumentaciju s minimalnim unosima korisnika. Također, potičemo postojeće potrošače električne energije da ulažu u fotonaponske elektrane za vlastite potrebe, koristeći umjetnu inteligenciju za pomoć pri odabiru opreme prema dostupnosti, cjenovnom rasponu i lokaciji. Kroz praćenje proizvodnje i potrošnje, aplikacija će pružati analize i uvide potrebne za efikasno korištenje obnovljivih izvora energije.",
+    "pvsc.headline": "PVSmartClick: Inovativna Online Platforma",
+    "pvsc.text1": "PVSmartClick je online platforma koja efikasno povezuje investitore zainteresirane za izgradnju solarnih elektrana, poput kućanstava i poduzeća, s bankarskim institucijama za kreditiranje projekata i stručnjacima za instalaciju solarnih panela. Platforma omogućava investitorima da brzo i precizno dobiju informacije o isplativosti projekta solarnih elektrana; dok bankama olakšava dogovaranje kreditnih angažmana a instalaterima proces projektiranja.",
+    "pvsc.subheadline": "PVSmartClick pomaže uspostaviti međusobnu komunikaciju između investitora,banke i instalatera.",
+    
+    // "pvsc.text2": "PVSmartClick olakšava projektiranje koristeći naš napredni alat za optimizaciju, što omogućuje brzo i precizno planiranje, uz minimalne pogreške i maksimalnu efikasnost solarne elektrane. Automatiziramo proces generiranja izvješća investitorima, koji im olakšava donošenje poslovne odluke o ulaganju.",
+   "pvsc.headline2": "PVSmartClick olakšava projektiranje koristeći naš napredni alat za optimizaciju, što omogućuje brzo i precizno planiranje, uz minimalne pogreške i maksimalnu efikasnost solarne elektrane. Automatiziramo proces generiranja izvješća investitorima, koji im olakšava donošenje poslovne odluke o ulaganju.",
+   "pvsc.headline3":"Ključne Karakteristike i Funkcionalnosti",
+
+   "pvsc-list1":"1. Analize isplativosti: Detaljne analize za kućanstva i poduzetnike u BIH i Hrvatskoj, uključujući tehničke specifikacije.",
+
+   "pvsc-list2":"2. Precizne analize potrošnje: Analize isplativosti na temelju mjesečnih ili satnih podataka o potrošnji, u skladu sa zakonima o obnovljivim izvorima energije i lokalnim cijenama energije.",
+   
+   "pvsc-list3":"3. Različiti modeli analize: Izbor između različitih modela analize, uključujući neto mjerenje, neto obračun i 'zero feed in'.",
+   
+   "pvsc-list4":"4. Napredni izvještaji: Automatsko generiranje izvještaja korisnih za sve uključene strane (Investitore, Projektante, Banke).",
+   
+   "pvsc-list5":"5. Vodič za investitore: Detaljne upute 'korak po korak' za izgradnju solarnih elektrana.",
+   
+   "pvsc-list6":"6. Integracija s alatima za insolaciju: Povezivanje s alatima poput 'PVGIS' i 'NREL' za procjenu insolacije i proizvodnje.",
+   
+   "pvsc-list7":"7. Integracija s profesionalnim alatima: Povezivanje s 'PV*Sol' i 'PVsyst' za 3D modeliranje solarnih elektrana.",
+   
+   "pvsc-list8":"8. Povezivanje s bankama i instalaterima: Povezuje investitore s bankama i instalaterima.",
+   
+   "pvsc-list9":"9. Prilagodljive cijene energije: Analize po prilagođenim cijenama za specifične potrebe.",
+   
+   "pvsc-list10":"10. Automatski izračun površine, nagiba i orijentacije: Jednostavna online procjena površine, nagiba, orijentacije i insolacije krova za dostupne regije.",
+
+
+
 
     "live.project": "Projekt",
     'Category': "Kategorija",
