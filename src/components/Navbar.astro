@@ -2,11 +2,14 @@
 import { languages } from '../i18n/ui';
 import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
 
-
 const currentUrl = new URL(Astro.url);
 const currentPath = currentUrl.pathname;
-const currentLang = currentPath.split('/')[1]; // Assuming language code is the first segment of the path
+let currentLang = currentPath.split('/')[1]; // Assuming language code is the first segment of the path
 
+// Fallback language setting
+const defaultLang = 'en'; // Default to English
+
+// Function to construct URL for a given language
 const constructUrlForLanguage = (lang) => {
   if (languages.hasOwnProperty(currentLang)) {
     return currentPath.replace(`/${currentLang}`, `/${lang}`);
@@ -15,35 +18,42 @@ const constructUrlForLanguage = (lang) => {
   }
 };
 
-const languageLinks = Object.entries(languages).map(([lang, label]) => {
-  return {
-    href: constructUrlForLanguage(lang),
-    label: label
-  };
-});
-const lang = getLangFromUrl(Astro.url);
+// Dynamically set the language based on user preference or fallback
+// Here you would implement the logic to detect if the user is from Croatia
+// This could be a simple check against the browser's language settings or a more complex server-side check
+// For simplicity, this example checks the browser language
+if (!languages.hasOwnProperty(currentLang)) {
+  currentLang = navigator.language.startsWith('hr') ? 'hr' : defaultLang;
+}
+
+const languageLinks = Object.entries(languages).map(([lang, label]) => ({
+  href: constructUrlForLanguage(lang),
+  label: label
+}));
+
+const lang = getLangFromUrl(Astro.url) || currentLang; // Use detected language or fallback to currentLang
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
-import logo from '../assets/digitalarena.png'
+
+import logo from '../assets/digitalarena.png';
 import { Image } from 'astro:assets';
 import LanguagePicker from './LanguagePicker.astro';
-import Navbar from './Navbar.jsx'
+import Navbar from './Navbar.jsx';
+
 const languageArray = Object.entries(languages).map(([code, label]) => ({ code, label }));
+
 ---
 
-  <Navbar 
+<Navbar 
   currentUrl={currentUrl}
-    homeTex={t('nav.home')}
-    homeLink={`/${lang}/`}
-    services={t('nav.services')} 
-    servicesLink={`/${lang}/services`}
-    about={t('nav.about')} 
-    aboutLink={`/${lang}/about`}
-    portfolio={t('nav.portfolio')} 
-    portfolioLink={`/${lang}/portfolio`} 
-    languageLinks={languageLinks}
-    client:load
-  />
-
-  
-               
+  homeText={t('nav.home')}
+  homeLink={`/${lang}/`}
+  services={t('nav.services')} 
+  servicesLink={`/${lang}/services`}
+  about={t('nav.about')} 
+  aboutLink={`/${lang}/about`}
+  portfolio={t('nav.portfolio')} 
+  portfolioLink={`/${lang}/portfolio`} 
+  languageLinks={languageLinks}
+  client:load
+/>
