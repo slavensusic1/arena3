@@ -266,7 +266,7 @@ export const ui = {
 
     "about.GrowthHeadline": "Rast",
     "about.Growth":
-      "Rast nije samo cilj; to je neprekidno putovanje. U digital areni, njegujemo okruženje koje potiče individualni i kolektivni rast. Naša predanost osobnom i profesionalnom razvoju osigurava da je svaki član tima i organizacija kao cjelina na putu stalnog usavršavanja. Kako rastemo, tako raste i naša sposobnost pružanja izuzetne vrijednosti našim klijentima i dionicima.",
+      "Rast nije samo cilj; to je neprekidno putovanje. U Digital areni, njegujemo okruženje koje potiče individualni i kolektivni rast. Naša predanost osobnom i profesionalnom razvoju osigurava da je svaki član tima i organizacija kao cjelina na putu stalnog usavršavanja. Kako rastemo, tako raste i naša sposobnost pružanja izuzetne vrijednosti našim klijentima i dionicima.",
 
     "work.proces.headline": "PROCES RAZVOJA U 4 KORAKA",
     "work.proces.subHeadline": "Proces rada",

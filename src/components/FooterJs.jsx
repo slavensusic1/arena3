@@ -92,7 +92,7 @@ const FooterJs = ({it,ict,energetics, isoGdprCisco,translatedParagraf,
 
                 Split, Trg Hrvatske bratske zajednice 8
               </p>
-              <p className="mb-4 flex items-start justify-start md:justify-start text-neutral-200" data-cy="uredi-im">
+              {/* <p className="mb-4 flex items-start justify-start md:justify-start text-neutral-200" data-cy="uredi-im">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -104,7 +104,7 @@ const FooterJs = ({it,ict,energetics, isoGdprCisco,translatedParagraf,
                     d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
                 </svg>
                 Šetalište S. Radića 16, Imotski
-              </p>
+              </p> */}
 
               <p className="mb-4 text-neutral-200 flex items-start justify-start md:justify-start" data-cy="tel-hr">
                 <svg
@@ -128,7 +128,7 @@ const FooterJs = ({it,ict,energetics, isoGdprCisco,translatedParagraf,
           className="mb-4 flex justify-left font-bold  text-xl pb-2 md:justify-start border-b text-gray-200" data-cy="uredi-bih">
          {urediBiH}
         </h6>
-        <p className="mb-4 flex items-start justify-start md:justify-start text-neutral-200" data-cy="ured-lju">
+        {/* <p className="mb-4 flex items-start justify-start md:justify-start text-neutral-200" data-cy="ured-lju">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -140,7 +140,7 @@ const FooterJs = ({it,ict,energetics, isoGdprCisco,translatedParagraf,
               d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
           </svg>
           Ljubuški, Šipovača 84
-        </p>
+        </p> */}
         <p className="mb-4 flex items-start justify-start md:justify-start text-neutral-200" data-cy="uredi-cap">
           <svg
             xmlns="http://www.w3.org/2000/svg"

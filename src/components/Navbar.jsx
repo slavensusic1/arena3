@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import logo from '../assets/digitalarena.png';
 
 const Navbar = ({
-  homeTex, homeLink, services, servicesLink,
+  homeText, homeLink, services, servicesLink,
   about, aboutLink, portfolio, portfolioLink, languageLinks
 }) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -21,7 +21,7 @@ const Navbar = ({
 
   return (
     <div className={`fixed top-0 w-full z-50 transition duration-500 ease-in-out ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
-      <div className="max-w-7xl mx-auto">
+      <div className="container mx-auto">
         <div className="flex justify-between items-center py-3 md:py-4">
          {/* <img src={logo} alt="" /> */}
           <div className="flex items-center justify-center px-5">
@@ -32,7 +32,7 @@ const Navbar = ({
 
           {/* Navigation links for large screens */}
           <div className="hidden lg:flex space-x-8 px-5">
-           <a href={homeLink} className={`text-gray-100 hover:text-green-600 text-xl ${isScrolled ? 'text-green-500' : ''}`}>{homeTex}</a>
+           <a href={homeLink} className={`text-gray-100 hover:text-green-600 text-xl ${isScrolled ? 'text-green-500' : ''}`}>{homeText}</a>
             <a href={aboutLink} className={`text-gray-100 hover:text-green-600 text-xl ${isScrolled ? 'text-green-500' : ''}`}>{about}</a>
             <a href={servicesLink} className={`text-gray-100 hover:text-green-600 text-xl ${isScrolled ? 'text-green-500' : ''}`}>{services}</a>
             <a href={portfolioLink} className={`text-gray-100 hover:text-green-600 text-xl ${isScrolled ? 'text-green-500' : ''}`}>{portfolio}</a>
@@ -78,7 +78,7 @@ const Navbar = ({
             </div>
             <div className="mt-6">
             <nav className="grid gap-y-4">
-  <a href={homeLink} className="px-4 py-2 text-gray-900 hover:text-green-600 font-medium rounded-md hover:bg-gray-50">{homeTex}</a>
+  <a href={homeLink} className="px-4 py-2 text-gray-900 hover:text-green-600 font-medium rounded-md hover:bg-gray-50">{homeText}</a>
   <a href={aboutLink} className="px-4 py-2 text-gray-900 hover:text-green-600 font-medium rounded-md hover:bg-gray-50">{about}</a>
   <a href={servicesLink} className="px-4 py-2 text-gray-900 hover:text-green-600 font-medium rounded-md hover:bg-gray-50">{services}</a>
   <a href={portfolioLink} className="px-4 py-2 text-gray-900 hover:text-green-600 font-medium rounded-md hover:bg-gray-50">{portfolio}</a>
