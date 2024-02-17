@@ -18,6 +18,7 @@ const constructUrlForLanguage = (lang) => {
   }
 };
 
+
 // Dynamically set the language based on user preference or fallback
 // Here you would implement the logic to detect if the user is from Croatia
 // This could be a simple check against the browser's language settings or a more complex server-side check
@@ -26,12 +27,16 @@ if (!languages.hasOwnProperty(currentLang)) {
   currentLang = navigator.language.startsWith('hr') ? 'hr' : defaultLang;
 }
 
-const languageLinks = Object.entries(languages).map(([lang, label]) => ({
+
+const languageLinks = Object.entries(languages).map(([lang, label, icons]) => ({
   href: constructUrlForLanguage(lang),
-  label: label
+  label: label,
+  icons:icons
+  
 }));
 
 const lang = getLangFromUrl(Astro.url) || currentLang; // Use detected language or fallback to currentLang
+let icons= lang === "en" ? "adsd" : "123123"
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 

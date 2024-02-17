@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../assets/digitalarena.png';
-
+import CroFlag from '../assets/Cro.svg'
+import UKFlag from '../assets/UK.svg'
 const Navbar = ({
   homeText, homeLink, services, servicesLink,
   about, aboutLink, portfolio, portfolioLink, languageLinks
 }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -39,13 +45,63 @@ const Navbar = ({
         
             {languageLinks.map(({ href, label }, index) => (
                 <ul className={`text-gray-100 hover:text-green-600 text-xl list-none ${isScrolled ? 'text-green-500' : ''}`}>
-        <li key={index}>
+        {/* <li key={index}>
           <a href={href} className={`text-gray-100 hover:text-green-600 text-xl list-none ${isScrolled ? 'text-green-500' : ''}`}>{label}</a>
-        </li>
+        </li> */}
+     
         </ul>
        
       ))}
-            {/* Add other links similarly */}
+        {/* ---------------------------------------------------------------------- */}
+<div className="relative inline-block text-left">
+      <div>
+        <button
+          type="button"
+          onClick={toggleDropdown}
+          className={`inline-flex justify-center w-full px-4 py-2 text-sm font-medium  rounded-md  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500  ${isScrolled ? 'text-green-500' : 'text-white'}   ${isScrolled ? 'hover:bg-gray-200' : 'hover:bg-green-400'}`}
+          id="language-menu-button"
+          aria-expanded="true"
+          aria-haspopup="true"
+        >
+          
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+</svg>
+
+        </button>
+ 
+      </div>
+
+      {isOpen && (
+        <div
+          className="origin-top-right absolute right-0 mt-2 w-20 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+          role="menu"
+          aria-orientation="vertical"
+          aria-labelledby="language-menu-button"
+          tabIndex="-1"
+        >
+          <div className="py-1" role="none">
+            {languageLinks.map(({ href, label, icon }, index) => (
+              <a
+                key={index}
+                href={href}
+                className="block px-1 py-2 text-base text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem"
+                tabIndex="-1"
+                id={`language-menu-item-${index}`}
+              >
+                <span className="flex items-center justify-center w-full">
+                   {label === "HR" ? <img src={CroFlag.src} alt={label} className="w-6 h-5 mr-2" /> : <img src={UKFlag.src} alt={label} className="w-6 h-5 mr-2" /> }
+                   {console.log(label)}
+                  {label}
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
           </div>
 
           {/* Mobile menu button */}
@@ -85,6 +141,12 @@ const Navbar = ({
   {languageLinks.map(({ href, label }, index) => (
     <a key={index} href={href} className="px-4 py-2 text-green-600 hover:text-green-600 font-medium rounded-md hover:bg-gray-50">{label}</a>
   ))}
+
+
+  
+
+{/* --------------------------------------------------------------------------- */}
+
   {/* Add other links similarly */}
 </nav>
             </div>

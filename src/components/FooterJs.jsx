@@ -54,9 +54,9 @@ const FooterJs = ({it,ict,energetics, isoGdprCisco,translatedParagraf,
             <p className="mb-4">
               <a href={energetics} data-cy="it-energetics" className="text-neutral-200 hover:text-green-500 hover:underline">{translatedEnergetika}</a>
             </p>
-            <p>
+            {/* <p>
               <a href={isoGdprCisco} data-cy="it-iso" className="text-neutral-200 hover:text-green-500 hover:underline">GDPR ISO CISO</a>
-            </p>
+            </p> */}
           </div>
 
           <div className=" text-left">

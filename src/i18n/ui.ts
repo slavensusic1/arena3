@@ -1,6 +1,6 @@
 export const languages = {
   en: "EN",
-  hr: "HR",
+  hr:"HR"
 };
 
 export const defaultLang = "en";
@@ -37,7 +37,7 @@ export const ui = {
     "about.company.parag":
       "At Digital Arena, we are driven by a passion to deliver top-notch IT services for your business",
     "about.company.paragraf1":
-      "Our team of over 50 IT engineers, in partnership with leading firms, specializes in IT outsourcing and project development. We have notable collaborations with PBZ, Addiko Bank, Raiffeisen, Zagrebačka Banka, CROZ, Ericsson Nikola Tesla in Croatia, and have undertaken projects for the Croatian National Television and Post. With deep expertise in the TelCo and Banking sectors, our services span:",
+      "Our team of over 50 IT and Telecommunication engineers, in partnership with leading firms, specializes in IT outsourcing and project development. We have notable collaborations with A1, CROZ, Kaufland, LuminumICT, BlLog and Ericsson Nikola Tesla in Croatia, and have undertaken various smaller projects for different clients. With deep expertise in the TelCo and Banking sectors, our services span:",
 
     "about.company.paragraf2":
       "While these are our core strengths, we're adept at adapting to and learning new technologies as needed.",
@@ -80,7 +80,7 @@ export const ui = {
     "work.proces.ProjectHeadline": "Project Delivery",
     "work.proces.ProjectText":
       "Experience the culmination of precision and dedication at Digital Arena. Our project delivery is a testament to our commitment to excellence. From concept to completion, we ensure a smooth and successful journey for every project.",
-    'partners': "Our Partners",
+    partners: "Our Partners",
     "portfolio.headline": "RECENT WORKS",
     "portfolio.subHeadline": "Our Portfolio",
     "portfolio.apps": "Applications",
@@ -118,98 +118,106 @@ export const ui = {
     "about.Growth":
       "Growth is not just a destination; it's a continuous journey. At Digital Arena, we nurture an environment that encourages individual and collective growth. Our commitment to personal and professional development ensures that each team member and the organization as a whole is on a trajectory of constant improvement. As we grow, so does our capacity to deliver exceptional value to our clients and stakeholders.",
 
-    'kauflandTitle': "Kaufland Market",
-    'kauflandText1':
-      "The k-marke(t) application as an integral part of Kaufland's prize game, which took place from August 30, 2023, to October 3, 2023. During the prize game, users could win rich Kaufland prizes every day. The application was successfully delivered to the client and satisfied the service in every aspect. NUXT was used as a 'fullstack' JavaScript framework for the application development",
-    'kauflandSubheadline': "Interactive application where customers win prizes",
-    'kauflandText2':
+    "kauflandTitle": "Kaufland Market",
+    "kauflandText1": "The k-marke(t) application as an integral part of Kaufland's prize game, which took place from August 30, 2023, to October 3, 2023. During the prize game, users could win rich Kaufland prizes every day. The application was successfully delivered to the client and satisfied the service in every aspect. NUXT was used as a 'fullstack' JavaScript framework for the application development",
+    kauflandSubheadline: "Interactive application where customers win prizes",
+    kauflandText2:
       "The first 1000 users with the best results on the leaderboard receive a code in their mailbox, entitling them to a daily prize – one Kaufland brand product",
-      "pvsc.headline": "PVSmartClick: Innovative Online Platform",
-      "pvsc.text1": "PVSmartClick is an online platform that efficiently connects investors interested in building solar power plants, such as households and businesses, with banking institutions for project financing and experts in solar panel installation. The platform enables investors to quickly and accurately obtain information on the profitability of solar power plant projects; while easing the process of arranging credit engagements for banks and the design process for installers.",
-      "pvsc.subheadline": "PVSmartClick helps establish communication between investors, banks, and installers.",
-      
-      // "pvsc.text2": "PVSmartClick simplifies the design process using our advanced optimization tool, enabling fast and accurate planning, with minimal errors and maximum efficiency of the solar power plant. We automate the report generation process for investors, facilitating their business decision-making on investments.",
-      "pvsc.headline2": "PVSmartClick simplifies the design process using our advanced optimization tool, enabling fast and accurate planning, with minimal errors and maximum efficiency of the solar power plant. We automate the report generation process for investors, facilitating their business decision-making on investments.",
-      "pvsc.headline3":"Key Features and Functionalities",
-      
-      "pvsc-list1":"1. Profitability Analyses: Detailed analyses for households and entrepreneurs in Bosnia and Herzegovina and Croatia, including technical specifications.",
-      
-      "pvsc-list2":"2. Precise Consumption Analyses: Profitability analyses based on monthly or hourly consumption data, in accordance with renewable energy laws and local energy prices.",
-      
-      "pvsc-list3":"3. Various Analysis Models: Choice between different analysis models, including net metering, net billing, and 'zero feed in'.",
-      
-      "pvsc-list4":"4. Advanced Reports: Automatic generation of reports useful for all involved parties (Investors, Designers, Banks).",
-      
-      "pvsc-list5":"5. Investor's Guide: Detailed 'step by step' instructions for building solar power plants.",
-      
-      "pvsc-list6":"6. Integration with Insolation Tools: Connecting with tools like 'PVGIS' and 'NREL' for insolation and production estimation.",
-      
-      "pvsc-list7":"7. Integration with Professional Tools: Connecting with 'PV*Sol' and 'PVsyst' for 3D modeling of solar power plants.",
-      
-      "pvsc-list8":"8. Connecting with Banks and Installers: Linking investors with banks and installers.",
-      
-      "pvsc-list9":"9. Customizable Energy Prices: Analyses at customized prices for specific needs.",
-    
-      "pvsc-list10":"10. Automatic Calculation of Area, Slope, and Orientation: Simple online assessment of the area, slope, orientation, and insolation of the roof for available regions.",
-//     "pvsc.text2":
-//       "We are developing an innovative application that will address the challenges associated with designing photovoltaic systems. Our goal is to provide users with a tool that considers electricity prices, time-differentiated tariffs, and the legal frameworks of individual countries in the region. Furthermore, we will implement artificial intelligence to search for products, provide recommendations, and optimize responses to generate designs in a matter of minutes, instead of weeks.",
-//     "pvsc.text3":
-//       "This application will resolve the uncertainty of investors in renewable energy sources, optimize small power plants according to consumption and the local energy distributor, and provide accurate documentation with minimal user input. Also, we encourage existing electric power consumers to invest in photovoltaic power plants for their own needs, using artificial intelligence to assist in selecting equipment based on availability, price range, and location. Through monitoring of production and consumption, the application will provide analyses and insights necessary for efficient use of renewable energy sources.",
-//  "banks.title": "Banks",
+    "pvsc.headline": "PVSmartClick: Innovative Online Platform",
+    "pvsc.text1":
+      "PVSmartClick is an online platform that efficiently connects investors interested in building solar power plants, such as households and businesses, with banking institutions for project financing and experts in solar panel installation. The platform enables investors to quickly and accurately obtain information on the profitability of solar power plant projects; while easing the process of arranging credit engagements for banks and the design process for installers.",
+    "pvsc.subheadline":
+      "PVSmartClick helps establish communication between investors, banks, and installers.",
 
- 'banks.listitem1': "Cash Order Module",
-      "Banks.2": "Cash Loan Module",
-      "Banks.3": "Mobile Banking and Omnichannel (frontend development)",
-      "Banks.4":
+    // "pvsc.text2": "PVSmartClick simplifies the design process using our advanced optimization tool, enabling fast and accurate planning, with minimal errors and maximum efficiency of the solar power plant. We automate the report generation process for investors, facilitating their business decision-making on investments.",
+    "pvsc.headline2":
+      "PVSmartClick simplifies the design process using our advanced optimization tool, enabling fast and accurate planning, with minimal errors and maximum efficiency of the solar power plant. We automate the report generation process for investors, facilitating their business decision-making on investments.",
+    "pvsc.headline3": "Key Features and Functionalities",
+
+    "pvsc-list1":
+      "1. Profitability Analyses: Detailed analyses for households and entrepreneurs in Bosnia and Herzegovina and Croatia, including technical specifications.",
+
+    "pvsc-list2":
+      "2. Precise Consumption Analyses: Profitability analyses based on monthly or hourly consumption data, in accordance with renewable energy laws and local energy prices.",
+
+    "pvsc-list3":
+      "3. Various Analysis Models: Choice between different analysis models, including net metering, net billing, and 'zero feed in'.",
+
+    "pvsc-list4":
+      "4. Advanced Reports: Automatic generation of reports useful for all involved parties (Investors, Designers, Banks).",
+
+    "pvsc-list5":
+      "5. Investor's Guide: Detailed 'step by step' instructions for building solar power plants.",
+
+    "pvsc-list6":
+      "6. Integration with Insolation Tools: Connecting with tools like 'PVGIS' and 'NREL' for insolation and production estimation.",
+
+    "pvsc-list7":
+      "7. Integration with Professional Tools: Connecting with 'PV*Sol' and 'PVsyst' for 3D modeling of solar power plants.",
+
+    "pvsc-list8":
+      "8. Connecting with Banks and Installers: Linking investors with banks and installers.",
+
+    "pvsc-list9":
+      "9. Customizable Energy Prices: Analyses at customized prices for specific needs.",
+
+    "pvsc-list10":
+      "10. Automatic Calculation of Area, Slope, and Orientation: Simple online assessment of the area, slope, orientation, and insolation of the roof for available regions.",
+    //     "pvsc.text2":
+    //       "We are developing an innovative application that will address the challenges associated with designing photovoltaic systems. Our goal is to provide users with a tool that considers electricity prices, time-differentiated tariffs, and the legal frameworks of individual countries in the region. Furthermore, we will implement artificial intelligence to search for products, provide recommendations, and optimize responses to generate designs in a matter of minutes, instead of weeks.",
+    //     "pvsc.text3":
+    //       "This application will resolve the uncertainty of investors in renewable energy sources, optimize small power plants according to consumption and the local energy distributor, and provide accurate documentation with minimal user input. Also, we encourage existing electric power consumers to invest in photovoltaic power plants for their own needs, using artificial intelligence to assist in selecting equipment based on availability, price range, and location. Through monitoring of production and consumption, the application will provide analyses and insights necessary for efficient use of renewable energy sources.",
+    //  "banks.title": "Banks",
+
+    "banks.listitem1": "Cash Order Module",
+    "Banks.2": "Cash Loan Module",
+    "Banks.3": "Mobile Banking and Omnichannel (frontend development)",
+    "Banks.4":
       "Project implementation of a wizard that displays generic screens defined by configuration using React technology. An application that draws screens from the design pulled from the BE and has data transfer sent back to the BE.",
-      "Banks.5":
+    "Banks.5":
       'Project on the "ca-onboarding" module, on the extended kyc form.',
-      "Banks.6":
+    "Banks.6":
       "Development of applications for entering bank data. Part of the frontend, application in Angular (CPM within EMA).",
-      "d.sector.title": "Government Sector",
-      
-      "d.sector.1": "Tax Administration Application",
-      "d.sector.2": "Warehouse Application for Earthquake-Affected Areas for the Government",
-      "d.sector.3": "Application for Calculating Salary for Secondary Income of the Government",
-      "Trade.title": "Trade",
-      
-      "Trade.1": "Implementation of ERP/POS in Retail",
-      "Trade.2": "Automatic Orders for POS",
-      "Trade.3": "Currency Exchange for Small Stores",
-      "Trade.4": "WEB Integration of Cash Register with ERP",
-      "Trade.5": "Automatic Entry of Working Hours and Export of Reports",
-      "Trade.6": "Integration with a Package Distribution Company",
-      "Trade.7": "Integration for EDI Exchange",
-      "Trade.8": "Integration for Bill Payment Application",
-      "tele.title": "Telecommunications",
-      
-      "tele.1": "LH1E – Implementation of Beacon 1e",
-      
-      "tele.2": "LCM Tool 2.0 – Maintenance of Legacy Components",
-      
-      "tele.3": "CSDP - Customer Support Platform",    
-      
+    "d.sector.title": "Government Sector",
 
+    "d.sector.1": "Tax Administration Application",
+    "d.sector.2":
+      "Warehouse Application for Earthquake-Affected Areas for the Government",
+    "d.sector.3":
+      "Application for Calculating Salary for Secondary Income of the Government",
+    "Trade.title": "Trade",
 
+    "Trade.1": "Implementation of ERP/POS in Retail",
+    "Trade.2": "Automatic Orders for POS",
+    "Trade.3": "Currency Exchange for Small Stores",
+    "Trade.4": "WEB Integration of Cash Register with ERP",
+    "Trade.5": "Automatic Entry of Working Hours and Export of Reports",
+    "Trade.6": "Integration with a Package Distribution Company",
+    "Trade.7": "Integration for EDI Exchange",
+    "Trade.8": "Integration for Bill Payment Application",
+    "tele.title": "Telecommunications",
 
+    "tele.1": "LH1E – Implementation of Beacon 1e",
 
+    "tele.2": "LCM Tool 2.0 – Maintenance of Legacy Components",
 
+    "tele.3": "CSDP - Customer Support Platform",
 
-
-
-    "edu.headline":"Developing Knowledge through Interactive Learning from First to Eighth Grade",
+    "edu.headline":
+      "Developing Knowledge through Interactive Learning from First to Eighth Grade",
     "edu.text1":
       "Eduvision is an innovative educational platform that provides comprehensive learning for students from first to eighth grade. This interactive platform is exclusively focused on education, offering users a unique learning experience. Through advanced technologies and customized lessons, Eduvision encourages students to develop knowledge and skills. It is solely dedicated to education, offering high-quality learning resources.",
     "edu.subheadline": "Refresh Your Education with Eduvision",
     "edu.text2":
       "Eduvision is designed to enable users interactive learning without distractions. The platform focuses on creating a stimulating environment for education. All users have the opportunity to explore and assimilate material in a way tailored to their needs, providing an unparalleled educational experience.",
 
-    "live.project": "Live Projekt",
-    'Category': "Category",
+    "live.project": "Live Project",
+    Category: "Category",
     "category.app": "App",
     "category.ener": "Energetics",
 
-    "footer.paragraf":"Crafting IT solutions can pose significant challenges, especially for those without a technical background. Collaborate with us, bringing your ideas to the table, and leverage our technical expertise to create a top-tier final product that will elevate your business",
+    "footer.paragraf":
+      "Crafting IT solutions can pose significant challenges, especially for those without a technical background. Collaborate with us, bringing your ideas to the table, and leverage our technical expertise to create a top-tier final product that will elevate your business",
     "footer.energetika": "Energetics",
     "footer.locationsHR": "Headquarters in Croatia",
     "footer.locationsBiH": "Headquarters in BiH",
@@ -249,16 +257,16 @@ export const ui = {
     "workwithus.parag":
       "Pridružite se nama u digitalnom dobu i budite lider u svojoj industriji. Naš stručni IT tim posvećen je digitalnoj transformaciji vašeg poslovanja, usmjeravajući se na efikasnost i rast. Nudimo prilagođena, najmodernija rješenja za pojednostavljenje vaših procesa i poboljšanje angažmana kupaca. S fokusom na inovacije i izvrsnost, pomoći ćemo vašem poslovanju ne samo da se prilagodi, već i da prosperira u digitalnom pejzažu. Pridružite nam se i podignite svoje poslovanje na nove visine.",
     "about.flexHeadline": "Fleksibilnost",
-    'yearsHelping': "Godina u poslovanju",
-    'workingEmp': "Zaposlenih Djelatnika",
-    'completedPro': "Dovršenih Projekata",
-    'happyCustomer': "Zadovoljnih Kupaca",
+    yearsHelping: "Godina u poslovanju",
+    workingEmp: "Zaposlenih Djelatnika",
+    completedPro: "Dovršenih Projekata",
+    happyCustomer: "Zadovoljnih Kupaca",
     "portfolio.headline": "NAJNOVIJI RADOVI",
     "portfolio.subHeadline": "Naš Portfolio",
     "portfolio.apps": "Aplikacije",
     "portfolio.Miscellaneous": "Razno",
 
-    "partners": "Naši partneri",
+    partners: "Naši partneri",
 
     "about.TeamworkHeadline": "Timski Rad",
     "about.Teamwork":
@@ -277,12 +285,13 @@ export const ui = {
     "work.proces.DesignHeadline": "Dizajn i razvoj",
     "work.proces.DesignText":
       "U Digital Arena, pretvaramo ideje u stvarnost kroz vrhunski dizajn i razvoj. Naš stručni tim stvara rješenja koja ne samo da ispunjavaju, već i nadmašuju očekivanja.",
-      "edu.headline": "Razvijanje znanja kroz interaktivno učenje od prvog do osmog razreda",
-"edu.text1":
-"Eduvizija je inovativna obrazovna platforma koja pruža sveobuhvatno učenje za učenike od prvog do osmog razreda. Ova interaktivna platforma usmjerena je isključivo na obrazovanje, nudeći korisnicima jedinstveno iskustvo učenja. Kroz napredne tehnologije i prilagođene lekcije, Eduvizija potiče učenike na razvijanje znanja i vještina. Posvećena je isključivo obrazovanju, nudeći visokokvalitetne obrazovne resurse.",
-"edu.subheadline": "Osvježite svoje obrazovanje s Eduvizijom",
-"edu.text2":
-"Eduvizija je dizajnirana kako bi korisnicima omogućila interaktivno učenje bez ometanja. Platforma se fokusira na stvaranje poticajnog okruženja za obrazovanje. Svi korisnici imaju priliku istraživati i usvajati materijale na način prilagođen njihovim potrebama, pružajući neusporedivo obrazovno iskustvo.",
+    "edu.headline":
+      "Razvijanje znanja kroz interaktivno učenje od prvog do osmog razreda",
+    "edu.text1":
+      "Eduvizija je inovativna obrazovna platforma koja pruža sveobuhvatno učenje za učenike od prvog do osmog razreda. Ova interaktivna platforma usmjerena je isključivo na obrazovanje, nudeći korisnicima jedinstveno iskustvo učenja. Kroz napredne tehnologije i prilagođene lekcije, Eduvizija potiče učenike na razvijanje znanja i vještina. Posvećena je isključivo obrazovanju, nudeći visokokvalitetne obrazovne resurse.",
+    "edu.subheadline": "Osvježite svoje obrazovanje s Eduvizijom",
+    "edu.text2":
+      "Eduvizija je dizajnirana kako bi korisnicima omogućila interaktivno učenje bez ometanja. Platforma se fokusira na stvaranje poticajnog okruženja za obrazovanje. Svi korisnici imaju priliku istraživati i usvajati materijale na način prilagođen njihovim potrebama, pružajući neusporedivo obrazovno iskustvo.",
 
     "work.proces.InstallHeadline": "Instalacija i testiranje",
     "work.proces.InstallText":
@@ -301,7 +310,7 @@ export const ui = {
     "about.company.parag":
       "U Digital Areni, pokreće nas strast da pružimo vrhunske IT usluge za vaše poslovanje.",
     "about.company.paragraf1":
-      "Naš tim broji više od 50 iskusnih IT inženjera koji se specijaliziraju za pružanje IT usluga i razvoj projekata u okviru outsourcinga. U našem portfoliju ističu se značajne suradnje s renomiranim financijskim institucijama kao što su Privredna banka Zagreb (PBZ), Addiko Bank, Raiffeisen Bank, Zagrebačka banka, te uspješni projekti realizirani za Hrvatsku radioteleviziju i Hrvatsku poštu. S dubokim stručnostima u područjima telekomunikacija i bankarstva, naše usluge obuhvaćaju:",
+      "Naš tim broji više od 50 iskusnih IT inženjera koji se specijaliziraju za pružanje IT usluga i razvoj projekata u okviru outsourcinga. U našem portfoliju ističu se značajne suradnje s renomiranim  institucijama kao što su A1, CROZ, Kaufland, LuminumICT, BlLog i Ericsson Nikola Tesla, te razni manji uspješni projekti za razne klijente. S dubokim stručnostima u područjima telekomunikacija i bankarstva, naše usluge obuhvaćaju:",
 
     "about.company.paragraf2":
       "Unatoč našim primarnim kompetencijama, istaknuli smo se kao stručnjaci sposobni prilagoditi se novim izazovima i tražiti rješenja u nepoznatim područjima.",
@@ -325,54 +334,64 @@ export const ui = {
     "read-more": "Pročitaj više",
     "baner.years": "godine u poslu",
 
-    'kauflandTitle': "Kaufland market",
-    'kauflandText1':
+    kauflandTitle: "Kaufland market",
+    kauflandText1:
       "Aplikacija k-marke(t) kao sastavni dio Kauflandove nagradne igre koja se odvijalau periodu od 30.08.2023. do 03.10.2023. Tijekom naradne igre korisnicu su svaki dan mogli dobiti bogate Kauflandove nagrade. Aplikacija je uspješno isporučena naručitelju te je zadovoljila uslugom u svkom aspektu. Za izradu aplikacije je korišten NUXT kao 'fullstack' javascript framework",
-    'kauflandSubheadline':
+    kauflandSubheadline:
       "Interaktivna aplikacija u kojoj kupci osvajaju  nagrade",
-    'kauflandText2':
+    kauflandText2:
       "Prvih 1000 korisnika koji imaju najbolje rezultate na rang- listi u svoj pretinac dobivaju kod kojim ostvaruju pravo na dnevnu nagradu – jedan proizvod Kauflandove robne marke",
 
     "pvsc.headline": "PVSmartClick: Inovativna Online Platforma",
-    "pvsc.text1": "PVSmartClick je online platforma koja efikasno povezuje investitore zainteresirane za izgradnju solarnih elektrana, poput kućanstava i poduzeća, s bankarskim institucijama za kreditiranje projekata i stručnjacima za instalaciju solarnih panela. Platforma omogućava investitorima da brzo i precizno dobiju informacije o isplativosti projekta solarnih elektrana; dok bankama olakšava dogovaranje kreditnih angažmana a instalaterima proces projektiranja.",
-    "pvsc.subheadline": "PVSmartClick pomaže uspostaviti međusobnu komunikaciju između investitora,banke i instalatera.",
-    
+    "pvsc.text1":
+      "PVSmartClick je online platforma koja efikasno povezuje investitore zainteresirane za izgradnju solarnih elektrana, poput kućanstava i poduzeća, s bankarskim institucijama za kreditiranje projekata i stručnjacima za instalaciju solarnih panela. Platforma omogućava investitorima da brzo i precizno dobiju informacije o isplativosti projekta solarnih elektrana; dok bankama olakšava dogovaranje kreditnih angažmana a instalaterima proces projektiranja.",
+    "pvsc.subheadline":
+      "PVSmartClick pomaže uspostaviti međusobnu komunikaciju između investitora,banke i instalatera.",
+
     // "pvsc.text2": "PVSmartClick olakšava projektiranje koristeći naš napredni alat za optimizaciju, što omogućuje brzo i precizno planiranje, uz minimalne pogreške i maksimalnu efikasnost solarne elektrane. Automatiziramo proces generiranja izvješća investitorima, koji im olakšava donošenje poslovne odluke o ulaganju.",
-   "pvsc.headline2": "PVSmartClick olakšava projektiranje koristeći naš napredni alat za optimizaciju, što omogućuje brzo i precizno planiranje, uz minimalne pogreške i maksimalnu efikasnost solarne elektrane. Automatiziramo proces generiranja izvješća investitorima, koji im olakšava donošenje poslovne odluke o ulaganju.",
-   "pvsc.headline3":"Ključne Karakteristike i Funkcionalnosti",
+    "pvsc.headline2":
+      "PVSmartClick olakšava projektiranje koristeći naš napredni alat za optimizaciju, što omogućuje brzo i precizno planiranje, uz minimalne pogreške i maksimalnu efikasnost solarne elektrane. Automatiziramo proces generiranja izvješća investitorima, koji im olakšava donošenje poslovne odluke o ulaganju.",
+    "pvsc.headline3": "Ključne Karakteristike i Funkcionalnosti",
 
-   "pvsc-list1":"1. Analize isplativosti: Detaljne analize za kućanstva i poduzetnike u BIH i Hrvatskoj, uključujući tehničke specifikacije.",
+    "pvsc-list1":
+      "1. Analize isplativosti: Detaljne analize za kućanstva i poduzetnike u BIH i Hrvatskoj, uključujući tehničke specifikacije.",
 
-   "pvsc-list2":"2. Precizne analize potrošnje: Analize isplativosti na temelju mjesečnih ili satnih podataka o potrošnji, u skladu sa zakonima o obnovljivim izvorima energije i lokalnim cijenama energije.",
-   
-   "pvsc-list3":"3. Različiti modeli analize: Izbor između različitih modela analize, uključujući neto mjerenje, neto obračun i 'zero feed in'.",
-   
-   "pvsc-list4":"4. Napredni izvještaji: Automatsko generiranje izvještaja korisnih za sve uključene strane (Investitore, Projektante, Banke).",
-   
-   "pvsc-list5":"5. Vodič za investitore: Detaljne upute 'korak po korak' za izgradnju solarnih elektrana.",
-   
-   "pvsc-list6":"6. Integracija s alatima za insolaciju: Povezivanje s alatima poput 'PVGIS' i 'NREL' za procjenu insolacije i proizvodnje.",
-   
-   "pvsc-list7":"7. Integracija s profesionalnim alatima: Povezivanje s 'PV*Sol' i 'PVsyst' za 3D modeliranje solarnih elektrana.",
-   
-   "pvsc-list8":"8. Povezivanje s bankama i instalaterima: Povezuje investitore s bankama i instalaterima.",
-   
-   "pvsc-list9":"9. Prilagodljive cijene energije: Analize po prilagođenim cijenama za specifične potrebe.",
-   
-   "pvsc-list10":"10. Automatski izračun površine, nagiba i orijentacije: Jednostavna online procjena površine, nagiba, orijentacije i insolacije krova za dostupne regije.",
+    "pvsc-list2":
+      "2. Precizne analize potrošnje: Analize isplativosti na temelju mjesečnih ili satnih podataka o potrošnji, u skladu sa zakonima o obnovljivim izvorima energije i lokalnim cijenama energije.",
 
+    "pvsc-list3":
+      "3. Različiti modeli analize: Izbor između različitih modela analize, uključujući neto mjerenje, neto obračun i 'zero feed in'.",
 
+    "pvsc-list4":
+      "4. Napredni izvještaji: Automatsko generiranje izvještaja korisnih za sve uključene strane (Investitore, Projektante, Banke).",
 
+    "pvsc-list5":
+      "5. Vodič za investitore: Detaljne upute 'korak po korak' za izgradnju solarnih elektrana.",
+
+    "pvsc-list6":
+      "6. Integracija s alatima za insolaciju: Povezivanje s alatima poput 'PVGIS' i 'NREL' za procjenu insolacije i proizvodnje.",
+
+    "pvsc-list7":
+      "7. Integracija s profesionalnim alatima: Povezivanje s 'PV*Sol' i 'PVsyst' za 3D modeliranje solarnih elektrana.",
+
+    "pvsc-list8":
+      "8. Povezivanje s bankama i instalaterima: Povezuje investitore s bankama i instalaterima.",
+
+    "pvsc-list9":
+      "9. Prilagodljive cijene energije: Analize po prilagođenim cijenama za specifične potrebe.",
+
+    "pvsc-list10":
+      "10. Automatski izračun površine, nagiba i orijentacije: Jednostavna online procjena površine, nagiba, orijentacije i insolacije krova za dostupne regije.",
 
     "live.project": "Projekt",
-    'Category': "Kategorija",
+    Category: "Kategorija",
     "category.app": "Aplikacija",
     "category.ener": "Energetika",
 
     //"banks.title": "Banke",
-     "banks.title": "Banke",
+    "banks.title": "Banke",
 
-     'banks.listitem1': "Modul za narudžbu gotovine",
+    "banks.listitem1": "Modul za narudžbu gotovine",
     "Banks.2": "Modul za gotovinske zajmove",
     "Banks.3": "Mobilno bankarstvo i Omnichannel (razvoj frontend-a)",
     "Banks.4":
@@ -407,11 +426,6 @@ export const ui = {
 
     "tele.3": "CSDP - Platforma za podršku korisnicima",
 
-
-
-
-
-    
     "footer.paragraf":
       "Izrada IT rješenja može predstavljati značajne izazove, posebno za one bez tehničkog znanja. Surađujte s nama, iznesite svoje ideje na stol i iskoristite našu tehničku stručnost za stvaranje vrhunskog konačnog proizvoda koji će unaprijediti vaše poslovanje",
 
