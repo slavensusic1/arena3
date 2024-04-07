@@ -440,9 +440,9 @@ export const ui = {
 
     "euprojekt.btn": "Natrag na projekt",
     "euprojekt.headline": "Komercijalizacija inovativnog proizvoda PVSmartClick",
-    "euprojekt.paragraf1": "Projekt naziva",
-    "euprojekt.paragraf2": "Komercijalizacija inovativnog proizvoda PVSmartClick Tvrtke Digital ARENA d.o.o",
-    "euprojekt.paragraf3": "usmjeren je na inovaciju organizacije i inovacije poslovnih procesa upravljanja proizvodima i korisničke podrške kako bi se stvorili osnovni preduvjeti za komercijalizaciju i primjenu IT/ Energo rješenja PVSmartClick na međunarodnom tržištu.",
+    "euprojekt.paragraf1": "Projekt naziva ",
+    "euprojekt.paragraf2": "Komercijalizacija inovativnog proizvoda PVSmartClick Tvrtke Digital Arena d.o.o",
+    "euprojekt.paragraf3": " usmjeren je na inovaciju organizacije i inovacije poslovnih procesa upravljanja proizvodima i korisničke podrške kako bi se stvorili osnovni preduvjeti za komercijalizaciju i primjenu IT/ Energo rješenja PVSmartClick na međunarodnom tržištu.",
     "euprojekt.paragraf4": " Problemi koje će biti adresirani projektom obuhvaćaju neadekvatnu organizaciju poslovanja, neadekvatne procese proizvodnje i isporuke proizvoda te nedovoljno istraženo ciljano tržište. Otklanjanjem ovih problema ostvarit će se dugoročni benefiti za tvrtku, zaposlenike, lokalnu zajednicu te energetski sektor.",
     "euprojekt.paragraf5": "Projekt će dovesti do povećanja broja zaposlenika, povećanja prihoda i ostvarivanja značajnog udjela od izvoza.",
     "moreAboutProject": "Više o projektu ...",
