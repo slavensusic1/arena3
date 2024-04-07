@@ -18,24 +18,24 @@ import { FreeMode, Pagination } from 'swiper/modules';
 
 const SwiperReact = ({pic1, pic2, pic3, pic4, pic5, pic6, slides}) => {
   return (
-    
+
     <Swiper
     slidesPerView={slides}
     spaceBetween={20}
     freeMode={true}
     pagination={{
-      clickable: true,
+    clickable: true,
     }}
     modules={[FreeMode, Pagination]}
     className="mySwiper"
   >
-        <SwiperSlide> <img src={pic1.src} /> </SwiperSlide>
-        <SwiperSlide> <img src={pic2.src} /> </SwiperSlide>
+        <SwiperSlide> <img src={pic1.src} className='w-full h-auto'/> </SwiperSlide>
+        <SwiperSlide> <img src={pic2.src} className='w-full h-auto' /> </SwiperSlide>
         {/* <SwiperSlide> <img src={pic3.src} /> </SwiperSlide> */}
-        <SwiperSlide> <img src={pic4.src} /> </SwiperSlide>
-        <SwiperSlide> <img src={pic5.src} /> </SwiperSlide>
-        <SwiperSlide> <img src={pic6.src} /> </SwiperSlide>
-       
+        <SwiperSlide> <img src={pic4.src} className='w-full h-auto'/> </SwiperSlide>
+        <SwiperSlide> <img src={pic5.src} className='w-full h-auto'/> </SwiperSlide>
+        <SwiperSlide> <img src={pic6.src} className='w-full h-auto'/> </SwiperSlide>
+
 
     </Swiper>
   );

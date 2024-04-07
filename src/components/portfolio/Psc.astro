@@ -4,6 +4,7 @@ import solar from '../../assets/solar.jpg'
 import ProjectLayout from '../../layouts/ProjectLayout.astro'
 import SwiperReact from './SwiperReact.jsx'
 import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/utils';
+import financiraEu from '../../assets/financiraEu.png'
 let lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
@@ -13,7 +14,7 @@ const headline= "Simulacija troškova i učinkovitosti solarnih elektrana"
 const text1="Softverska platforma pruža sveobuhvatno rješenje za sve faze razvoja solarnih elektrana. Uključuje alate za dizajn koji omogućuju precizno planiranje i vizualizaciju, pratnju proizvodnje energije te sustave održavanja. Osim toga, softver pruža mogućnost selekcije opreme koja je ključna za optimalno funkcioniranje solarnih elektrana. . Integrirajući ove ključne aspekte, naša platforma olakšava upravljanje, poboljšava učinkovitost i osigurava dugoročnu pouzdanost solarnih energetskih sustava"
 const subheadline="Inovativnost i zelena energija"
 const text2="Razvijamo inovativnu aplikaciju koja će riješiti izazove vezane uz projektiranje fotoelektričnih sustava. Naš cilj je pružiti korisnicima alat koji će uzeti u obzir cijene električne energije, vremensku diferencijaciju tarifa te zakonske okvire pojedinih zemalja u regiji. Osim toga, implementirat ćemo umjetnu inteligenciju koja će pretraživati proizvode, davati preporuke i optimizirati odgovore kako bismo generirali dizajn u pitanju minuta, umjesto tjednima."
-      
+
 const text3="Ova aplikacija će riješiti neizvjesnost investitora prilikom ulaganja u obnovljive izvore energije, optimizirati male elektrane prema potrošnji i lokalnom distributeru energije te pružiti točnu dokumentaciju s minimalnim unosima korisnika. Također, potičemo postojeće potrošače električne energije da investiraju u fotonaponske elektrane za vlastite potrebe, koristeći umjetnu inteligenciju za pomoć pri odabiru opreme prema dostupnosti, cjenovnom rasponu i lokaciji. Kroz praćenje proizvodnje i potrošnje, aplikacija će pružati analize i uvide potrebne za efikasno korištenje obnovljivih izvora energije."
 
 const category="Enrgetics, App"
@@ -65,12 +66,12 @@ const images = [
     <div>
       <h3 class="font-bold text-2xl">{t('Category')}:</h3><span class="text-lg">{t('category.app')} , {t('category.ener')} </span>
   </div>
-    
+
     <div>
       <div class="flex flex-col">
         <a href={link} target="_blank">
           <button class="bg-green-500 text-white font-bold py-4 px-8 text-lg rounded-md">{t('live.project')}</button>
-      
+
         </a>
 
       </div>
@@ -78,8 +79,25 @@ const images = [
     </div>
 
   </div>
-  
-  
+
+
 </div>
-<div class="py-10 px-2"><SwiperReact slides={3} pic1={pic1} pic2={pic2} pic3={pic3} pic4={pic4} pic5={pic5} pic6={pic6} client:load/></div>
+<div class="flex flex-col items-center justify-center md:flex-row">
+    <div class="w-full md:w-2/3 mb-8 md:mb-0">
+        <!-- Assuming SwiperReact is a custom component -->
+        <SwiperReact slides={2} pic1={pic1} pic2={pic2} pic3={pic3} pic4={pic4} pic5={pic5} pic6={pic6} client:load/>
+    </div>
+    <div class="w-full md:w-1/3 flex flex-col items-center justify-center">
+        <img src={financiraEu.src} alt="eulogo" class="w-2/3 mb-4">
+        <a href=`/${lang}/portfolio/PVSCEuro` class="text-blue-500 underline text-xl">{t('moreAboutProject')}</a>
+    </div>
+</div>
+</div>
+
+
+
+
+
+</div>
+
 </ProjectLayout>

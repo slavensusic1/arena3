@@ -9,7 +9,7 @@ function CounterComponent({yearsHelping,workingEmp,completedPro,happyCustomer})
     {
       number:10,
       title:yearsHelping
-      
+
     },
     {
       number:50,
@@ -20,10 +20,10 @@ function CounterComponent({yearsHelping,workingEmp,completedPro,happyCustomer})
     title:completedPro
     },
     {
-      number:36,
-      title:completedPro
+      number:20,
+      title:happyCustomer
     }
- 
+
   ]
 
   return (
@@ -33,12 +33,12 @@ function CounterComponent({yearsHelping,workingEmp,completedPro,happyCustomer})
     return <div>
       <Number title={dat.title} n={dat.number} client:visible/>
     </div>
-    
+
   })}
 
            </div>
-   
-           
+
+
 
 
 

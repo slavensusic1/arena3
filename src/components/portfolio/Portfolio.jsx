@@ -4,7 +4,9 @@ import { tabsData } from "./tabs";
 
 import pvSmartclick from '../../assets/pvc-logo-color.svg';
 import market from '../../assets/kmarket.png';
-import eduvizija  from '../../assets/Eduvizija.jpg'
+import eduvizija from '../../assets/Eduvizija.jpg'
+import securityindex from '../../assets/securityIndex.png'
+import ecolabel from '../../assets/ecoLabel1.png'
 
 
 
@@ -23,10 +25,8 @@ t3,
  t7,
  t8,
  te1,
-
  te2,
  te3,
-
  te4,
 
 }) {
@@ -36,7 +36,9 @@ t3,
   const blogContent = [
     { id: 1, headline: 'PV Smart Click', category: [apps, ' | ', energetics], src: pvSmartclick },
     { id: 2, headline: 'Kaufland marke(t)', category: [apps], src: market },
-    { id: 2, headline: 'Eduvizija', category: [apps], src: eduvizija },
+    { id: 3, headline: 'Eduvizija', category: [apps], src: eduvizija },
+    { id: 4, headline: 'Security Index', category: [apps], src: securityindex },
+     { id: 5, headline: 'ecolabel', category: [apps], src: ecolabel },
   ];
   const [filteredItems, setFilteredItems] = useState(blogContent);
   const [filteredTabs, setFilteredTabs] = useState(tabsData);
@@ -44,7 +46,7 @@ t3,
   const [activeBranding, setActiveBranding] = useState(false);
   const [razno, setActiverazno] = useState(false);
   const [activePhotography, setActivePhotography] = useState(false);
- 
+
   const handleFilterAll = () => {
     setFilteredItems(blogContent);
     setActiveAll(true);
@@ -83,7 +85,7 @@ t3,
             <p className="text-green-500 text-left font-bold text-lg md:text-2xl">
              {headline}
             </p>
-          
+
             <h2 className="text-left font-bold text-4xl md:text-4xl">
             {subHeadline}
             </h2>
@@ -101,7 +103,7 @@ t3,
           >
   {apps}
           </button>
-      
+
           <button
             onClick={handleRazno}
             className={`flex-1 duration-300 ${razno ? "bg-green-500 " : "border-black border"} ${
@@ -140,9 +142,9 @@ t3,
                 />
               </div>
             </a>
-            <div className="mt-4 flex flex-col items-start justify-start opacity-0 bg-white transition-all duration-500 transform translate-y-[-4rem] 
-              group text-lg-hover:opacity-100 group text-lg-hover:translate-y-[-7rem] mx-2 py-4 rounded-lg ease-in">
-              <h2 className="text-lg text-center opacity-0 group text-lg-hover:opacity-100 -translate-x-0 group text-lg-hover:translate-x-5 duration-500 delay-200 text-green-500 font-semibold">{item.category}</h2>
+            <div className="mt-4 flex flex-col items-start justify-start opacity-0 bg-white transition-all duration-500 transform translate-y-[-6rem]
+              group-hover:opacity-100 group text-lg hover:translate-y-[-7rem] mx-2 py-4 rounded-lg ease-in">
+              <h2 className="text-lg text-center opacity-0 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-5 duration-500 delay-200 text-green-500 font-semibold">{item.category}</h2>
               <a
                   href={`/${lang}/portfolio/${item.headline
                   .toLowerCase()
@@ -152,9 +154,9 @@ t3,
                   .replaceAll("š", "s")
                   .replaceAll("!", "")
                   .replaceAll("?", "")}`}
-                className="text-lg text-black transform translate-x-20 group text-lg-hover:translate-x-5 duration-500 delay-500"
+                className="text-lg text-black transform translate-x-20 group-hover:translate-x-5 duration-500 delay-500"
               >
-                <p className="text-base text-start opacity-0 group text-lg-hover:opacity-100 translate-x-20 group text-lg-hover:-translate-x-0 duration-500 delay-200 text-black font-semibold ">{item.headline}</p>
+                <p className="text-start opacity-0 group-hover:opacity-100 translate-x-20 group-hover:-translate-x-0 duration-500 delay-200 text-black font-semibold ">{item.headline}</p>
               </a>
             </div>
           </div>
@@ -173,14 +175,14 @@ t3,
         <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{banks5}</li>
         <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{banks6}</li>
       </ul>
-    
+
       <ul className="space-y-4">
         <li className="font-semibold text-xl text-green-600">{d1}</li>
         <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{d2}</li>
         <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{d3}</li>
         <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{d4}</li>
       </ul>
-    
+
       <ul className="space-y-4">
         <li className="font-semibold text-xl text-green-600">{t0}</li>
         <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{t2}</li>
@@ -190,17 +192,17 @@ t3,
         <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{t6}</li>
         <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{t7}</li>
         <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{t8}</li>
-      </ul>  
-    
+      </ul>
+
       <ul className="space-y-4">
         <li className="font-semibold text-xl text-green-600">{te1}</li>
         <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{te2}</li>
         <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{te3}</li>
         <li className="text-gray-700 hover:text-green-500 transition-colors duration-200">{te4}</li>
-      </ul>  
+      </ul>
     </div>
-    
-      
+
+
           : ''}
       </div>
     </div>

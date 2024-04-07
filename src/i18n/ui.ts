@@ -1,6 +1,6 @@
 export const languages = {
   en: "EN",
-  hr:"HR"
+  hr: "HR"
 };
 
 export const defaultLang = "en";
@@ -58,9 +58,9 @@ export const ui = {
     "why.trustus.parag":
       "Our engineers hold industry-recognized certifications, ensuring a high level of expertise and reliability. Trust us to drive the digital transformation of your business. With our certified professionals, we bring unparalleled excellence to every aspect of our services.",
     yearsHelping: "Years of Helping Businesses",
-    workingEmp: "Employees Working",
+    workingEmp: "Employees",
     completedPro: "Completed Projects",
-    happyCustomer: "Happy Customers",
+    happyCustomer: "Satisfied Customers",
 
     "workwithus.headline": "WANT TO WORK WITH US?",
     "workwithus.subheadline": "Digitally Transform & Grow Your Business",
@@ -167,9 +167,9 @@ export const ui = {
     //       "We are developing an innovative application that will address the challenges associated with designing photovoltaic systems. Our goal is to provide users with a tool that considers electricity prices, time-differentiated tariffs, and the legal frameworks of individual countries in the region. Furthermore, we will implement artificial intelligence to search for products, provide recommendations, and optimize responses to generate designs in a matter of minutes, instead of weeks.",
     //     "pvsc.text3":
     //       "This application will resolve the uncertainty of investors in renewable energy sources, optimize small power plants according to consumption and the local energy distributor, and provide accurate documentation with minimal user input. Also, we encourage existing electric power consumers to invest in photovoltaic power plants for their own needs, using artificial intelligence to assist in selecting equipment based on availability, price range, and location. Through monitoring of production and consumption, the application will provide analyses and insights necessary for efficient use of renewable energy sources.",
-    //  "banks.title": "Banks",
+    "banks.title": "Banks",
 
-    "banks.listitem1": "Cash Order Module",
+    "banks.listitem1": "Energetics",
     "Banks.2": "Cash Loan Module",
     "Banks.3": "Mobile Banking and Omnichannel (frontend development)",
     "Banks.4":
@@ -216,6 +216,18 @@ export const ui = {
     "category.app": "App",
     "category.ener": "Energetics",
 
+    // euprojekt
+
+
+
+    "euprojekt.btn": "Back to Project",
+    "euprojekt.headline": "Commercialization of the Innovative Product PVSmartClick",
+    "euprojekt.paragraf1": "Project Titled ",
+    "euprojekt.paragraf2": "Commercialization of the Innovative Product PVSmartClick by Digital ARENA d.o.o. ",
+    "euprojekt.paragraf3": "is focused on organizational innovation and innovation of business processes in product management and customer support to create the basic prerequisites for the commercialization and implementation of the IT/Energy solution PVSmartClick in the international market.",
+    "euprojekt.paragraf4": "The problems addressed by the project include inadequate business organization, inadequate product manufacturing and delivery processes, and insufficiently researched target market. By addressing these issues, long-term benefits will be achieved for the company, employees, local community, and the energy sector.",
+    "euprojekt.paragraf5": "The project will lead to an increase in the number of employees, revenue growth, and significant share of exports.",
+    "moreAboutProject": "More about the project ...",
     "footer.paragraf":
       "Crafting IT solutions can pose significant challenges, especially for those without a technical background. Collaborate with us, bringing your ideas to the table, and leverage our technical expertise to create a top-tier final product that will elevate your business",
     "footer.energetika": "Energetics",
@@ -391,7 +403,7 @@ export const ui = {
     //"banks.title": "Banke",
     "banks.title": "Banke",
 
-    "banks.listitem1": "Modul za narudžbu gotovine",
+    "banks.listitem1": "Energetika",
     "Banks.2": "Modul za gotovinske zajmove",
     "Banks.3": "Mobilno bankarstvo i Omnichannel (razvoj frontend-a)",
     "Banks.4":
@@ -425,6 +437,15 @@ export const ui = {
     "tele.2": "LCM alat 2.0 – Održavanje legacy komponenti",
 
     "tele.3": "CSDP - Platforma za podršku korisnicima",
+
+    "euprojekt.btn": "Natrag na projekt",
+    "euprojekt.headline": "Komercijalizacija inovativnog proizvoda PVSmartClick",
+    "euprojekt.paragraf1": "Projekt naziva",
+    "euprojekt.paragraf2": "Komercijalizacija inovativnog proizvoda PVSmartClick Tvrtke Digital ARENA d.o.o",
+    "euprojekt.paragraf3": "usmjeren je na inovaciju organizacije i inovacije poslovnih procesa upravljanja proizvodima i korisničke podrške kako bi se stvorili osnovni preduvjeti za komercijalizaciju i primjenu IT/ Energo rješenja PVSmartClick na međunarodnom tržištu.",
+    "euprojekt.paragraf4": " Problemi koje će biti adresirani projektom obuhvaćaju neadekvatnu organizaciju poslovanja, neadekvatne procese proizvodnje i isporuke proizvoda te nedovoljno istraženo ciljano tržište. Otklanjanjem ovih problema ostvarit će se dugoročni benefiti za tvrtku, zaposlenike, lokalnu zajednicu te energetski sektor.",
+    "euprojekt.paragraf5": "Projekt će dovesti do povećanja broja zaposlenika, povećanja prihoda i ostvarivanja značajnog udjela od izvoza.",
+    "moreAboutProject": "Više o projektu ...",
 
     "footer.paragraf":
       "Izrada IT rješenja može predstavljati značajne izazove, posebno za one bez tehničkog znanja. Surađujte s nama, iznesite svoje ideje na stol i iskoristite našu tehničku stručnost za stvaranje vrhunskog konačnog proizvoda koji će unaprijediti vaše poslovanje",

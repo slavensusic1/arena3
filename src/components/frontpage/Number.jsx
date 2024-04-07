@@ -13,13 +13,13 @@ function Number({ n, title, checkmark,titles }) {
 
      <div class="flex justify-center py-0 z-20">
        <div class="flex flex-col items-center justify-center ml-4">
-      
+
         <div class="flex text-base md:text-3xl items-center space-x-1 justify-center text-gray-100 z-10">
-          <animated.div class="text-5xl md:text-5xl font-bold">{number.to((n) => n.toFixed(0))}</animated.div>
+          <animated.div class="text-6xl md:text-5xl font-bold">{number.to((n) => n.toFixed(0))}</animated.div>
           <p class="text-lg">+</p>
           <p></p>
         </div>
-        <p className="text-xl text-white font-bold">{title}</p>
+        <p className="text-2xl text-white font-bold">{title}</p>
          </div>
     </div>
   );

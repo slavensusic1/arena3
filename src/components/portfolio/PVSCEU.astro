@@ -1,0 +1,36 @@
+---
+import financiraEu from '../../assets/financiraEU.png';
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/utils';
+let lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+<ProjectLayout>
+<div class="xl:w-full prose prose-lg px-4 pt-12">
+    <button class="md:flex hidden gap-5 ml-10 font-bold text-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+        </svg>
+        <a href=`/${lang}/portfolio/pv-smart-click`>{t('euprojekt.btn')}</a>
+    </button>
+    <div class="max-w-5xl mx-auto">
+        <h2 class="text-xl md:text-5xl font-bold text-center mb-4">{t('euprojekt.headline')}</h2>
+        <p class="text-gray-700 text-base md:text-2xl mb-4">
+            {t('euprojekt.paragraf1')}<span class="text-green-600 font-semibold">{t('euprojekt.paragraf2')}</span>{t('euprojekt.paragraf3')}
+        </p>
+        <p class="text-gray-700 text-base md:text-2xl mb-4">
+            {t('euprojekt.paragraf4')}
+        </p>
+        <p class="text-gray-700 text-base md:text-2xl mb-8">
+            {t('euprojekt.paragraf5')}
+        </p>
+    </div>
+    <div class="flex items-center justify-center">
+        <img src={financiraEu.src} alt="eulogo" class="w-full md:w-1/2">
+    </div>
+</div>
+
+</ProjectLayout>
+
+
