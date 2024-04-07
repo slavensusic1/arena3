@@ -33,19 +33,19 @@ const Navbar = ({
   const year = cur.getFullYear();
   const navItems = [
     {
-      text: "Home",
+      text: homeText,
       link: homeLink,
     },
     {
-      text: "About",
+      text: about,
       link: aboutLink,
     },
     {
-      text: "Services",
+      text: services,
       link: servicesLink,
     },
     {
-      text: "Portfolio",
+      text: portfolio,
       link: portfolioLink,
     },
   ];
