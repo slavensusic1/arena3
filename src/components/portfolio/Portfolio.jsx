@@ -4,7 +4,7 @@ import { tabsData } from "./tabs";
 
 import pvSmartclick from '../../assets/pvc-logo-color.svg';
 import market from '../../assets/kmarket.png';
-import eduvizija from '../../assets/Eduvizija.jpg'
+import eduvizija from '../../assets/eduvizijaPng.png'
 import securityindex from '../../assets/securityIndex.png'
 import ecolabel from '../../assets/ecoLabel1.png'
 
