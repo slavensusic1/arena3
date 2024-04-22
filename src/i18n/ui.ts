@@ -17,7 +17,7 @@ export const ui = {
     "nav.about": "About",
     "nav.services": "Services",
     "nav.services/it": "It",
-    "nav.portfolio": "Portfolio",
+    "nav.portfolio": "Eu projects",
     "nav.Contact": "Contact",
     "nav.project": "Project",
     "nav.projectDetail": "Project Detail",
@@ -39,6 +39,11 @@ export const ui = {
     "about.company.paragraf1":
       "Our team of over 50 IT and Telecommunication engineers, in partnership with leading firms, specializes in IT outsourcing and project development. We have notable collaborations with A1, CROZ, Kaufland, LuminumICT, BlLog and Ericsson Nikola Tesla in Croatia, and have undertaken various smaller projects for different clients. With deep expertise in the TelCo and Banking sectors, our services span:",
 
+    "eu.korisnik": "Beneficiary: Digital Arena d.o.o.",
+    "eu.korisnik1": "Project implementation period: October 1, 2022 - October 1, 2024",
+    "eu.korisnik2": "Total project value: EUR 608,656.69",
+    "eu.korisnik3": "EU grant amount: EUR 265,524.35",
+    "eu.korisnik4": "Contact person for further information: Lovre Šimunoviċ",
     "about.company.paragraf2":
       "While these are our core strengths, we're adept at adapting to and learning new technologies as needed.",
     "about.company.li1":
@@ -238,7 +243,7 @@ export const ui = {
     "nav.home": "Početna",
     "nav.about": "O nama",
     "nav.services": "Usluge",
-    "nav.portfolio": "Portfelj",
+    "nav.portfolio": "Eu projekti",
     "nav.Contact": "Kontakt",
     "nav.projectDetail": "Izrada Projekta",
     "nav.project": "Projekt",
@@ -446,6 +451,11 @@ export const ui = {
     "euprojekt.paragraf4": " Problemi koje će biti adresirani projektom obuhvaćaju neadekvatnu organizaciju poslovanja, neadekvatne procese proizvodnje i isporuke proizvoda te nedovoljno istraženo ciljano tržište. Otklanjanjem ovih problema ostvarit će se dugoročni benefiti za tvrtku, zaposlenike, lokalnu zajednicu te energetski sektor.",
     "euprojekt.paragraf5": "Projekt će dovesti do povećanja broja zaposlenika, povećanja prihoda i ostvarivanja značajnog udjela od izvoza.",
     "moreAboutProject": "Više o projektu ...",
+    "eu.korisnik": "Korisnik bespovratnih redstava: Digital Arena d.o.o.",
+    "eu.korisnik1": "Razdoblje provedbe projekta: 01.10.2022. - 01.10.2024.",
+    "eu.korisnik2": "Ukupna vrijednost projekta: 608.656,69 EUR",
+    "eu.korisnik3": "Iznos EU bespovratnih sredstava: 265.524,35 EUR",
+    "eu.korisnik4": "Kontakt osoba za dodatne informacije: Lovre Šimunoviċ",
 
     "footer.paragraf":
       "Izrada IT rješenja može predstavljati značajne izazove, posebno za one bez tehničkog znanja. Surađujte s nama, iznesite svoje ideje na stol i iskoristite našu tehničku stručnost za stvaranje vrhunskog konačnog proizvoda koji će unaprijediti vaše poslovanje",

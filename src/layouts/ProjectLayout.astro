@@ -7,7 +7,7 @@ interface Props {
 import { getLangFromUrl } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
-const { title } = Astro.props;
+const  title  = "Digital Arena"
 import Navbar from '../components/Navbar.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -32,13 +32,13 @@ import PortfolioDetailHeader from '../components/portfolio/PortfolioDetailHeader
     <body class="">
         <main transition:animate="initial" />
             <div class="z-0">
-               <Navbar />      
-            </div> 
+               <Navbar />
+            </div>
             <div class="-z-20">
                <PortfolioDetailHeader />
-            </div> 
-         
-    
+            </div>
+
+
           <slot />
         </main>
         <Footer/>
@@ -46,11 +46,11 @@ import PortfolioDetailHeader from '../components/portfolio/PortfolioDetailHeader
 </html>
 <style is:global>
 	:root {
-		
+
 	}
 	html {
 		font-family: 'Dosis', sans-serif;
-	
+
 	}
 	code {
 		font-family:

@@ -32,7 +32,7 @@ const languageLinks = Object.entries(languages).map(([lang, label, icons]) => ({
   href: constructUrlForLanguage(lang),
   label: label,
   icons:icons
-  
+
 }));
 
 const lang = getLangFromUrl(Astro.url) || currentLang; // Use detected language or fallback to currentLang
@@ -49,16 +49,16 @@ const languageArray = Object.entries(languages).map(([code, label]) => ({ code, 
 
 ---
 
-<Navbar 
+<Navbar
   currentUrl={currentUrl}
   homeText={t('nav.home')}
   homeLink={`/${lang}/`}
-  services={t('nav.services')} 
+  services={t('nav.services')}
   servicesLink={`/${lang}/services`}
-  about={t('nav.about')} 
+  about={t('nav.about')}
   aboutLink={`/${lang}/about`}
-  portfolio={t('nav.portfolio')} 
-  portfolioLink={`/${lang}/portfolio`} 
+  portfolio={t('nav.portfolio')}
+  portfolioLink={`/${lang}/euprojects`}
   languageLinks={languageLinks}
   client:load
 />

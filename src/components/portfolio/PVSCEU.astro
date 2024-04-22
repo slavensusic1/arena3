@@ -5,15 +5,37 @@ import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/u
 let lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
+import solar from '../../assets/solar.jpg'
+import SwiperReact from './SwiperReact.jsx'
+const title= "pvsmartclick"
+const headline= "Simulacija troškova i učinkovitosti solarnih elektrana"
+const text1="Softverska platforma pruža sveobuhvatno rješenje za sve faze razvoja solarnih elektrana. Uključuje alate za dizajn koji omogućuju precizno planiranje i vizualizaciju, pratnju proizvodnje energije te sustave održavanja. Osim toga, softver pruža mogućnost selekcije opreme koja je ključna za optimalno funkcioniranje solarnih elektrana. . Integrirajući ove ključne aspekte, naša platforma olakšava upravljanje, poboljšava učinkovitost i osigurava dugoročnu pouzdanost solarnih energetskih sustava"
+const subheadline="Inovativnost i zelena energija"
+const text2="Razvijamo inovativnu aplikaciju koja će riješiti izazove vezane uz projektiranje fotoelektričnih sustava. Naš cilj je pružiti korisnicima alat koji će uzeti u obzir cijene električne energije, vremensku diferencijaciju tarifa te zakonske okvire pojedinih zemalja u regiji. Osim toga, implementirat ćemo umjetnu inteligenciju koja će pretraživati proizvode, davati preporuke i optimizirati odgovore kako bismo generirali dizajn u pitanju minuta, umjesto tjednima."
+
+const text3="Ova aplikacija će riješiti neizvjesnost investitora prilikom ulaganja u obnovljive izvore energije, optimizirati male elektrane prema potrošnji i lokalnom distributeru energije te pružiti točnu dokumentaciju s minimalnim unosima korisnika. Također, potičemo postojeće potrošače električne energije da investiraju u fotonaponske elektrane za vlastite potrebe, koristeći umjetnu inteligenciju za pomoć pri odabiru opreme prema dostupnosti, cjenovnom rasponu i lokaciji. Kroz praćenje proizvodnje i potrošnje, aplikacija će pružati analize i uvide potrebne za efikasno korištenje obnovljivih izvora energije."
+
+const category="Enrgetics, App"
+const link= 'https://pvsmartclick.com/home'
+import pic1 from '../../assets/pvsc1.png'
+import pic2 from '../../assets/pvsc2.png'
+import pic3 from '../../assets/pvsc3.png'
+import pic4 from '../../assets/pvsc4.png'
+import pic5 from '../../assets/pvsc5.png'
+import pic6 from '../../assets/pvsc6.png'
+
+const images = [
+  { id: 1, src: pic1, alt: 'Image 1', caption: 'Caption 1' },
+  { id: 2, src: pic2, alt: 'Image 2', caption: 'Caption 2' },
+  { id: 3, src: pic3, alt: 'Image 3', caption: 'Caption 3' },
+  { id: 4, src: pic4, alt: 'Image 4', caption: 'Caption 4' },
+  { id: 5, src: pic5, alt: 'Image 5', caption: 'Caption 5' },
+  { id: 6, src: pic6, alt: 'Image 6', caption: 'Caption 6' },
+];
+
 ---
 <ProjectLayout>
 <div class="xl:w-full prose prose-lg px-4 pt-12">
-    <button class="md:flex hidden gap-5 ml-10 font-bold text-lg">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
-        </svg>
-        <a href=`/${lang}/portfolio/pv-smart-click`>{t('euprojekt.btn')}</a>
-    </button>
     <div class="max-w-5xl mx-auto">
         <h2 class="text-xl md:text-5xl font-bold text-center mb-4">{t('euprojekt.headline')}</h2>
         <p class="text-gray-700 text-base md:text-2xl mb-4">
@@ -25,9 +47,61 @@ const translatePath = useTranslatedPath(lang);
         <p class="text-gray-700 text-base md:text-2xl mb-8">
             {t('euprojekt.paragraf5')}
         </p>
+  <div class="max-w-5xl mx-auto mt-8">
+    <h3 class="text-xl md:text-3xl font-bold mb-2">{t('eu.korisnik')}</h3>
+    <ul class="list-disc list-inside">
+        <li class="text-xl text-gray-700">{t('eu.korisnik1')}</li>
+        <li class="text-xl text-gray-700">{t('eu.korisnik2')}</li>
+        <li class="text-xl text-gray-700">{t('eu.korisnik3')}</li>
+        <li class="text-xl text-gray-700">{t('eu.korisnik4')}</li>
+    </ul>
+</div>
     </div>
     <div class="flex items-center justify-center">
         <img src={financiraEu.src} alt="eulogo" class="w-full md:w-1/2">
+    </div>
+</div>
+
+<div class="p-8 space-y-5 max-w-7xl mx-auto">
+    <div class="space-y-5">
+        <h1 class="text-2xl font-bold ">{t('pvsc.headline')}</h1>
+        <p class="text-gray-600 text-xl">{t('pvsc.text1')}</p>
+        <h1 class="text-2xl font-bold ">{t('pvsc.subheadline')}</h1>
+        <p class="text-gray-600 text-xl">{t('pvsc.text2')}</p>
+        <h2 class="text-gray-600 text-xl first-child:text-blue-500 ">{t('pvsc.headline2')}</h2>
+        <h2 class="text-gray-600 text-2xl font-bold ">{t('pvsc.headline3')}</h2>
+        <ul class="list-none pl-5 space-y-2">
+            <li class="text-gray-700">{t('pvsc-list1')}</li>
+            <li class="text-gray-700">{t('pvsc-list2')}</li>
+            <li class="text-gray-700">{t('pvsc-list3')}</li>
+            <li class="text-gray-700">{t('pvsc-list4')}</li>
+            <li class="text-gray-700">{t('pvsc-list5')}</li>
+            <li class="text-gray-700">{t('pvsc-list6')}</li>
+            <li class="text-gray-700">{t('pvsc-list7')}</li>
+            <li class="text-gray-700">{t('pvsc-list8')}</li>
+            <li class="text-gray-700">{t('pvsc-list9')}</li>
+            <li class="text-gray-700">{t('pvsc-list10')}</li>
+        </ul>
+        <div class="flex gap-10 flex-col justify-center md:flex-row items-center md:justify-between">
+            <div>
+                <h3 class="font-bold text-2xl">{t('Category')}:</h3>
+                <span class="text-lg">{t('category.app')} , {t('category.ener')}</span>
+            </div>
+            <div>
+                <div class="flex flex-col">
+                    <a href={link} target="_blank">
+                        <button class="bg-green-500 text-white font-bold py-4 px-8 text-lg rounded-md">{t('live.project')}</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex flex-col items-center justify-center md:flex-row">
+    <div class="w-full md:w-2/3 mb-8 md:mb-0">
+        <!-- Assuming SwiperReact is a custom component -->
+        <SwiperReact slides={2} pic1={pic1} pic2={pic2} pic3={pic3} pic4={pic4} pic5={pic5} pic6={pic6} client:load/>
     </div>
 </div>
 
