@@ -238,6 +238,13 @@ export const ui = {
     "footer.energetika": "Energetics",
     "footer.locationsHR": "Headquarters in Croatia",
     "footer.locationsBiH": "Headquarters in BiH",
+ 	"contact.headline": "We’d Love to Hear from You!",
+ 	"contact.para": "Got a question, feedback, or inquiry? Fill out the form below, and we’ll get back to you as soon as possible",
+ 	"contact.namePlaceHolder": "Your Name",
+ 	"contact.emailPlaceHolder": "Email Address",
+ 	"contact.subjectPlaceHolder": "Subject",
+ 	"contact.messagePlaceHolder": "Message",
+ 	"contact.btn": "Send"
   },
   hr: {
     "nav.home": "Početna",
@@ -465,6 +472,17 @@ export const ui = {
     "footer.energetika": "Energetika",
     "footer.locationsHR": "Uredi Hrvatska",
     "footer.locationsBiH": "Uredi BiH",
+    "contact.headline": "Veselimo se vašem javljanju!",
+  "contact.para": "Imate li pitanje, prijedlog ili trebate dodatne informacije? Ispunite obrazac u nastavku, a mi ćemo vam odgovoriti u najkraćem mogućem roku",
+    "contact.namePlaceHolder": "Vaše ime",
+    "contact.emailPlaceHolder": "Email adresa",
+    "contact.subjectPlaceHolder": "Naslov",
+    "contact.messagePlaceHolder": "Vaša poruka",
+    "contact.btn": "Pošalji",
+
+    "contact.popUp": "Vaša poruka je uspješno poslana",
+    "contact.sending": "Slanje...",
+
   },
 } as const;
 
